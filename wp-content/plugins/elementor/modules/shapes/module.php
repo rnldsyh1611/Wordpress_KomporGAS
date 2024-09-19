@@ -8,6 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Module extends \Elementor\Core\Base\Module {
 
+<<<<<<< HEAD
 	public function __construct() {
 		parent::__construct();
 
@@ -31,6 +32,8 @@ class Module extends \Elementor\Core\Base\Module {
 		);
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * Return a translated user-friendly list of the available SVG shapes.
 	 *

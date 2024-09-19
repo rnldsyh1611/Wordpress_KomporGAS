@@ -8,6 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 return [
 	'handle' => 'elementor-v2-editor',
 	'deps' => [
+<<<<<<< HEAD
+=======
+		'elementor-v2-editor-documents',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		'elementor-v2-editor-v1-adapters',
 		'elementor-v2-locations',
 		'elementor-v2-query',
@@ -15,5 +19,9 @@ return [
 		'elementor-v2-ui',
 		'react',
 		'react-dom',
+<<<<<<< HEAD
+=======
+		'wp-i18n',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	],
 ];

@@ -4,7 +4,10 @@ namespace Elementor\Core\Editor\Loader\V2;
 use Elementor\Core\Editor\Loader\Common\Editor_Common_Scripts_Settings;
 use Elementor\Core\Editor\Loader\Editor_Base_Loader;
 use Elementor\Core\Utils\Assets_Translation_Loader;
+<<<<<<< HEAD
 use Elementor\Core\Utils\Collection;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,6 +19,7 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 	const ENV_PACKAGE = 'env';
 
 	/**
+<<<<<<< HEAD
 	 * Packages that should only be registered, unless some other asset depends on them.
 	 */
 	const LIBS = [
@@ -43,6 +47,34 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 		'wp-media' => [
 			'media-models',
 		],
+=======
+	 * Packages that should be enqueued (the main app and the extensions of the app).
+	 */
+	const PACKAGES_TO_ENQUEUE = [
+		// App
+		self::APP_PACKAGE,
+
+		// Extensions
+		'editor-app-bar',
+		'editor-documents',
+		'editor-panels',
+		'editor-responsive',
+		'editor-site-navigation',
+		'editor-v1-adapters',
+	];
+
+	/**
+	 * Packages that should only be registered, unless some other asset depends on them.
+	 */
+	const LIBS = [
+		self::ENV_PACKAGE,
+		'editor-app-bar-ui',
+		'icons',
+		'locations',
+		'query',
+		'store',
+		'ui',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	];
 
 	/**
@@ -50,9 +82,14 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 	 */
 	public function init() {
 		$packages = array_merge( $this->get_packages_to_enqueue(), self::LIBS );
+<<<<<<< HEAD
 		$packages_with_app = array_merge( $packages, [ self::APP_PACKAGE ] );
 
 		foreach ( $packages_with_app as $package ) {
+=======
+
+		foreach ( $packages as $package ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			$this->assets_config_provider->load( $package );
 		}
 
@@ -89,6 +126,7 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 				);
 			}
 
+<<<<<<< HEAD
 			$additional_deps = self::ADDITIONAL_DEPS[ $package ] ?? [];
 			$deps = array_merge( $config['deps'], $additional_deps );
 
@@ -96,6 +134,12 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 				$config['handle'],
 				"{$assets_url}js/packages/{$package}/{$package}{$min_suffix}.js",
 				$deps,
+=======
+			wp_register_script(
+				$config['handle'],
+				"{$assets_url}js/packages/{$package}/{$package}{$min_suffix}.js",
+				$config['deps'],
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				ELEMENTOR_VERSION,
 				true
 			);
@@ -114,8 +158,11 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 	public function enqueue_scripts() {
 		do_action( 'elementor/editor/v2/scripts/enqueue/before' );
 
+<<<<<<< HEAD
 		parent::enqueue_scripts();
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		wp_enqueue_script( 'elementor-editor-environment-v2' );
 
 		$env_config = $this->assets_config_provider->get( self::ENV_PACKAGE );
@@ -130,9 +177,13 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 			);
 		}
 
+<<<<<<< HEAD
 		$packages_with_app = array_merge( $this->get_packages_to_enqueue(), [ self::APP_PACKAGE ] );
 
 		foreach ( $this->assets_config_provider->only( $packages_with_app ) as $config ) {
+=======
+		foreach ( $this->assets_config_provider->only( $this->get_packages_to_enqueue() ) as $config ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			wp_enqueue_script( $config['handle'] );
 		}
 
@@ -159,6 +210,7 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 		$assets_url = $this->config->get( 'assets_url' );
 		$min_suffix = $this->config->get( 'min_suffix' );
 
+<<<<<<< HEAD
 		foreach ( $this->get_styles() as $style ) {
 			wp_register_style(
 				"elementor-{$style}",
@@ -167,6 +219,14 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 				ELEMENTOR_VERSION
 			);
 		}
+=======
+		wp_register_style(
+			'elementor-editor-v2-overrides',
+			"{$assets_url}css/editor-v2-overrides{$min_suffix}.css",
+			[ 'elementor-editor' ],
+			ELEMENTOR_VERSION
+		);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 		do_action( 'elementor/editor/v2/styles/register' );
 	}
@@ -177,9 +237,13 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 	public function enqueue_styles() {
 		parent::enqueue_styles();
 
+<<<<<<< HEAD
 		foreach ( $this->get_styles() as $style ) {
 			wp_enqueue_style( "elementor-{$style}" );
 		}
+=======
+		wp_enqueue_style( 'elementor-editor-v2-overrides' );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 		do_action( 'elementor/editor/v2/styles/enqueue' );
 	}
@@ -194,6 +258,7 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 		include ELEMENTOR_PATH . 'includes/editor-templates/editor-wrapper.php';
 	}
 
+<<<<<<< HEAD
 	public static function get_packages_to_enqueue() : array {
 		return apply_filters( 'elementor/editor/v2/packages', [] );
 	}
@@ -204,5 +269,9 @@ class Editor_V2_Loader extends Editor_Base_Loader {
 		return Collection::make( $styles )
 			->unique()
 			->all();
+=======
+	private function get_packages_to_enqueue() : array {
+		return apply_filters( 'elementor/editor/v2/packages', self::PACKAGES_TO_ENQUEUE );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 }

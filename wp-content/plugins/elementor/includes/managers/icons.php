@@ -24,7 +24,11 @@ class Icons_Manager {
 
 	const LOAD_FA4_SHIM_OPTION_KEY = 'elementor_load_fa4_shim';
 
+<<<<<<< HEAD
 	const ELEMENTOR_ICONS_VERSION = '5.31.0';
+=======
+	const ELEMENTOR_ICONS_VERSION = '5.30.0';
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 	/**
 	 * Tabs.
@@ -403,7 +407,11 @@ class Icons_Manager {
 	 * @param array $element        settings array
 	 * @param string $old_control   old control id
 	 * @param string $new_control   new control id
+<<<<<<< HEAD
 	 * @param bool $remove_old      boolean whether to remove old control or not
+=======
+	 * @param bool $remove_old      boolean weather to remove old control or not
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 *
 	 * @return array
 	 */

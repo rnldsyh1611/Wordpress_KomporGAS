@@ -8,7 +8,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 return [
 	'handle' => 'elementor-v2-editor-responsive',
 	'deps' => [
+<<<<<<< HEAD
 		'elementor-v2-editor-v1-adapters',
+=======
+		'elementor-v2-editor-app-bar',
+		'elementor-v2-editor-v1-adapters',
+		'elementor-v2-icons',
+		'elementor-v2-store',
+		'elementor-v2-ui',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		'react',
 		'wp-i18n',
 	],

@@ -64,6 +64,7 @@ class Ai extends Library {
 		);
 	}
 
+<<<<<<< HEAD
 	public function get_remote_frontend_config( $data ) {
 		return $this->ai_request(
 			'POST',
@@ -82,6 +83,8 @@ class Ai extends Library {
 		);
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * get_file_payload
 	 * @param $filename
@@ -598,6 +601,7 @@ class Ai extends Library {
 
 		return $result;
 	}
+<<<<<<< HEAD
 	public function get_image_to_image_mask_cleanup( $image_data, $context, $request_ids ) {
 		$image_file = get_attached_file( $image_data['attachment_id'] );
 		$mask_file = $this->store_temp_file( $image_data['mask'], '.svg' );
@@ -637,6 +641,8 @@ class Ai extends Library {
 
 		return $result;
 	}
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 	public function generate_layout( $data, $context ) {
 		$endpoint = 'generate/layout';
@@ -671,7 +677,10 @@ class Ai extends Library {
 					$html = wp_json_encode( $attachment['content'] );
 
 					$body['html'] = $html;
+<<<<<<< HEAD
 					$body['htmlFetchedUrl'] = $attachment['label'];
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 					break;
 			}
@@ -679,7 +688,11 @@ class Ai extends Library {
 
 		$context['currentContext'] = $data['currentContext'];
 		$context['features'] = [
+<<<<<<< HEAD
 			'supportedFeatures' => [ 'Taxonomy' ],
+=======
+			'supportedFeatures' => [],
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		];
 
 		if ( ElementorUtils::has_pro() ) {
@@ -694,12 +707,21 @@ class Ai extends Library {
 			$context['features']['supportedFeatures'][] = 'Nested';
 		}
 
+<<<<<<< HEAD
 		if ( Plugin::instance()->experiments->get_active_features()['mega-menu'] ) {
 			$context['features']['supportedFeatures'][] = 'MegaMenu';
 		}
 
 		if ( class_exists( 'WC' ) ) {
 			$context['features']['supportedFeatures'][] = 'WooCommerce';
+=======
+		if ( Plugin::instance()->experiments->get_active_features()['taxonomy-filter'] ) {
+			$context['features']['supportedFeatures'][] = 'Taxonomy';
+		}
+
+		if ( Plugin::instance()->experiments->get_active_features()['mega-menu'] ) {
+			$context['features']['supportedFeatures'][] = 'MegaMenu';
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		}
 
 		$metadata = [

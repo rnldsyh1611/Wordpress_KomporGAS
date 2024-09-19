@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["vendors-node_modules_prop-types_index_js-node_modules_babel_runtime_helpers_slicedToArray_js"],{
 
 /***/ "../node_modules/object-assign/index.js":

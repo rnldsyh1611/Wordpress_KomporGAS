@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 "use strict";
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["frontend"],{
 
@@ -104,9 +108,14 @@ module.exports = function ($) {
   if (elementorFrontendConfig.experimentalFeatures['nested-elements']) {
     this.elementsHandlers['nested-accordion.default'] = () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! elementor/modules/nested-accordion/assets/js/frontend/handlers/nested-accordion */ "../modules/nested-accordion/assets/js/frontend/handlers/nested-accordion.js"));
   }
+<<<<<<< HEAD
   if (elementorFrontendConfig.experimentalFeatures.container) {
     this.elementsHandlers['contact-buttons.default'] = () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! elementor/modules/floating-buttons/assets/js/floating-buttons/frontend/handlers/contact-buttons */ "../modules/floating-buttons/assets/js/floating-buttons/frontend/handlers/contact-buttons.js"));
     this.elementsHandlers['floating-bars-var-1.default'] = () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! elementor/modules/floating-buttons/assets/js/floating-bars/frontend/handlers/floating-bars */ "../modules/floating-buttons/assets/js/floating-bars/frontend/handlers/floating-bars.js"));
+=======
+  if (elementorFrontendConfig.experimentalFeatures['floating-buttons']) {
+    this.elementsHandlers['contact-buttons.default'] = () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! elementor/modules/floating-buttons/assets/js/frontend/handlers/contact-buttons */ "../modules/floating-buttons/assets/js/frontend/handlers/contact-buttons.js"));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   const addGlobalHandlers = () => elementorFrontend.hooks.addAction('frontend/element_ready/global', _global.default);
   const addElementsHandlers = () => {
@@ -508,6 +517,27 @@ class Frontend extends elementorModules.ViewModule {
       }
     };
   }
+<<<<<<< HEAD
+=======
+  waypoint($element, callback, options) {
+    const defaultOptions = {
+      offset: '100%',
+      triggerOnce: true
+    };
+    options = jQuery.extend(defaultOptions, options);
+    const correctCallback = function () {
+      const element = this.element || this,
+        result = callback.apply(element, arguments);
+
+      // If is Waypoint new API and is frontend
+      if (options.triggerOnce && this.destroy) {
+        this.destroy();
+      }
+      return result;
+    };
+    return $element.elementorWaypoint(correctCallback, options);
+  }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   muteMigrationTraces() {
     jQuery.migrateMute = true;
     jQuery.migrateTrace = false;
@@ -1429,6 +1459,7 @@ class AssetsLoader {
   load(type, key) {
     const assetData = AssetsLoader.assets[type][key];
     if (!assetData.loader) {
+<<<<<<< HEAD
       assetData.loader = this.isAssetLoaded(assetData, type) ? Promise.resolve(true) : this.loadAsset(assetData, type);
     }
     return assetData.loader;
@@ -1488,6 +1519,34 @@ AssetsLoader.assets = {
       before: '#elementor-frontend-css'
     }
   }
+=======
+      assetData.loader = new Promise(resolve => {
+        const element = 'style' === type ? this.getStyleElement(assetData.src) : this.getScriptElement(assetData.src);
+        element.onload = () => resolve(true);
+        const parent = 'head' === assetData.parent ? assetData.parent : 'body';
+        document[parent].appendChild(element);
+      });
+    }
+    return assetData.loader;
+  }
+}
+exports["default"] = AssetsLoader;
+const fileSuffix = elementorFrontendConfig.environmentMode.isScriptDebug ? '' : '.min';
+const swiperSource = elementorFrontendConfig.experimentalFeatures.e_swiper_latest ? `${elementorFrontendConfig.urls.assets}lib/swiper/v8/swiper${fileSuffix}.js?ver=8.4.5` : `${elementorFrontendConfig.urls.assets}lib/swiper/swiper${fileSuffix}.js?ver=5.3.6`;
+AssetsLoader.assets = {
+  script: {
+    dialog: {
+      src: `${elementorFrontendConfig.urls.assets}lib/dialog/dialog${fileSuffix}.js?ver=4.9.0`
+    },
+    'share-link': {
+      src: `${elementorFrontendConfig.urls.assets}lib/share-link/share-link${fileSuffix}.js?ver=${elementorFrontendConfig.version}`
+    },
+    swiper: {
+      src: swiperSource
+    }
+  },
+  style: {}
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 
 /***/ }),
@@ -1606,25 +1665,39 @@ class LightboxManager extends elementorModules.ViewModule {
           return resolveLightbox(new LightboxModule());
         });
       }),
+<<<<<<< HEAD
       dialogScriptPromise = elementorFrontend.utils.assetsLoader.load('script', 'dialog'),
       dialogStylePromise = elementorFrontend.utils.assetsLoader.load('style', 'dialog'),
       shareLinkPromise = elementorFrontend.utils.assetsLoader.load('script', 'share-link'),
       swiperStylePromise = elementorFrontend.utils.assetsLoader.load('style', 'swiper'),
       lightboxStylePromise = elementorFrontend.utils.assetsLoader.load('style', 'e-lightbox');
     return Promise.all([lightboxPromise, dialogScriptPromise, dialogStylePromise, shareLinkPromise, swiperStylePromise, lightboxStylePromise]).then(() => lightboxPromise);
+=======
+      dialogPromise = elementorFrontend.utils.assetsLoader.load('script', 'dialog'),
+      shareLinkPromise = elementorFrontend.utils.assetsLoader.load('script', 'share-link');
+    return Promise.all([lightboxPromise, dialogPromise, shareLinkPromise]).then(() => lightboxPromise);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   getDefaultSettings() {
     return {
       selectors: {
+<<<<<<< HEAD
         links: 'a, [data-elementor-lightbox]',
         slideshow: '[data-elementor-lightbox-slideshow]'
+=======
+        links: 'a, [data-elementor-lightbox]'
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }
     };
   }
   getDefaultElements() {
     return {
+<<<<<<< HEAD
       $links: jQuery(this.getSettings('selectors.links')),
       $slideshow: jQuery(this.getSettings('selectors.slideshow'))
+=======
+      $links: jQuery(this.getSettings('selectors.links'))
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     };
   }
   isLightboxLink(element) {
@@ -1636,9 +1709,12 @@ class LightboxManager extends elementorModules.ViewModule {
       currentLinkOpenInLightbox = element.dataset.elementorOpenLightbox;
     return 'yes' === currentLinkOpenInLightbox || generalOpenInLightbox && 'no' !== currentLinkOpenInLightbox;
   }
+<<<<<<< HEAD
   isLightboxSlideshow() {
     return 0 !== this.elements.$slideshow.length;
   }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   async onLinkClick(event) {
     const element = event.currentTarget,
       $target = jQuery(event.target),
@@ -1671,9 +1747,13 @@ class LightboxManager extends elementorModules.ViewModule {
     if (elementorFrontend.isEditMode()) {
       return;
     }
+<<<<<<< HEAD
     this.maybeActivateLightboxOnLink();
   }
   maybeActivateLightboxOnLink() {
+=======
+
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     // Detecting lightbox links on init will reduce the time of waiting to the lightbox to be display on slow connections.
     this.elements.$links.each((index, element) => {
       if (this.isLightboxLink(element)) {

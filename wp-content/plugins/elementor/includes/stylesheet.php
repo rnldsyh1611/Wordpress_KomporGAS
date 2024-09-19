@@ -388,10 +388,17 @@ class Stylesheet {
 	/**
 	 * Get query hash style format.
 	 *
+<<<<<<< HEAD
 	 * Retrieve formatted media query rule with the endpoint width settings.
 	 *
 	 * The method returns the CSS `@media` rule and supported viewport width in
 	 * pixels. It can also handle multiple width endpoints.
+=======
+	 * Retrieve formated media query rule with the endpoint width settings.
+	 *
+	 * The method returns the CSS `@media` rule and supported viewport width in
+	 * pixels. It can also handel multiple width endpoints.
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 *
 	 * @since 1.2.0
 	 * @access private

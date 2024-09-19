@@ -2,7 +2,10 @@
 namespace Elementor\Core\Files;
 
 use Elementor\Core\Base\Document as Document_Base;
+<<<<<<< HEAD
 use Elementor\Core\Base\Elements_Iteration_Actions\Assets;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Core\Common\Modules\Ajax\Module as Ajax;
 use Elementor\Core\Files\CSS\Global_CSS;
 use Elementor\Core\Files\CSS\Post as Post_CSS;
@@ -115,7 +118,10 @@ class Manager {
 
 		delete_post_meta_by_key( Post_CSS::META_KEY );
 		delete_post_meta_by_key( Document_Base::CACHE_META_KEY );
+<<<<<<< HEAD
 		delete_post_meta_by_key( Assets::ASSETS_META_KEY );
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 		delete_option( Global_CSS::META_KEY );
 		delete_option( Frontend::META_KEY );
@@ -133,10 +139,13 @@ class Manager {
 	}
 
 	public function clear_custom_image_sizes() {
+<<<<<<< HEAD
 		if ( ! defined( 'BFITHUMB_UPLOAD_DIR' ) ) {
 			return;
 		}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$upload_info = wp_upload_dir();
 		$upload_dir = $upload_info['basedir'] . '/' . BFITHUMB_UPLOAD_DIR;
 

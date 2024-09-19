@@ -24,6 +24,7 @@ class Assets extends Base {
 
 		$element_assets = $this->get_assets( $settings, $controls );
 
+<<<<<<< HEAD
 		$element_assets_depend = [
 			'styles' => $element_data->get_style_depends(),
 			'scripts' => $element_data->get_script_depends(),
@@ -47,6 +48,8 @@ class Assets extends Base {
 			}
 		}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		if ( $element_assets ) {
 			$this->update_page_assets( $element_assets );
 		}

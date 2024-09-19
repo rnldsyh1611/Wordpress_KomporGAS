@@ -97,7 +97,10 @@ class Modules_Manager {
 			'shapes',
 			'favorites',
 			'admin-top-bar',
+<<<<<<< HEAD
 			'checklist',
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'element-manager',
 			'nested-elements',
 			// Depends on Nested Elements module
@@ -112,7 +115,10 @@ class Modules_Manager {
 			'image-loading-optimization',
 			'kit-elements-defaults',
 			'announcements',
+<<<<<<< HEAD
 			'editor-app-bar',
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'site-navigation',
 			'styleguide',
 			'element-cache',
@@ -122,9 +128,12 @@ class Modules_Manager {
 			'floating-buttons',
 			'content-sanitizer',
 			'editor-events',
+<<<<<<< HEAD
 			'atomic-widgets',
 			'wc-product-editor',
 			'checklist',
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		];
 	}
 

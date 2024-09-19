@@ -10,6 +10,7 @@ interface Wordpress_Adapter_Interface {
 	public function wp_nonce_url( $url, $action );
 
 	public function self_admin_url( $path );
+<<<<<<< HEAD
 
 	public function get_pages( $args );
 
@@ -18,4 +19,6 @@ interface Wordpress_Adapter_Interface {
 	public function add_option( $option_key, $option_value );
 
 	public function update_option( $option_key, $option_value );
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 }

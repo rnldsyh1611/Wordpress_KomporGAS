@@ -3,9 +3,12 @@ namespace Elementor\Core\Page_Assets;
 
 use Elementor\Core\Base\Module;
 use Elementor\Plugin;
+<<<<<<< HEAD
 use Elementor\Control_Animation;
 use Elementor\Control_Exit_Animation;
 use Elementor\Control_Hover_Animation;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -19,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 3.3.0
  */
 class Loader extends Module {
+<<<<<<< HEAD
 	private array $assets = [];
 
 	public function get_name(): string {
@@ -106,6 +110,28 @@ class Loader extends Module {
 	}
 
 	public function get_assets(): array {
+=======
+	private $assets;
+
+	public function get_name() {
+		return 'assets-loader';
+	}
+
+	private function init_assets() {
+		$this->assets = [
+			'styles' => [
+				'e-animations' => [
+					'src' => $this->get_css_assets_url( 'animations', 'assets/lib/animations/', true ),
+					'version' => ELEMENTOR_VERSION,
+					'dependencies' => [],
+				],
+			],
+			'scripts' => [],
+		];
+	}
+
+	public function get_assets() {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		if ( ! $this->assets ) {
 			$this->init_assets();
 		}
@@ -119,7 +145,11 @@ class Loader extends Module {
 	 *     @type array 'scripts'
 	 * }
 	 */
+<<<<<<< HEAD
 	public function enable_assets( array $assets_data ): void {
+=======
+	public function enable_assets( array $assets_data ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		if ( ! $this->assets ) {
 			$this->init_assets();
 		}
@@ -143,7 +173,11 @@ class Loader extends Module {
 	 *     @type array 'scripts'
 	 * }
 	 */
+<<<<<<< HEAD
 	public function add_assets( array $assets ): void {
+=======
+	public function add_assets( array $assets ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		if ( ! $this->assets ) {
 			$this->init_assets();
 		}
@@ -154,25 +188,35 @@ class Loader extends Module {
 	/**
 	 * @deprecated 3.22.0
 	 */
+<<<<<<< HEAD
 	public function enqueue_assets(): void {
+=======
+	public function enqueue_assets() {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$assets = $this->get_assets();
 		$is_preview_mode = Plugin::$instance->preview->is_preview_mode();
 
 		foreach ( $assets as $assets_type => $assets_type_data ) {
 			foreach ( $assets_type_data as $asset_name => $asset_data ) {
+<<<<<<< HEAD
 				if ( empty( $asset_data['src'] ) ) {
 					continue;
 				}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				if ( ! empty( $asset_data['enabled'] ) || $is_preview_mode ) {
 					if ( 'scripts' === $assets_type ) {
 						wp_enqueue_script( $asset_name, $asset_data['src'], $asset_data['dependencies'], $asset_data['version'], true );
 					} else {
+<<<<<<< HEAD
 						// TODO: Remove the 'e-animations' registration in v3.26.0 [ED-15471].
 						if ( $this->skip_animations_style( $asset_name ) ) {
 							continue;
 						}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 						wp_enqueue_style( $asset_name, $asset_data['src'], $asset_data['dependencies'], $asset_data['version'] );
 					}
 				}
@@ -180,6 +224,7 @@ class Loader extends Module {
 		}
 	}
 
+<<<<<<< HEAD
 	// TODO: Remove the 'e-animations' registration in v3.26.0 [ED-15471].
 	private function skip_animations_style( $asset_name ): bool {
 		$is_preview = Plugin::$instance->preview->is_preview_mode();
@@ -188,6 +233,9 @@ class Loader extends Module {
 	}
 
 	private function register_assets(): void {
+=======
+	private function register_assets() {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$assets = $this->get_assets();
 
 		foreach ( $assets as $assets_type => $assets_type_data ) {

@@ -74,6 +74,19 @@ class Feedback extends Module {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * @since 2.3.0
+	 * @deprecated 3.1.0
+	 */
+	public function localize_feedback_dialog_settings() {
+		Plugin::$instance->modules_manager->get_modules( 'dev-tools' )->deprecation->deprecated_function( __METHOD__, '3.1.0' );
+
+		return [];
+	}
+
+	/**
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Print deactivate feedback dialog.
 	 *
 	 * Display a dialog box to ask the user why he deactivated Elementor.

@@ -1,14 +1,22 @@
 <?php
 namespace Elementor;
 
+<<<<<<< HEAD
 use Elementor\Modules\EditorAppBar\Module as App_Bar_Module;
+=======
+use Elementor\Core\Editor\Editor;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Utils;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+<<<<<<< HEAD
 $is_app_bar_active = Plugin::$instance->experiments->is_feature_active( App_Bar_Module::EXPERIMENT_NAME );
+=======
+$is_editor_v2_active = Plugin::$instance->experiments->is_feature_active( Editor::EDITOR_V2_EXPERIMENT_NAME );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 ?>
 <script type="text/template" id="tmpl-elementor-hotkeys">
 	<# var ctrlLabel = environment.mac ? '&#8984;' : 'Ctrl'; #>
@@ -121,7 +129,11 @@ $is_app_bar_active = Plugin::$instance->experiments->is_feature_active( App_Bar_
 
 				<li class="elementor-hotkeys__item">
 					<div class="elementor-hotkeys__item--label"><?php
+<<<<<<< HEAD
 						echo $is_app_bar_active
+=======
+						echo $is_editor_v2_active
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 							? esc_html__( 'Structure', 'elementor' )
 							: esc_html__( 'Navigator', 'elementor' );
 					?></div>

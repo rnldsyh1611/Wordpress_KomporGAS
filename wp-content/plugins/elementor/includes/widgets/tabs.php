@@ -78,6 +78,7 @@ class Widget_Tabs extends Widget_Base {
 		return false;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Get style dependencies.
 	 *
@@ -92,6 +93,8 @@ class Widget_Tabs extends Widget_Base {
 		return [ 'widget-tabs' ];
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public function show_in_panel(): bool {
 		return ! Plugin::$instance->experiments->is_feature_active( 'nested-elements' );
 	}

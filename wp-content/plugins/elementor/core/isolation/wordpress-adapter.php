@@ -18,6 +18,7 @@ class Wordpress_Adapter implements Wordpress_Adapter_Interface {
 	public function self_admin_url( $path ): string {
 		return self_admin_url( $path );
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Retrieves an array of pages (or hierarchical post type items).
@@ -41,4 +42,6 @@ class Wordpress_Adapter implements Wordpress_Adapter_Interface {
 	public function add_option( $option_key, $option_value ) : void {
 		add_option( $option_key, $option_value );
 	}
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 }

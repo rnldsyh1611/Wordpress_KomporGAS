@@ -22,13 +22,17 @@ class Module extends BaseModule {
 	public function __construct() {
 		parent::__construct();
 
+<<<<<<< HEAD
 		add_action( 'elementor/frontend/after_register_styles', [ $this, 'register_styles' ] );
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		add_action( 'elementor/editor/before_enqueue_scripts', function () {
 			wp_enqueue_script( $this->get_name(), $this->get_js_assets_url( $this->get_name() ), [
 				'nested-elements',
 			], ELEMENTOR_VERSION, true );
 		} );
+<<<<<<< HEAD
 
 	}
 
@@ -47,5 +51,7 @@ class Module extends BaseModule {
 			[],
 			ELEMENTOR_VERSION
 		);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 }

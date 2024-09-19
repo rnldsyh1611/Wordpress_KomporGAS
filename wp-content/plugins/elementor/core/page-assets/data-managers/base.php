@@ -189,7 +189,11 @@ abstract class Base {
 	 * @since 3.3.0
 	 * @access protected
 	 *
+<<<<<<< HEAD
 	 * @param string $data_type (exists|content|size)
+=======
+	 * @param string $data_type (content|size)
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * @param string $file_key - In case that the same file data is needed for multiple assets (like a JSON file), the file data key should be the same for all shared assets to make sure that the file is being read only once.
 	 *
 	 * @return string|number
@@ -207,9 +211,13 @@ abstract class Base {
 
 		$asset_path = $this->get_file_path();
 
+<<<<<<< HEAD
 		if ( 'exists' === $data_type ) {
 			$data = file_exists( $asset_path );
 		} elseif ( 'content' === $data_type ) {
+=======
+		if ( 'content' === $data_type ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			$data = Utils::file_get_contents( $asset_path );
 
 			if ( ! $data ) {

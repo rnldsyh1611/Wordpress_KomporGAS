@@ -252,6 +252,7 @@ class Settings extends Settings_Page {
 				'label' => esc_html__( 'General', 'elementor' ),
 				'sections' => [
 					'general' => [
+<<<<<<< HEAD
 						'label' => esc_html__( 'General', 'elementor' ),
 						'callback' => function() {
 							printf(
@@ -259,6 +260,8 @@ class Settings extends Settings_Page {
 								esc_html__( 'Tailor how Elementor enhances your site, from post types to other functions.', 'elementor' )
 							);
 						},
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 						'fields' => [
 							self::UPDATE_TIME_FIELD => [
 								'full_field_id' => self::UPDATE_TIME_FIELD,
@@ -329,6 +332,7 @@ class Settings extends Settings_Page {
 				'label' => esc_html__( 'Advanced', 'elementor' ),
 				'sections' => [
 					'advanced' => [
+<<<<<<< HEAD
 						'label' => esc_html__( 'Advanced', 'elementor' ),
 						'callback' => function() {
 							printf(
@@ -336,6 +340,8 @@ class Settings extends Settings_Page {
 								esc_html__( 'Personalize the way Elementor works on your website by choosing the advanced features and how they operate.', 'elementor' )
 							);
 						},
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 						'fields' => [
 							'editor_break_lines' => [
 								'label' => esc_html__( 'Switch Editor Loader Method', 'elementor' ),
@@ -404,7 +410,11 @@ class Settings extends Settings_Page {
 						'callback' => function() {
 							printf(
 								'<p>%s</p><br><hr><br>',
+<<<<<<< HEAD
 								esc_html__( 'Improve loading times on your site by selecting the optimization tools that best fit your requirements.', 'elementor' )
+=======
+								esc_html__( 'Improve loading times on your site by selecting the optimization tools that best fit your requirements. ', 'elementor' )
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 							);
 						},
 						'fields' => [
@@ -454,6 +464,7 @@ class Settings extends Settings_Page {
 									'desc' => esc_html__( 'Reduce unnecessary render-blocking loads by dequeuing unused Gutenberg block editor scripts and styles.', 'elementor' ),
 								],
 							],
+<<<<<<< HEAD
 							'lazy_load_background_images' => [
 								'label' => esc_html__( 'Lazy Load Background Images', 'elementor' ),
 								'field_args' => [
@@ -466,6 +477,8 @@ class Settings extends Settings_Page {
 									'desc' => esc_html__( 'Improve initial page load performance by lazy loading all background images except the first one.', 'elementor' ),
 								],
 							],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 						],
 					],
 				],

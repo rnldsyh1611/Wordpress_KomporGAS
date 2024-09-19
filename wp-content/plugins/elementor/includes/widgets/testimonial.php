@@ -78,6 +78,7 @@ class Widget_Testimonial extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -92,6 +93,8 @@ class Widget_Testimonial extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Get widget upsale data.
 	 *
 	 * Retrieve the widget promotion data.
@@ -623,7 +626,11 @@ class Widget_Testimonial extends Widget_Base {
 
 			if ( settings.link.url ) {
 				#>
+<<<<<<< HEAD
 				<a href="{{  elementor.helpers.sanitizeUrl( settings.link.url ) }}" {{{ view.getRenderAttributeString( 'testimonial_name' ) }}}>{{{ settings.testimonial_name }}}</a>
+=======
+				<a href="{{ settings.link.url }}" {{{ view.getRenderAttributeString( 'testimonial_name' ) }}}>{{{ settings.testimonial_name }}}</a>
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				<#
 			} else {
 				#>
@@ -639,7 +646,11 @@ class Widget_Testimonial extends Widget_Base {
 
 			if ( settings.link.url ) {
 				#>
+<<<<<<< HEAD
 				<a href="{{  elementor.helpers.sanitizeUrl( settings.link.url ) }}" {{{ view.getRenderAttributeString( 'testimonial_job' ) }}}>{{{ settings.testimonial_job }}}</a>
+=======
+				<a href="{{ settings.link.url }}" {{{ view.getRenderAttributeString( 'testimonial_job' ) }}}>{{{ settings.testimonial_job }}}</a>
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				<#
 			} else {
 				#>

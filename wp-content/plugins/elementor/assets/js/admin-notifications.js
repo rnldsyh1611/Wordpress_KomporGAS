@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -108,6 +112,10 @@ var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _whatsNew = __webpack_require__(/*! ./whats-new */ "../modules/notifications/assets/js/components/whats-new.js");
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+<<<<<<< HEAD
+=======
+var _giftIcon = __webpack_require__(/*! ../icons/gift-icon */ "../modules/notifications/assets/js/icons/gift-icon.js");
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 var BarButtonNotification = function BarButtonNotification(props) {
@@ -139,8 +147,13 @@ var BarButtonNotification = function BarButtonNotification(props) {
     sx: {
       mx: 0.5
     }
+<<<<<<< HEAD
   }, /*#__PURE__*/_react.default.createElement("i", {
     className: "e-admin-top-bar__bar-button-icon eicon-speakerphone"
+=======
+  }, /*#__PURE__*/_react.default.createElement(_giftIcon.GiftIcon, {
+    fontSize: "inherit"
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   })), /*#__PURE__*/_react.default.createElement("span", {
     className: "e-admin-top-bar__bar-button-title"
   }, props.children)), /*#__PURE__*/_react.default.createElement(_whatsNew.WhatsNew, {
@@ -164,7 +177,10 @@ BarButtonNotification.propTypes = {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
+<<<<<<< HEAD
 /* provided dependency */ var PropTypes = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -177,8 +193,12 @@ var _query = __webpack_require__(/*! @elementor/query */ "../node_modules/@eleme
 var _api = __webpack_require__(/*! ../api */ "../modules/notifications/assets/js/api/index.js");
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
 var _whatsNewItem = __webpack_require__(/*! ./whats-new-item */ "../modules/notifications/assets/js/components/whats-new-item.js");
+<<<<<<< HEAD
 var WhatsNewDrawerContent = function WhatsNewDrawerContent(_ref) {
   var setIsOpen = _ref.setIsOpen;
+=======
+var WhatsNewDrawerContent = function WhatsNewDrawerContent() {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var _useQuery = (0, _query.useQuery)({
       queryKey: ['e-notifications'],
       queryFn: _api.getNotifications
@@ -199,15 +219,22 @@ var WhatsNewDrawerContent = function WhatsNewDrawerContent(_ref) {
       key: itemIndex,
       item: item,
       itemIndex: itemIndex,
+<<<<<<< HEAD
       itemsLength: items.length,
       setIsOpen: setIsOpen
+=======
+      itemsLength: items.length
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     });
   });
 };
 exports.WhatsNewDrawerContent = WhatsNewDrawerContent;
+<<<<<<< HEAD
 WhatsNewDrawerContent.propTypes = {
   setIsOpen: PropTypes.func.isRequired
 };
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 /***/ }),
 
@@ -385,8 +412,12 @@ var _whatsNewItemChips = __webpack_require__(/*! ./whats-new-item-chips */ "../m
 var WhatsNewItem = function WhatsNewItem(_ref) {
   var item = _ref.item,
     itemIndex = _ref.itemIndex,
+<<<<<<< HEAD
     itemsLength = _ref.itemsLength,
     setIsOpen = _ref.setIsOpen;
+=======
+    itemsLength = _ref.itemsLength;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   return /*#__PURE__*/_react.default.createElement(_ui.Box, {
     key: itemIndex,
     display: "flex",
@@ -428,6 +459,7 @@ var WhatsNewItem = function WhatsNewItem(_ref) {
     }
   }, /*#__PURE__*/_react.default.createElement(_ui.Button, {
     href: item.ctaLink,
+<<<<<<< HEAD
     target: item.ctaLink.startsWith('#') ? '_self' : '_blank',
     variant: "contained",
     size: "small",
@@ -435,6 +467,12 @@ var WhatsNewItem = function WhatsNewItem(_ref) {
     onClick: item.ctaLink.startsWith('#') ? function () {
       return setIsOpen(false);
     } : function () {}
+=======
+    target: "_blank",
+    variant: "contained",
+    size: "small",
+    color: "promotion"
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }, item.cta)), itemIndex !== itemsLength - 1 && /*#__PURE__*/_react.default.createElement(_ui.Divider, {
     sx: {
       my: 1
@@ -445,8 +483,12 @@ exports.WhatsNewItem = WhatsNewItem;
 WhatsNewItem.propTypes = {
   item: PropTypes.object.isRequired,
   itemIndex: PropTypes.number.isRequired,
+<<<<<<< HEAD
   itemsLength: PropTypes.number.isRequired,
   setIsOpen: PropTypes.func.isRequired
+=======
+  itemsLength: PropTypes.number.isRequired
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 
 /***/ }),
@@ -575,9 +617,13 @@ var WhatsNew = function WhatsNew(props) {
     sx: {
       padding: '16px'
     }
+<<<<<<< HEAD
   }, /*#__PURE__*/_react.default.createElement(_whatsNewDrawerContent.WhatsNewDrawerContent, {
     setIsOpen: setIsOpen
   }))))))));
+=======
+  }, /*#__PURE__*/_react.default.createElement(_whatsNewDrawerContent.WhatsNewDrawerContent, null))))))));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 exports.WhatsNew = WhatsNew;
 WhatsNew.propTypes = {
@@ -632,6 +678,44 @@ WrapperWithLink.propTypes = {
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "../modules/notifications/assets/js/icons/gift-icon.js":
+/*!*************************************************************!*\
+  !*** ../modules/notifications/assets/js/icons/gift-icon.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ "../node_modules/@babel/runtime/helpers/typeof.js");
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports.GiftIcon = void 0;
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../node_modules/@babel/runtime/helpers/extends.js"));
+var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+var GiftIcon = (0, _react.forwardRef)(function (props, ref) {
+  return /*#__PURE__*/_react.default.createElement(_ui.SvgIcon, (0, _extends2.default)({
+    viewBox: "0 0 24 24"
+  }, props, {
+    ref: ref
+  }), /*#__PURE__*/_react.default.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.65527 4.84484C8.95951 4.07178 8.20923 3.73771 7.51306 3.74984L7.5 3.75007C7.03587 3.75007 6.59075 3.93433 6.26256 4.26252C5.93437 4.59071 5.75 5.03583 5.75 5.49995C5.75 5.96408 5.93437 6.4092 6.26256 6.73739C6.59075 7.06558 7.03587 7.24995 7.5 7.24995C7.50295 7.24995 7.5059 7.24997 7.50884 7.25001H11.0002C10.6592 6.26394 10.1939 5.44328 9.65527 4.84484ZM11.25 8.75001V11.25H4C3.86193 11.25 3.75 11.1381 3.75 11V9.00001C3.75 8.86193 3.86193 8.75001 4 8.75001H11.25ZM4.25 12.75H4C3.0335 12.75 2.25 11.9665 2.25 11V9.00001C2.25 8.03351 3.0335 7.25001 4 7.25001H4.76141C4.43004 6.73144 4.25 6.12498 4.25 5.49995C4.25 4.638 4.59241 3.81135 5.2019 3.20186C5.80984 2.59392 6.63384 2.2517 7.49342 2.24996C8.72414 2.23069 9.86213 2.83242 10.7702 3.84139C11.2484 4.37275 11.6608 5.01284 12 5.73103C12.3392 5.01284 12.7516 4.37275 13.2298 3.84139C14.1379 2.83242 15.2759 2.23069 16.5066 2.24996C17.3662 2.2517 18.1902 2.59392 18.7981 3.20186C19.4076 3.81135 19.75 4.638 19.75 5.49995C19.75 6.12498 19.57 6.73144 19.2386 7.25001H20C20.9665 7.25001 21.75 8.03351 21.75 9.00001V11C21.75 11.9665 20.9665 12.75 20 12.75H19.75V19C19.75 19.7294 19.4603 20.4288 18.9445 20.9445C18.4288 21.4603 17.7293 21.75 17 21.75H7C6.27065 21.75 5.57118 21.4603 5.05546 20.9445C4.53973 20.4288 4.25 19.7294 4.25 19V12.75ZM11.25 20.25H7C6.66848 20.25 6.35054 20.1183 6.11612 19.8839C5.8817 19.6495 5.75 19.3315 5.75 19V12.75H11.25V20.25ZM12.75 20.25H17C17.3315 20.25 17.6495 20.1183 17.8839 19.8839C18.1183 19.6495 18.25 19.3315 18.25 19V12.75H12.75V20.25ZM12.75 11.25V8.75001H20C20.1381 8.75001 20.25 8.86193 20.25 9.00001V11C20.25 11.1381 20.1381 11.25 20 11.25H12.75ZM16.4912 7.25001C16.4941 7.24997 16.497 7.24995 16.5 7.24995C16.9641 7.24995 17.4092 7.06558 17.7374 6.73739C18.0656 6.4092 18.25 5.96408 18.25 5.49995C18.25 5.03583 18.0656 4.59071 17.7374 4.26252C17.4092 3.93433 16.9641 3.74995 16.5 3.74995H16.4869C15.7908 3.73783 15.0405 4.07178 14.3447 4.84484C13.8061 5.44328 13.3408 6.26394 12.9998 7.25001H16.4912Z"
+  }));
+});
+exports.GiftIcon = GiftIcon;
+
+/***/ }),
+
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/notifications/assets/js/icons/x-icon.js":
 /*!**********************************************************!*\
   !*** ../modules/notifications/assets/js/icons/x-icon.js ***!
@@ -1774,6 +1858,7 @@ if (false) {} else {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../node_modules/react/cjs/react-jsx-runtime.development.js":
 /*!******************************************************************!*\
   !*** ../node_modules/react/cjs/react-jsx-runtime.development.js ***!
@@ -3134,6 +3219,8 @@ if (false) {} else {
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "react":
 /*!************************!*\
   !*** external "React" ***!
@@ -3421,9 +3508,14 @@ var FocusManager = class extends import_subscribable.Subscribable {
     }
   }
   onFocus() {
+<<<<<<< HEAD
     const isFocused = this.isFocused();
     this.listeners.forEach((listener) => {
       listener(isFocused);
+=======
+    this.listeners.forEach((listener) => {
+      listener();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     });
   }
   isFocused() {
@@ -3475,13 +3567,17 @@ __export(hydration_exports, {
   hydrate: () => hydrate
 });
 module.exports = __toCommonJS(hydration_exports);
+<<<<<<< HEAD
 function defaultTransformerFn(data) {
   return data;
 }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function dehydrateMutation(mutation) {
   return {
     mutationKey: mutation.options.mutationKey,
     state: mutation.state,
+<<<<<<< HEAD
     ...mutation.options.scope && { scope: mutation.options.scope },
     ...mutation.meta && { meta: mutation.meta }
   };
@@ -3506,6 +3602,16 @@ function dehydrateQuery(query, serializeData) {
         return Promise.reject(new Error("redacted"));
       })
     },
+=======
+    ...mutation.meta && { meta: mutation.meta }
+  };
+}
+function dehydrateQuery(query) {
+  return {
+    state: query.state,
+    queryKey: query.queryKey,
+    queryHash: query.queryHash,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     ...query.meta && { meta: query.meta }
   };
 }
@@ -3516,6 +3622,7 @@ function defaultShouldDehydrateQuery(query) {
   return query.state.status === "success";
 }
 function dehydrate(client, options = {}) {
+<<<<<<< HEAD
   const filterMutation = options.shouldDehydrateMutation ?? client.getDefaultOptions().dehydrate?.shouldDehydrateMutation ?? defaultShouldDehydrateMutation;
   const mutations = client.getMutationCache().getAll().flatMap(
     (mutation) => filterMutation(mutation) ? [dehydrateMutation(mutation)] : []
@@ -3525,6 +3632,14 @@ function dehydrate(client, options = {}) {
   const queries = client.getQueryCache().getAll().flatMap(
     (query) => filterQuery(query) ? [dehydrateQuery(query, serializeData)] : []
   );
+=======
+  const filterMutation = options.shouldDehydrateMutation ?? defaultShouldDehydrateMutation;
+  const mutations = client.getMutationCache().getAll().flatMap(
+    (mutation) => filterMutation(mutation) ? [dehydrateMutation(mutation)] : []
+  );
+  const filterQuery = options.shouldDehydrateQuery ?? defaultShouldDehydrateQuery;
+  const queries = client.getQueryCache().getAll().flatMap((query) => filterQuery(query) ? [dehydrateQuery(query)] : []);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   return { mutations, queries };
 }
 function hydrate(client, dehydratedState, options) {
@@ -3533,6 +3648,7 @@ function hydrate(client, dehydratedState, options) {
   }
   const mutationCache = client.getMutationCache();
   const queryCache = client.getQueryCache();
+<<<<<<< HEAD
   const deserializeData = options?.defaultOptions?.deserializeData ?? client.getDefaultOptions().hydrate?.deserializeData ?? defaultTransformerFn;
   const mutations = dehydratedState.mutations || [];
   const queries = dehydratedState.queries || [];
@@ -3581,6 +3697,45 @@ function hydrate(client, dehydratedState, options) {
       const initialPromise = Promise.resolve(promise).then(deserializeData);
       void query.fetch(void 0, { initialPromise });
     }
+=======
+  const mutations = dehydratedState.mutations || [];
+  const queries = dehydratedState.queries || [];
+  mutations.forEach((dehydratedMutation) => {
+    mutationCache.build(
+      client,
+      {
+        ...options?.defaultOptions?.mutations,
+        mutationKey: dehydratedMutation.mutationKey,
+        meta: dehydratedMutation.meta
+      },
+      dehydratedMutation.state
+    );
+  });
+  queries.forEach(({ queryKey, state, queryHash, meta }) => {
+    const query = queryCache.get(queryHash);
+    if (query) {
+      if (query.state.dataUpdatedAt < state.dataUpdatedAt) {
+        const { fetchStatus: _ignored, ...dehydratedQueryState } = state;
+        query.setState(dehydratedQueryState);
+      }
+      return;
+    }
+    queryCache.build(
+      client,
+      {
+        ...options?.defaultOptions?.queries,
+        queryKey,
+        queryHash,
+        meta
+      },
+      // Reset fetch status to idle to avoid
+      // query being stuck in fetching state upon hydration
+      {
+        ...state,
+        fetchStatus: "idle"
+      }
+    );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   });
 }
 // Annotate the CommonJS export names for ESM import in node:
@@ -3637,12 +3792,19 @@ __export(src_exports, {
   isCancelledError: () => import_retryer2.isCancelledError,
   isServer: () => import_utils.isServer,
   keepPreviousData: () => import_utils.keepPreviousData,
+<<<<<<< HEAD
   matchMutation: () => import_utils.matchMutation,
   matchQuery: () => import_utils.matchQuery,
   notifyManager: () => import_notifyManager.notifyManager,
   onlineManager: () => import_onlineManager.onlineManager,
   replaceEqualDeep: () => import_utils.replaceEqualDeep,
   skipToken: () => import_utils.skipToken
+=======
+  matchQuery: () => import_utils.matchQuery,
+  notifyManager: () => import_notifyManager.notifyManager,
+  onlineManager: () => import_onlineManager.onlineManager,
+  replaceEqualDeep: () => import_utils.replaceEqualDeep
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 });
 module.exports = __toCommonJS(src_exports);
 var import_retryer = __webpack_require__(/*! ./retryer.cjs */ "../node_modules/@tanstack/query-core/build/modern/retryer.cjs");
@@ -3727,7 +3889,13 @@ function infiniteQueryBehavior(pages) {
             }
           });
         };
+<<<<<<< HEAD
         const queryFn = (0, import_utils.ensureQueryFn)(context.options, context.fetchOptions);
+=======
+        const queryFn = context.options.queryFn || (() => Promise.reject(
+          new Error(`Missing queryFn: '${context.options.queryHash}'`)
+        ));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         const fetchPage = async (data, param, previous) => {
           if (cancelled) {
             return Promise.reject();
@@ -3861,6 +4029,10 @@ module.exports = __toCommonJS(infiniteQueryObserver_exports);
 var import_queryObserver = __webpack_require__(/*! ./queryObserver.cjs */ "../node_modules/@tanstack/query-core/build/modern/queryObserver.cjs");
 var import_infiniteQueryBehavior = __webpack_require__(/*! ./infiniteQueryBehavior.cjs */ "../node_modules/@tanstack/query-core/build/modern/infiniteQueryBehavior.cjs");
 var InfiniteQueryObserver = class extends import_queryObserver.QueryObserver {
+<<<<<<< HEAD
+=======
+  // eslint-disable-next-line @typescript-eslint/no-useless-constructor
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   constructor(client, options) {
     super(client, options);
   }
@@ -3900,6 +4072,7 @@ var InfiniteQueryObserver = class extends import_queryObserver.QueryObserver {
   }
   createResult(query, options) {
     const { state } = query;
+<<<<<<< HEAD
     const parentResult = super.createResult(query, options);
     const { isFetching, isRefetching, isError, isRefetchError } = parentResult;
     const fetchDirection = state.fetchMeta?.fetchMore?.direction;
@@ -3909,10 +4082,19 @@ var InfiniteQueryObserver = class extends import_queryObserver.QueryObserver {
     const isFetchingPreviousPage = isFetching && fetchDirection === "backward";
     const result = {
       ...parentResult,
+=======
+    const result = super.createResult(query, options);
+    const { isFetching, isRefetching } = result;
+    const isFetchingNextPage = isFetching && state.fetchMeta?.fetchMore?.direction === "forward";
+    const isFetchingPreviousPage = isFetching && state.fetchMeta?.fetchMore?.direction === "backward";
+    return {
+      ...result,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       fetchNextPage: this.fetchNextPage,
       fetchPreviousPage: this.fetchPreviousPage,
       hasNextPage: (0, import_infiniteQueryBehavior.hasNextPage)(options, state.data),
       hasPreviousPage: (0, import_infiniteQueryBehavior.hasPreviousPage)(options, state.data),
+<<<<<<< HEAD
       isFetchNextPageError,
       isFetchingNextPage,
       isFetchPreviousPageError,
@@ -3921,6 +4103,12 @@ var InfiniteQueryObserver = class extends import_queryObserver.QueryObserver {
       isRefetching: isRefetching && !isFetchingNextPage && !isFetchingPreviousPage
     };
     return result;
+=======
+      isFetchingNextPage,
+      isFetchingPreviousPage,
+      isRefetching: isRefetching && !isFetchingNextPage && !isFetchingPreviousPage
+    };
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
@@ -3966,20 +4154,36 @@ var import_notifyManager = __webpack_require__(/*! ./notifyManager.cjs */ "../no
 var import_removable = __webpack_require__(/*! ./removable.cjs */ "../node_modules/@tanstack/query-core/build/modern/removable.cjs");
 var import_retryer = __webpack_require__(/*! ./retryer.cjs */ "../node_modules/@tanstack/query-core/build/modern/retryer.cjs");
 var Mutation = class extends import_removable.Removable {
+<<<<<<< HEAD
   #observers;
   #mutationCache;
   #retryer;
   constructor(config) {
     super();
     this.mutationId = config.mutationId;
+=======
+  constructor(config) {
+    super();
+    this.mutationId = config.mutationId;
+    this.#defaultOptions = config.defaultOptions;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#mutationCache = config.mutationCache;
     this.#observers = [];
     this.state = config.state || getDefaultState();
     this.setOptions(config.options);
     this.scheduleGc();
   }
+<<<<<<< HEAD
   setOptions(options) {
     this.options = options;
+=======
+  #observers;
+  #defaultOptions;
+  #mutationCache;
+  #retryer;
+  setOptions(options) {
+    this.options = { ...this.#defaultOptions, ...options };
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.updateGcTime(this.options.gcTime);
   }
   get meta() {
@@ -4019,6 +4223,7 @@ var Mutation = class extends import_removable.Removable {
     this.execute(this.state.variables);
   }
   async execute(variables) {
+<<<<<<< HEAD
     this.#retryer = (0, import_retryer.createRetryer)({
       fn: () => {
         if (!this.options.mutationFn) {
@@ -4045,6 +4250,35 @@ var Mutation = class extends import_removable.Removable {
     try {
       if (!restored) {
         this.#dispatch({ type: "pending", variables, isPaused });
+=======
+    const executeMutation = () => {
+      this.#retryer = (0, import_retryer.createRetryer)({
+        fn: () => {
+          if (!this.options.mutationFn) {
+            return Promise.reject(new Error("No mutationFn found"));
+          }
+          return this.options.mutationFn(variables);
+        },
+        onFail: (failureCount, error) => {
+          this.#dispatch({ type: "failed", failureCount, error });
+        },
+        onPause: () => {
+          this.#dispatch({ type: "pause" });
+        },
+        onContinue: () => {
+          this.#dispatch({ type: "continue" });
+        },
+        retry: this.options.retry ?? 0,
+        retryDelay: this.options.retryDelay,
+        networkMode: this.options.networkMode
+      });
+      return this.#retryer.promise;
+    };
+    const restored = this.state.status === "pending";
+    try {
+      if (!restored) {
+        this.#dispatch({ type: "pending", variables });
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         await this.#mutationCache.config.onMutate?.(
           variables,
           this
@@ -4054,12 +4288,20 @@ var Mutation = class extends import_removable.Removable {
           this.#dispatch({
             type: "pending",
             context,
+<<<<<<< HEAD
             variables,
             isPaused
           });
         }
       }
       const data = await this.#retryer.start();
+=======
+            variables
+          });
+        }
+      }
+      const data = await executeMutation();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       await this.#mutationCache.config.onSuccess?.(
         data,
         variables,
@@ -4107,8 +4349,11 @@ var Mutation = class extends import_removable.Removable {
       } finally {
         this.#dispatch({ type: "error", error });
       }
+<<<<<<< HEAD
     } finally {
       this.#mutationCache.runNext(this);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }
   }
   #dispatch(action) {
@@ -4138,7 +4383,11 @@ var Mutation = class extends import_removable.Removable {
             failureCount: 0,
             failureReason: null,
             error: null,
+<<<<<<< HEAD
             isPaused: action.isPaused,
+=======
+            isPaused: !(0, import_retryer.canFetch)(this.options.networkMode),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             status: "pending",
             variables: action.variables,
             submittedAt: Date.now()
@@ -4237,11 +4486,20 @@ var MutationCache = class extends import_subscribable.Subscribable {
   constructor(config = {}) {
     super();
     this.config = config;
+<<<<<<< HEAD
     this.#mutations = /* @__PURE__ */ new Map();
     this.#mutationId = Date.now();
   }
   #mutations;
   #mutationId;
+=======
+    this.#mutations = [];
+    this.#mutationId = 0;
+  }
+  #mutations;
+  #mutationId;
+  #resuming;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   build(client, options, state) {
     const mutation = new import_mutation.Mutation({
       mutationCache: this,
@@ -4253,6 +4511,7 @@ var MutationCache = class extends import_subscribable.Subscribable {
     return mutation;
   }
   add(mutation) {
+<<<<<<< HEAD
     const scope = scopeFor(mutation);
     const mutations = this.#mutations.get(scope) ?? [];
     mutations.push(mutation);
@@ -4284,21 +4543,47 @@ var MutationCache = class extends import_subscribable.Subscribable {
   clear() {
     import_notifyManager.notifyManager.batch(() => {
       this.getAll().forEach((mutation) => {
+=======
+    this.#mutations.push(mutation);
+    this.notify({ type: "added", mutation });
+  }
+  remove(mutation) {
+    this.#mutations = this.#mutations.filter((x) => x !== mutation);
+    this.notify({ type: "removed", mutation });
+  }
+  clear() {
+    import_notifyManager.notifyManager.batch(() => {
+      this.#mutations.forEach((mutation) => {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         this.remove(mutation);
       });
     });
   }
   getAll() {
+<<<<<<< HEAD
     return [...this.#mutations.values()].flat();
   }
   find(filters) {
     const defaultedFilters = { exact: true, ...filters };
     return this.getAll().find(
+=======
+    return this.#mutations;
+  }
+  find(filters) {
+    const defaultedFilters = { exact: true, ...filters };
+    return this.#mutations.find(
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       (mutation) => (0, import_utils.matchMutation)(defaultedFilters, mutation)
     );
   }
   findAll(filters = {}) {
+<<<<<<< HEAD
     return this.getAll().filter((mutation) => (0, import_utils.matchMutation)(filters, mutation));
+=======
+    return this.#mutations.filter(
+      (mutation) => (0, import_utils.matchMutation)(filters, mutation)
+    );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   notify(event) {
     import_notifyManager.notifyManager.batch(() => {
@@ -4308,6 +4593,7 @@ var MutationCache = class extends import_subscribable.Subscribable {
     });
   }
   resumePausedMutations() {
+<<<<<<< HEAD
     const pausedMutations = this.getAll().filter((x) => x.state.isPaused);
     return import_notifyManager.notifyManager.batch(
       () => Promise.all(
@@ -4319,6 +4605,22 @@ var MutationCache = class extends import_subscribable.Subscribable {
 function scopeFor(mutation) {
   return mutation.options.scope?.id ?? String(mutation.mutationId);
 }
+=======
+    this.#resuming = (this.#resuming ?? Promise.resolve()).then(() => {
+      const pausedMutations = this.#mutations.filter((x) => x.state.isPaused);
+      return import_notifyManager.notifyManager.batch(
+        () => pausedMutations.reduce(
+          (promise, mutation) => promise.then(() => mutation.continue().catch(import_utils.noop)),
+          Promise.resolve()
+        )
+      );
+    }).then(() => {
+      this.#resuming = void 0;
+    });
+    return this.#resuming;
+  }
+};
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=mutationCache.cjs.map
@@ -4362,17 +4664,30 @@ var import_notifyManager = __webpack_require__(/*! ./notifyManager.cjs */ "../no
 var import_subscribable = __webpack_require__(/*! ./subscribable.cjs */ "../node_modules/@tanstack/query-core/build/modern/subscribable.cjs");
 var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/query-core/build/modern/utils.cjs");
 var MutationObserver = class extends import_subscribable.Subscribable {
+<<<<<<< HEAD
   #client;
   #currentResult = void 0;
   #currentMutation;
   #mutateOptions;
   constructor(client, options) {
     super();
+=======
+  constructor(client, options) {
+    super();
+    this.#currentResult = void 0;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#client = client;
     this.setOptions(options);
     this.bindMethods();
     this.#updateResult();
   }
+<<<<<<< HEAD
+=======
+  #client;
+  #currentResult;
+  #currentMutation;
+  #mutateOptions;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   bindMethods() {
     this.mutate = this.mutate.bind(this);
     this.reset = this.reset.bind(this);
@@ -4380,18 +4695,26 @@ var MutationObserver = class extends import_subscribable.Subscribable {
   setOptions(options) {
     const prevOptions = this.options;
     this.options = this.#client.defaultMutationOptions(options);
+<<<<<<< HEAD
     if (!(0, import_utils.shallowEqualObjects)(this.options, prevOptions)) {
+=======
+    if (!(0, import_utils.shallowEqualObjects)(prevOptions, this.options)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.#client.getMutationCache().notify({
         type: "observerOptionsUpdated",
         mutation: this.#currentMutation,
         observer: this
       });
     }
+<<<<<<< HEAD
     if (prevOptions?.mutationKey && this.options.mutationKey && (0, import_utils.hashKey)(prevOptions.mutationKey) !== (0, import_utils.hashKey)(this.options.mutationKey)) {
       this.reset();
     } else if (this.#currentMutation?.state.status === "pending") {
       this.#currentMutation.setOptions(this.options);
     }
+=======
+    this.#currentMutation?.setOptions(this.options);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   onUnsubscribe() {
     if (!this.hasListeners()) {
@@ -4406,7 +4729,10 @@ var MutationObserver = class extends import_subscribable.Subscribable {
     return this.#currentResult;
   }
   reset() {
+<<<<<<< HEAD
     this.#currentMutation?.removeObserver(this);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#currentMutation = void 0;
     this.#updateResult();
     this.#notify();
@@ -4433,6 +4759,7 @@ var MutationObserver = class extends import_subscribable.Subscribable {
   #notify(action) {
     import_notifyManager.notifyManager.batch(() => {
       if (this.#mutateOptions && this.hasListeners()) {
+<<<<<<< HEAD
         const variables = this.#currentResult.variables;
         const context = this.#currentResult.context;
         if (action?.type === "success") {
@@ -4445,6 +4772,31 @@ var MutationObserver = class extends import_subscribable.Subscribable {
             action.error,
             variables,
             context
+=======
+        if (action?.type === "success") {
+          this.#mutateOptions.onSuccess?.(
+            action.data,
+            this.#currentResult.variables,
+            this.#currentResult.context
+          );
+          this.#mutateOptions.onSettled?.(
+            action.data,
+            null,
+            this.#currentResult.variables,
+            this.#currentResult.context
+          );
+        } else if (action?.type === "error") {
+          this.#mutateOptions.onError?.(
+            action.error,
+            this.#currentResult.variables,
+            this.#currentResult.context
+          );
+          this.#mutateOptions.onSettled?.(
+            void 0,
+            action.error,
+            this.#currentResult.variables,
+            this.#currentResult.context
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           );
         }
       }
@@ -4464,7 +4816,11 @@ var MutationObserver = class extends import_subscribable.Subscribable {
 /*!***************************************************************************!*\
   !*** ../node_modules/@tanstack/query-core/build/modern/notifyManager.cjs ***!
   \***************************************************************************/
+<<<<<<< HEAD
 /***/ ((module) => {
+=======
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 "use strict";
 
@@ -4493,6 +4849,10 @@ __export(notifyManager_exports, {
   notifyManager: () => notifyManager
 });
 module.exports = __toCommonJS(notifyManager_exports);
+<<<<<<< HEAD
+=======
+var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/query-core/build/modern/utils.cjs");
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function createNotifyManager() {
   let queue = [];
   let transactions = 0;
@@ -4502,10 +4862,13 @@ function createNotifyManager() {
   let batchNotifyFn = (callback) => {
     callback();
   };
+<<<<<<< HEAD
   let scheduleFn = (cb) => setTimeout(cb, 0);
   const setScheduler = (fn) => {
     scheduleFn = fn;
   };
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   const batch = (callback) => {
     let result;
     transactions++;
@@ -4523,7 +4886,11 @@ function createNotifyManager() {
     if (transactions) {
       queue.push(callback);
     } else {
+<<<<<<< HEAD
       scheduleFn(() => {
+=======
+      (0, import_utils.scheduleMicrotask)(() => {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         notifyFn(callback);
       });
     }
@@ -4539,7 +4906,11 @@ function createNotifyManager() {
     const originalQueue = queue;
     queue = [];
     if (originalQueue.length) {
+<<<<<<< HEAD
       scheduleFn(() => {
+=======
+      (0, import_utils.scheduleMicrotask)(() => {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         batchNotifyFn(() => {
           originalQueue.forEach((callback) => {
             notifyFn(callback);
@@ -4559,8 +4930,12 @@ function createNotifyManager() {
     batchCalls,
     schedule,
     setNotifyFunction,
+<<<<<<< HEAD
     setBatchNotifyFunction,
     setScheduler
+=======
+    setBatchNotifyFunction
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   };
 }
 var notifyManager = createNotifyManager();
@@ -4710,16 +5085,31 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
   #result;
   #queries;
   #observers;
+<<<<<<< HEAD
   #combinedResult;
   #lastCombine;
   #lastResult;
   constructor(client, queries, _options) {
+=======
+  #options;
+  #combinedResult;
+  constructor(client, queries, options) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     super();
     this.#client = client;
     this.#queries = [];
     this.#observers = [];
+<<<<<<< HEAD
     this.#result = [];
     this.setQueries(queries);
+=======
+    this.#setResult([]);
+    this.setQueries(queries, options);
+  }
+  #setResult(value) {
+    this.#result = value;
+    this.#combinedResult = this.#combineResult(value);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   onSubscribe() {
     if (this.listeners.size === 1) {
@@ -4741,8 +5131,14 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
       observer.destroy();
     });
   }
+<<<<<<< HEAD
   setQueries(queries, _options, notifyOptions) {
     this.#queries = queries;
+=======
+  setQueries(queries, options, notifyOptions) {
+    this.#queries = queries;
+    this.#options = options;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     import_notifyManager.notifyManager.batch(() => {
       const prevObservers = this.#observers;
       const newObserverMatches = this.#findMatchingObservers(this.#queries);
@@ -4760,7 +5156,11 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
         return;
       }
       this.#observers = newObservers;
+<<<<<<< HEAD
       this.#result = newResult;
+=======
+      this.#setResult(newResult);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       if (!this.hasListeners()) {
         return;
       }
@@ -4776,7 +5176,11 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
     });
   }
   getCurrentResult() {
+<<<<<<< HEAD
     return this.#result;
+=======
+    return this.#combinedResult;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   getQueries() {
     return this.#observers.map((observer) => observer.getCurrentQuery());
@@ -4784,7 +5188,11 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
   getObservers() {
     return this.#observers;
   }
+<<<<<<< HEAD
   getOptimisticResult(queries, combine) {
+=======
+  getOptimisticResult(queries) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const matches = this.#findMatchingObservers(queries);
     const result = matches.map(
       (match) => match.observer.getOptimisticResult(match.defaultedQueryOptions)
@@ -4792,20 +5200,29 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
     return [
       result,
       (r) => {
+<<<<<<< HEAD
         return this.#combineResult(r ?? result, combine);
+=======
+        return this.#combineResult(r ?? result);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       },
       () => {
         return matches.map((match, index) => {
           const observerResult = result[index];
+<<<<<<< HEAD
           return !match.defaultedQueryOptions.notifyOnChangeProps ? match.observer.trackResult(observerResult, (accessedProp) => {
             matches.forEach((m) => {
               m.observer.trackProp(accessedProp);
             });
           }) : observerResult;
+=======
+          return !match.defaultedQueryOptions.notifyOnChangeProps ? match.observer.trackResult(observerResult) : observerResult;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         });
       }
     ];
   }
+<<<<<<< HEAD
   #combineResult(input, combine) {
     if (combine) {
       if (!this.#combinedResult || this.#result !== this.#lastResult || combine !== this.#lastCombine) {
@@ -4817,6 +5234,12 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
         );
       }
       return this.#combinedResult;
+=======
+  #combineResult(input) {
+    const combine = this.#options?.combine;
+    if (combine) {
+      return (0, import_utils.replaceEqualDeep)(this.#combinedResult, combine(input));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }
     return input;
   }
@@ -4860,7 +5283,11 @@ var QueriesObserver = class extends import_subscribable.Subscribable {
   #onUpdate(observer, result) {
     const index = this.#observers.indexOf(observer);
     if (index !== -1) {
+<<<<<<< HEAD
       this.#result = replaceAt(this.#result, index, result);
+=======
+      this.#setResult(replaceAt(this.#result, index, result));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.#notify();
     }
   }
@@ -4907,8 +5334,12 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/query.ts
 var query_exports = {};
 __export(query_exports, {
+<<<<<<< HEAD
   Query: () => Query,
   fetchState: () => fetchState
+=======
+  Query: () => Query
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 });
 module.exports = __toCommonJS(query_exports);
 var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tanstack/query-core/build/modern/utils.cjs");
@@ -4916,18 +5347,26 @@ var import_notifyManager = __webpack_require__(/*! ./notifyManager.cjs */ "../no
 var import_retryer = __webpack_require__(/*! ./retryer.cjs */ "../node_modules/@tanstack/query-core/build/modern/retryer.cjs");
 var import_removable = __webpack_require__(/*! ./removable.cjs */ "../node_modules/@tanstack/query-core/build/modern/removable.cjs");
 var Query = class extends import_removable.Removable {
+<<<<<<< HEAD
   #initialState;
   #revertState;
   #cache;
   #retryer;
   #defaultOptions;
   #abortSignalConsumed;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   constructor(config) {
     super();
     this.#abortSignalConsumed = false;
     this.#defaultOptions = config.defaultOptions;
+<<<<<<< HEAD
     this.setOptions(config.options);
     this.observers = [];
+=======
+    this.#setOptions(config.options);
+    this.#observers = [];
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#cache = config.cache;
     this.queryKey = config.queryKey;
     this.queryHash = config.queryHash;
@@ -4935,6 +5374,7 @@ var Query = class extends import_removable.Removable {
     this.state = this.#initialState;
     this.scheduleGc();
   }
+<<<<<<< HEAD
   get meta() {
     return this.options.meta;
   }
@@ -4942,11 +5382,29 @@ var Query = class extends import_removable.Removable {
     return this.#retryer?.promise;
   }
   setOptions(options) {
+=======
+  #initialState;
+  #revertState;
+  #cache;
+  #promise;
+  #retryer;
+  #observers;
+  #defaultOptions;
+  #abortSignalConsumed;
+  get meta() {
+    return this.options.meta;
+  }
+  #setOptions(options) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.options = { ...this.#defaultOptions, ...options };
     this.updateGcTime(this.options.gcTime);
   }
   optionalRemove() {
+<<<<<<< HEAD
     if (!this.observers.length && this.state.fetchStatus === "idle") {
+=======
+    if (!this.#observers.length && this.state.fetchStatus === "idle") {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.#cache.remove(this);
     }
   }
@@ -4964,7 +5422,11 @@ var Query = class extends import_removable.Removable {
     this.#dispatch({ type: "setState", state, setStateOptions });
   }
   cancel(options) {
+<<<<<<< HEAD
     const promise = this.#retryer?.promise;
+=======
+    const promise = this.#promise;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#retryer?.cancel(options);
     return promise ? promise.then(import_utils.noop).catch(import_utils.noop) : Promise.resolve();
   }
@@ -4977,14 +5439,20 @@ var Query = class extends import_removable.Removable {
     this.setState(this.#initialState);
   }
   isActive() {
+<<<<<<< HEAD
     return this.observers.some(
       (observer) => (0, import_utils.resolveEnabled)(observer.options.enabled, this) !== false
+=======
+    return this.#observers.some(
+      (observer) => observer.options.enabled !== false
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     );
   }
   isDisabled() {
     return this.getObserversCount() > 0 && !this.isActive();
   }
   isStale() {
+<<<<<<< HEAD
     if (this.state.isInvalidated) {
       return true;
     }
@@ -5000,25 +5468,49 @@ var Query = class extends import_removable.Removable {
   }
   onFocus() {
     const observer = this.observers.find((x) => x.shouldFetchOnWindowFocus());
+=======
+    return this.state.isInvalidated || !this.state.dataUpdatedAt || this.#observers.some((observer) => observer.getCurrentResult().isStale);
+  }
+  isStaleByTime(staleTime = 0) {
+    return this.state.isInvalidated || !this.state.dataUpdatedAt || !(0, import_utils.timeUntilStale)(this.state.dataUpdatedAt, staleTime);
+  }
+  onFocus() {
+    const observer = this.#observers.find((x) => x.shouldFetchOnWindowFocus());
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     observer?.refetch({ cancelRefetch: false });
     this.#retryer?.continue();
   }
   onOnline() {
+<<<<<<< HEAD
     const observer = this.observers.find((x) => x.shouldFetchOnReconnect());
+=======
+    const observer = this.#observers.find((x) => x.shouldFetchOnReconnect());
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     observer?.refetch({ cancelRefetch: false });
     this.#retryer?.continue();
   }
   addObserver(observer) {
+<<<<<<< HEAD
     if (!this.observers.includes(observer)) {
       this.observers.push(observer);
+=======
+    if (!this.#observers.includes(observer)) {
+      this.#observers.push(observer);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.clearGcTimeout();
       this.#cache.notify({ type: "observerAdded", query: this, observer });
     }
   }
   removeObserver(observer) {
+<<<<<<< HEAD
     if (this.observers.includes(observer)) {
       this.observers = this.observers.filter((x) => x !== observer);
       if (!this.observers.length) {
+=======
+    if (this.#observers.includes(observer)) {
+      this.#observers = this.#observers.filter((x) => x !== observer);
+      if (!this.#observers.length) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         if (this.#retryer) {
           if (this.#abortSignalConsumed) {
             this.#retryer.cancel({ revert: true });
@@ -5032,7 +5524,11 @@ var Query = class extends import_removable.Removable {
     }
   }
   getObserversCount() {
+<<<<<<< HEAD
     return this.observers.length;
+=======
+    return this.#observers.length;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   invalidate() {
     if (!this.state.isInvalidated) {
@@ -5041,6 +5537,7 @@ var Query = class extends import_removable.Removable {
   }
   fetch(options, fetchOptions) {
     if (this.state.fetchStatus !== "idle") {
+<<<<<<< HEAD
       if (this.state.data !== void 0 && fetchOptions?.cancelRefetch) {
         this.cancel({ silent: true });
       } else if (this.#retryer) {
@@ -5055,6 +5552,22 @@ var Query = class extends import_removable.Removable {
       const observer = this.observers.find((x) => x.options.queryFn);
       if (observer) {
         this.setOptions(observer.options);
+=======
+      if (this.state.dataUpdatedAt && fetchOptions?.cancelRefetch) {
+        this.cancel({ silent: true });
+      } else if (this.#promise) {
+        this.#retryer?.continueRetry();
+        return this.#promise;
+      }
+    }
+    if (options) {
+      this.#setOptions(options);
+    }
+    if (!this.options.queryFn) {
+      const observer = this.#observers.find((x) => x.options.queryFn);
+      if (observer) {
+        this.#setOptions(observer.options);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }
     }
     if (true) {
@@ -5065,6 +5578,13 @@ var Query = class extends import_removable.Removable {
       }
     }
     const abortController = new AbortController();
+<<<<<<< HEAD
+=======
+    const queryFnContext = {
+      queryKey: this.queryKey,
+      meta: this.meta
+    };
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const addSignalProperty = (object) => {
       Object.defineProperty(object, "signal", {
         enumerable: true,
@@ -5074,6 +5594,7 @@ var Query = class extends import_removable.Removable {
         }
       });
     };
+<<<<<<< HEAD
     const fetchFn = () => {
       const queryFn = (0, import_utils.ensureQueryFn)(this.options, fetchOptions);
       const queryFnContext = {
@@ -5085,11 +5606,30 @@ var Query = class extends import_removable.Removable {
       if (this.options.persister) {
         return this.options.persister(
           queryFn,
+=======
+    addSignalProperty(queryFnContext);
+    const fetchFn = () => {
+      if (!this.options.queryFn) {
+        return Promise.reject(
+          new Error(`Missing queryFn: '${this.options.queryHash}'`)
+        );
+      }
+      this.#abortSignalConsumed = false;
+      if (this.options.persister) {
+        return this.options.persister(
+          this.options.queryFn,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           queryFnContext,
           this
         );
       }
+<<<<<<< HEAD
       return queryFn(queryFnContext);
+=======
+      return this.options.queryFn(
+        queryFnContext
+      );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     };
     const context = {
       fetchOptions,
@@ -5131,11 +5671,18 @@ var Query = class extends import_removable.Removable {
       this.isFetchingOptimistic = false;
     };
     this.#retryer = (0, import_retryer.createRetryer)({
+<<<<<<< HEAD
       initialPromise: fetchOptions?.initialPromise,
       fn: context.fetchFn,
       abort: abortController.abort.bind(abortController),
       onSuccess: (data) => {
         if (data === void 0) {
+=======
+      fn: context.fetchFn,
+      abort: abortController.abort.bind(abortController),
+      onSuccess: (data) => {
+        if (typeof data === "undefined") {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           if (true) {
             console.error(
               `Query data cannot be undefined. Please make sure to return a value other than undefined from your query function. Affected query key: ${this.queryHash}`
@@ -5168,10 +5715,17 @@ var Query = class extends import_removable.Removable {
       },
       retry: context.options.retry,
       retryDelay: context.options.retryDelay,
+<<<<<<< HEAD
       networkMode: context.options.networkMode,
       canRun: () => true
     });
     return this.#retryer.start();
+=======
+      networkMode: context.options.networkMode
+    });
+    this.#promise = this.#retryer.promise;
+    return this.#promise;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   #dispatch(action) {
     const reducer = (state) => {
@@ -5195,8 +5749,19 @@ var Query = class extends import_removable.Removable {
         case "fetch":
           return {
             ...state,
+<<<<<<< HEAD
             ...fetchState(state.data, this.options),
             fetchMeta: action.meta ?? null
+=======
+            fetchFailureCount: 0,
+            fetchFailureReason: null,
+            fetchMeta: action.meta ?? null,
+            fetchStatus: (0, import_retryer.canFetch)(this.options.networkMode) ? "fetching" : "paused",
+            ...!state.dataUpdatedAt && {
+              error: null,
+              status: "pending"
+            }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           };
         case "success":
           return {
@@ -5242,13 +5807,18 @@ var Query = class extends import_removable.Removable {
     };
     this.state = reducer(this.state);
     import_notifyManager.notifyManager.batch(() => {
+<<<<<<< HEAD
       this.observers.forEach((observer) => {
+=======
+      this.#observers.forEach((observer) => {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         observer.onQueryUpdate();
       });
       this.#cache.notify({ query: this, type: "updated", action });
     });
   }
 };
+<<<<<<< HEAD
 function fetchState(data, options) {
   return {
     fetchFailureCount: 0,
@@ -5263,6 +5833,11 @@ function fetchState(data, options) {
 function getDefaultState(options) {
   const data = typeof options.initialData === "function" ? options.initialData() : options.initialData;
   const hasData = data !== void 0;
+=======
+function getDefaultState(options) {
+  const data = typeof options.initialData === "function" ? options.initialData() : options.initialData;
+  const hasData = typeof data !== "undefined";
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   const initialDataUpdatedAt = hasData ? typeof options.initialDataUpdatedAt === "function" ? options.initialDataUpdatedAt() : options.initialDataUpdatedAt : 0;
   return {
     data,
@@ -5475,6 +6050,7 @@ var QueryClient = class {
     this.#mountCount++;
     if (this.#mountCount !== 1)
       return;
+<<<<<<< HEAD
     this.#unsubscribeFocus = import_focusManager.focusManager.subscribe(async (focused) => {
       if (focused) {
         await this.resumePausedMutations();
@@ -5484,6 +6060,17 @@ var QueryClient = class {
     this.#unsubscribeOnline = import_onlineManager.onlineManager.subscribe(async (online) => {
       if (online) {
         await this.resumePausedMutations();
+=======
+    this.#unsubscribeFocus = import_focusManager.focusManager.subscribe(() => {
+      if (import_focusManager.focusManager.isFocused()) {
+        this.resumePausedMutations();
+        this.#queryCache.onFocus();
+      }
+    });
+    this.#unsubscribeOnline = import_onlineManager.onlineManager.subscribe(() => {
+      if (import_onlineManager.onlineManager.isOnline()) {
+        this.resumePausedMutations();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         this.#queryCache.onOnline();
       }
     });
@@ -5504,6 +6091,7 @@ var QueryClient = class {
     return this.#mutationCache.findAll({ ...filters, status: "pending" }).length;
   }
   getQueryData(queryKey) {
+<<<<<<< HEAD
     const options = this.defaultQueryOptions({ queryKey });
     return this.#queryCache.get(options.queryHash)?.state.data;
   }
@@ -5522,11 +6110,22 @@ var QueryClient = class {
   }
   getQueriesData(filters) {
     return this.#queryCache.findAll(filters).map(({ queryKey, state }) => {
+=======
+    return this.#queryCache.find({ queryKey })?.state.data;
+  }
+  ensureQueryData(options) {
+    const cachedData = this.getQueryData(options.queryKey);
+    return cachedData !== void 0 ? Promise.resolve(cachedData) : this.fetchQuery(options);
+  }
+  getQueriesData(filters) {
+    return this.getQueryCache().findAll(filters).map(({ queryKey, state }) => {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       const data = state.data;
       return [queryKey, data];
     });
   }
   setQueryData(queryKey, updater, options) {
+<<<<<<< HEAD
     const defaultedOptions = this.defaultQueryOptions({ queryKey });
     const query = this.#queryCache.get(
       defaultedOptions.queryHash
@@ -5536,19 +6135,36 @@ var QueryClient = class {
     if (data === void 0) {
       return void 0;
     }
+=======
+    const query = this.#queryCache.find({ queryKey });
+    const prevData = query?.state.data;
+    const data = (0, import_utils.functionalUpdate)(updater, prevData);
+    if (typeof data === "undefined") {
+      return void 0;
+    }
+    const defaultedOptions = this.defaultQueryOptions({ queryKey });
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     return this.#queryCache.build(this, defaultedOptions).setData(data, { ...options, manual: true });
   }
   setQueriesData(filters, updater, options) {
     return import_notifyManager.notifyManager.batch(
+<<<<<<< HEAD
       () => this.#queryCache.findAll(filters).map(({ queryKey }) => [
+=======
+      () => this.getQueryCache().findAll(filters).map(({ queryKey }) => [
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         queryKey,
         this.setQueryData(queryKey, updater, options)
       ])
     );
   }
   getQueryState(queryKey) {
+<<<<<<< HEAD
     const options = this.defaultQueryOptions({ queryKey });
     return this.#queryCache.get(options.queryHash)?.state;
+=======
+    return this.#queryCache.find({ queryKey })?.state;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   removeQueries(filters) {
     const queryCache = this.#queryCache;
@@ -5611,6 +6227,7 @@ var QueryClient = class {
   }
   fetchQuery(options) {
     const defaultedOptions = this.defaultQueryOptions(options);
+<<<<<<< HEAD
     if (defaultedOptions.retry === void 0) {
       defaultedOptions.retry = false;
     }
@@ -5618,6 +6235,13 @@ var QueryClient = class {
     return query.isStaleByTime(
       (0, import_utils.resolveStaleTime)(defaultedOptions.staleTime, query)
     ) ? query.fetch(defaultedOptions) : Promise.resolve(query.state.data);
+=======
+    if (typeof defaultedOptions.retry === "undefined") {
+      defaultedOptions.retry = false;
+    }
+    const query = this.#queryCache.build(this, defaultedOptions);
+    return query.isStaleByTime(defaultedOptions.staleTime) ? query.fetch(defaultedOptions) : Promise.resolve(query.state.data);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   prefetchQuery(options) {
     return this.fetchQuery(options).then(import_utils.noop).catch(import_utils.noop);
@@ -5630,10 +6254,14 @@ var QueryClient = class {
     return this.fetchInfiniteQuery(options).then(import_utils.noop).catch(import_utils.noop);
   }
   resumePausedMutations() {
+<<<<<<< HEAD
     if (import_onlineManager.onlineManager.isOnline()) {
       return this.#mutationCache.resumePausedMutations();
     }
     return Promise.resolve();
+=======
+    return this.#mutationCache.resumePausedMutations();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   getQueryCache() {
     return this.#queryCache;
@@ -5680,12 +6308,20 @@ var QueryClient = class {
     return result;
   }
   defaultQueryOptions(options) {
+<<<<<<< HEAD
     if (options._defaulted) {
+=======
+    if (options?._defaulted) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       return options;
     }
     const defaultedOptions = {
       ...this.#defaultOptions.queries,
+<<<<<<< HEAD
       ...this.getQueryDefaults(options.queryKey),
+=======
+      ...options?.queryKey && this.getQueryDefaults(options.queryKey),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       ...options,
       _defaulted: true
     };
@@ -5695,6 +6331,7 @@ var QueryClient = class {
         defaultedOptions
       );
     }
+<<<<<<< HEAD
     if (defaultedOptions.refetchOnReconnect === void 0) {
       defaultedOptions.refetchOnReconnect = defaultedOptions.networkMode !== "always";
     }
@@ -5707,6 +6344,17 @@ var QueryClient = class {
     if (defaultedOptions.enabled !== true && defaultedOptions.queryFn === import_utils.skipToken) {
       defaultedOptions.enabled = false;
     }
+=======
+    if (typeof defaultedOptions.refetchOnReconnect === "undefined") {
+      defaultedOptions.refetchOnReconnect = defaultedOptions.networkMode !== "always";
+    }
+    if (typeof defaultedOptions.throwOnError === "undefined") {
+      defaultedOptions.throwOnError = !!defaultedOptions.suspense;
+    }
+    if (typeof defaultedOptions.networkMode === "undefined" && defaultedOptions.persister) {
+      defaultedOptions.networkMode = "offlineFirst";
+    }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     return defaultedOptions;
   }
   defaultMutationOptions(options) {
@@ -5767,20 +6415,39 @@ var import_utils = __webpack_require__(/*! ./utils.cjs */ "../node_modules/@tans
 var import_notifyManager = __webpack_require__(/*! ./notifyManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/notifyManager.cjs");
 var import_focusManager = __webpack_require__(/*! ./focusManager.cjs */ "../node_modules/@tanstack/query-core/build/modern/focusManager.cjs");
 var import_subscribable = __webpack_require__(/*! ./subscribable.cjs */ "../node_modules/@tanstack/query-core/build/modern/subscribable.cjs");
+<<<<<<< HEAD
 var import_query = __webpack_require__(/*! ./query.cjs */ "../node_modules/@tanstack/query-core/build/modern/query.cjs");
 var QueryObserver = class extends import_subscribable.Subscribable {
   constructor(client, options) {
     super();
     this.options = options;
     this.#client = client;
+=======
+var import_retryer = __webpack_require__(/*! ./retryer.cjs */ "../node_modules/@tanstack/query-core/build/modern/retryer.cjs");
+var QueryObserver = class extends import_subscribable.Subscribable {
+  constructor(client, options) {
+    super();
+    this.#currentQuery = void 0;
+    this.#currentQueryInitialState = void 0;
+    this.#currentResult = void 0;
+    this.#trackedProps = /* @__PURE__ */ new Set();
+    this.#client = client;
+    this.options = options;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#selectError = null;
     this.bindMethods();
     this.setOptions(options);
   }
   #client;
+<<<<<<< HEAD
   #currentQuery = void 0;
   #currentQueryInitialState = void 0;
   #currentResult = void 0;
+=======
+  #currentQuery;
+  #currentQueryInitialState;
+  #currentResult;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   #currentResultState;
   #currentResultOptions;
   #selectError;
@@ -5792,7 +6459,11 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   #staleTimeoutId;
   #refetchIntervalId;
   #currentRefetchInterval;
+<<<<<<< HEAD
   #trackedProps = /* @__PURE__ */ new Set();
+=======
+  #trackedProps;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   bindMethods() {
     this.refetch = this.refetch.bind(this);
   }
@@ -5801,8 +6472,11 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       this.#currentQuery.addObserver(this);
       if (shouldFetchOnMount(this.#currentQuery, this.options)) {
         this.#executeFetch();
+<<<<<<< HEAD
       } else {
         this.updateResult();
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }
       this.#updateTimers();
     }
@@ -5836,6 +6510,7 @@ var QueryObserver = class extends import_subscribable.Subscribable {
     const prevOptions = this.options;
     const prevQuery = this.#currentQuery;
     this.options = this.#client.defaultQueryOptions(options);
+<<<<<<< HEAD
     if (this.options.enabled !== void 0 && typeof this.options.enabled !== "boolean" && typeof this.options.enabled !== "function" && typeof (0, import_utils.resolveEnabled)(this.options.enabled, this.#currentQuery) !== "boolean") {
       throw new Error(
         "Expected enabled to be a boolean or a callback that returns a boolean"
@@ -5844,12 +6519,25 @@ var QueryObserver = class extends import_subscribable.Subscribable {
     this.#updateQuery();
     this.#currentQuery.setOptions(this.options);
     if (prevOptions._defaulted && !(0, import_utils.shallowEqualObjects)(this.options, prevOptions)) {
+=======
+    if (!(0, import_utils.shallowEqualObjects)(prevOptions, this.options)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.#client.getQueryCache().notify({
         type: "observerOptionsUpdated",
         query: this.#currentQuery,
         observer: this
       });
     }
+<<<<<<< HEAD
+=======
+    if (typeof this.options.enabled !== "undefined" && typeof this.options.enabled !== "boolean") {
+      throw new Error("Expected enabled to be a boolean");
+    }
+    if (!this.options.queryKey) {
+      this.options.queryKey = prevOptions.queryKey;
+    }
+    this.#updateQuery();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const mounted = this.hasListeners();
     if (mounted && shouldFetchOptionally(
       this.#currentQuery,
@@ -5860,11 +6548,19 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       this.#executeFetch();
     }
     this.updateResult(notifyOptions);
+<<<<<<< HEAD
     if (mounted && (this.#currentQuery !== prevQuery || (0, import_utils.resolveEnabled)(this.options.enabled, this.#currentQuery) !== (0, import_utils.resolveEnabled)(prevOptions.enabled, this.#currentQuery) || (0, import_utils.resolveStaleTime)(this.options.staleTime, this.#currentQuery) !== (0, import_utils.resolveStaleTime)(prevOptions.staleTime, this.#currentQuery))) {
       this.#updateStaleTimeout();
     }
     const nextRefetchInterval = this.#computeRefetchInterval();
     if (mounted && (this.#currentQuery !== prevQuery || (0, import_utils.resolveEnabled)(this.options.enabled, this.#currentQuery) !== (0, import_utils.resolveEnabled)(prevOptions.enabled, this.#currentQuery) || nextRefetchInterval !== this.#currentRefetchInterval)) {
+=======
+    if (mounted && (this.#currentQuery !== prevQuery || this.options.enabled !== prevOptions.enabled || this.options.staleTime !== prevOptions.staleTime)) {
+      this.#updateStaleTimeout();
+    }
+    const nextRefetchInterval = this.#computeRefetchInterval();
+    if (mounted && (this.#currentQuery !== prevQuery || this.options.enabled !== prevOptions.enabled || nextRefetchInterval !== this.#currentRefetchInterval)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.#updateRefetchInterval(nextRefetchInterval);
     }
   }
@@ -5881,24 +6577,35 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   getCurrentResult() {
     return this.#currentResult;
   }
+<<<<<<< HEAD
   trackResult(result, onPropTracked) {
+=======
+  trackResult(result) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const trackedResult = {};
     Object.keys(result).forEach((key) => {
       Object.defineProperty(trackedResult, key, {
         configurable: false,
         enumerable: true,
         get: () => {
+<<<<<<< HEAD
           this.trackProp(key);
           onPropTracked?.(key);
+=======
+          this.#trackedProps.add(key);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           return result[key];
         }
       });
     });
     return trackedResult;
   }
+<<<<<<< HEAD
   trackProp(key) {
     this.#trackedProps.add(key);
   }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   getCurrentQuery() {
     return this.#currentQuery;
   }
@@ -5935,6 +6642,7 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   }
   #updateStaleTimeout() {
     this.#clearStaleTimeout();
+<<<<<<< HEAD
     const staleTime = (0, import_utils.resolveStaleTime)(
       this.options.staleTime,
       this.#currentQuery
@@ -5943,6 +6651,15 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       return;
     }
     const time = (0, import_utils.timeUntilStale)(this.#currentResult.dataUpdatedAt, staleTime);
+=======
+    if (import_utils.isServer || this.#currentResult.isStale || !(0, import_utils.isValidTimeout)(this.options.staleTime)) {
+      return;
+    }
+    const time = (0, import_utils.timeUntilStale)(
+      this.#currentResult.dataUpdatedAt,
+      this.options.staleTime
+    );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const timeout = time + 1;
     this.#staleTimeoutId = setTimeout(() => {
       if (!this.#currentResult.isStale) {
@@ -5956,7 +6673,11 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   #updateRefetchInterval(nextInterval) {
     this.#clearRefetchInterval();
     this.#currentRefetchInterval = nextInterval;
+<<<<<<< HEAD
     if (import_utils.isServer || (0, import_utils.resolveEnabled)(this.options.enabled, this.#currentQuery) === false || !(0, import_utils.isValidTimeout)(this.#currentRefetchInterval) || this.#currentRefetchInterval === 0) {
+=======
+    if (import_utils.isServer || this.options.enabled === false || !(0, import_utils.isValidTimeout)(this.#currentRefetchInterval) || this.#currentRefetchInterval === 0) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       return;
     }
     this.#refetchIntervalId = setInterval(() => {
@@ -5990,7 +6711,11 @@ var QueryObserver = class extends import_subscribable.Subscribable {
     const queryChange = query !== prevQuery;
     const queryInitialState = queryChange ? query.state : this.#currentQueryInitialState;
     const { state } = query;
+<<<<<<< HEAD
     let newState = { ...state };
+=======
+    let { error, errorUpdatedAt, fetchStatus, status } = state;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     let isPlaceholderData = false;
     let data;
     if (options._optimisticResults) {
@@ -5998,6 +6723,7 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       const fetchOnMount = !mounted && shouldFetchOnMount(query, options);
       const fetchOptionally = mounted && shouldFetchOptionally(query, prevQuery, options, prevOptions);
       if (fetchOnMount || fetchOptionally) {
+<<<<<<< HEAD
         newState = {
           ...newState,
           ...(0, import_query.fetchState)(state.data, query.options)
@@ -6010,11 +6736,28 @@ var QueryObserver = class extends import_subscribable.Subscribable {
     let { error, errorUpdatedAt, status } = newState;
     if (options.select && newState.data !== void 0) {
       if (prevResult && newState.data === prevResultState?.data && options.select === this.#selectFn) {
+=======
+        fetchStatus = (0, import_retryer.canFetch)(query.options.networkMode) ? "fetching" : "paused";
+        if (!state.dataUpdatedAt) {
+          status = "pending";
+        }
+      }
+      if (options._optimisticResults === "isRestoring") {
+        fetchStatus = "idle";
+      }
+    }
+    if (options.select && typeof state.data !== "undefined") {
+      if (prevResult && state.data === prevResultState?.data && options.select === this.#selectFn) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         data = this.#selectResult;
       } else {
         try {
           this.#selectFn = options.select;
+<<<<<<< HEAD
           data = options.select(newState.data);
+=======
+          data = options.select(state.data);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           data = (0, import_utils.replaceData)(prevResult?.data, data, options);
           this.#selectResult = data;
           this.#selectError = null;
@@ -6023,9 +6766,15 @@ var QueryObserver = class extends import_subscribable.Subscribable {
         }
       }
     } else {
+<<<<<<< HEAD
       data = newState.data;
     }
     if (options.placeholderData !== void 0 && data === void 0 && status === "pending") {
+=======
+      data = state.data;
+    }
+    if (typeof options.placeholderData !== "undefined" && typeof data === "undefined" && status === "pending") {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       let placeholderData;
       if (prevResult?.isPlaceholderData && options.placeholderData === prevResultOptions?.placeholderData) {
         placeholderData = prevResult.data;
@@ -6034,7 +6783,11 @@ var QueryObserver = class extends import_subscribable.Subscribable {
           this.#lastQueryWithDefinedData?.state.data,
           this.#lastQueryWithDefinedData
         ) : options.placeholderData;
+<<<<<<< HEAD
         if (options.select && placeholderData !== void 0) {
+=======
+        if (options.select && typeof placeholderData !== "undefined") {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           try {
             placeholderData = options.select(placeholderData);
             this.#selectError = null;
@@ -6043,7 +6796,11 @@ var QueryObserver = class extends import_subscribable.Subscribable {
           }
         }
       }
+<<<<<<< HEAD
       if (placeholderData !== void 0) {
+=======
+      if (typeof placeholderData !== "undefined") {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         status = "success";
         data = (0, import_utils.replaceData)(
           prevResult?.data,
@@ -6059,6 +6816,7 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       errorUpdatedAt = Date.now();
       status = "error";
     }
+<<<<<<< HEAD
     const isFetching = newState.fetchStatus === "fetching";
     const isPending = status === "pending";
     const isError = status === "error";
@@ -6067,12 +6825,22 @@ var QueryObserver = class extends import_subscribable.Subscribable {
     const result = {
       status,
       fetchStatus: newState.fetchStatus,
+=======
+    const isFetching = fetchStatus === "fetching";
+    const isPending = status === "pending";
+    const isError = status === "error";
+    const isLoading = isPending && isFetching;
+    const result = {
+      status,
+      fetchStatus,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       isPending,
       isSuccess: status === "success",
       isError,
       isInitialLoading: isLoading,
       isLoading,
       data,
+<<<<<<< HEAD
       dataUpdatedAt: newState.dataUpdatedAt,
       error,
       errorUpdatedAt,
@@ -6087,6 +6855,22 @@ var QueryObserver = class extends import_subscribable.Subscribable {
       isPaused: newState.fetchStatus === "paused",
       isPlaceholderData,
       isRefetchError: isError && hasData,
+=======
+      dataUpdatedAt: state.dataUpdatedAt,
+      error,
+      errorUpdatedAt,
+      failureCount: state.fetchFailureCount,
+      failureReason: state.fetchFailureReason,
+      errorUpdateCount: state.errorUpdateCount,
+      isFetched: state.dataUpdateCount > 0 || state.errorUpdateCount > 0,
+      isFetchedAfterMount: state.dataUpdateCount > queryInitialState.dataUpdateCount || state.errorUpdateCount > queryInitialState.errorUpdateCount,
+      isFetching,
+      isRefetching: isFetching && !isPending,
+      isLoadingError: isError && state.dataUpdatedAt === 0,
+      isPaused: fetchStatus === "paused",
+      isPlaceholderData,
+      isRefetchError: isError && state.dataUpdatedAt !== 0,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       isStale: isStale(query, options),
       refetch: this.refetch
     };
@@ -6097,12 +6881,21 @@ var QueryObserver = class extends import_subscribable.Subscribable {
     const nextResult = this.createResult(this.#currentQuery, this.options);
     this.#currentResultState = this.#currentQuery.state;
     this.#currentResultOptions = this.options;
+<<<<<<< HEAD
     if (this.#currentResultState.data !== void 0) {
       this.#lastQueryWithDefinedData = this.#currentQuery;
     }
     if ((0, import_utils.shallowEqualObjects)(nextResult, prevResult)) {
       return;
     }
+=======
+    if ((0, import_utils.shallowEqualObjects)(nextResult, prevResult)) {
+      return;
+    }
+    if (this.#currentResultState.data !== void 0) {
+      this.#lastQueryWithDefinedData = this.#currentQuery;
+    }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.#currentResult = nextResult;
     const defaultNotifyOptions = {};
     const shouldNotifyListeners = () => {
@@ -6165,6 +6958,7 @@ var QueryObserver = class extends import_subscribable.Subscribable {
   }
 };
 function shouldLoadOnMount(query, options) {
+<<<<<<< HEAD
   return (0, import_utils.resolveEnabled)(options.enabled, query) !== false && query.state.data === void 0 && !(query.state.status === "error" && options.retryOnMount === false);
 }
 function shouldFetchOnMount(query, options) {
@@ -6172,16 +6966,32 @@ function shouldFetchOnMount(query, options) {
 }
 function shouldFetchOn(query, options, field) {
   if ((0, import_utils.resolveEnabled)(options.enabled, query) !== false) {
+=======
+  return options.enabled !== false && !query.state.dataUpdatedAt && !(query.state.status === "error" && options.retryOnMount === false);
+}
+function shouldFetchOnMount(query, options) {
+  return shouldLoadOnMount(query, options) || query.state.dataUpdatedAt > 0 && shouldFetchOn(query, options, options.refetchOnMount);
+}
+function shouldFetchOn(query, options, field) {
+  if (options.enabled !== false) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const value = typeof field === "function" ? field(query) : field;
     return value === "always" || value !== false && isStale(query, options);
   }
   return false;
 }
 function shouldFetchOptionally(query, prevQuery, options, prevOptions) {
+<<<<<<< HEAD
   return (query !== prevQuery || (0, import_utils.resolveEnabled)(prevOptions.enabled, query) === false) && (!options.suspense || query.state.status !== "error") && isStale(query, options);
 }
 function isStale(query, options) {
   return (0, import_utils.resolveEnabled)(options.enabled, query) !== false && query.isStaleByTime((0, import_utils.resolveStaleTime)(options.staleTime, query));
+=======
+  return options.enabled !== false && (query !== prevQuery || prevOptions.enabled === false) && (!options.suspense || query.state.status !== "error") && isStale(query, options);
+}
+function isStale(query, options) {
+  return query.isStaleByTime(options.staleTime);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 }
 function shouldAssignObserverCurrentProperties(observer, optimisticResult) {
   if (!(0, import_utils.shallowEqualObjects)(observer.getCurrentResult(), optimisticResult)) {
@@ -6336,8 +7146,12 @@ function createRetryer(config) {
   const continueRetry = () => {
     isRetryCancelled = false;
   };
+<<<<<<< HEAD
   const canContinue = () => import_focusManager.focusManager.isFocused() && (config.networkMode === "always" || import_onlineManager.onlineManager.isOnline()) && config.canRun();
   const canStart = () => canFetch(config.networkMode) && config.canRun();
+=======
+  const shouldPause = () => !import_focusManager.focusManager.isFocused() || config.networkMode !== "always" && !import_onlineManager.onlineManager.isOnline();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   const resolve = (value) => {
     if (!isResolved) {
       isResolved = true;
@@ -6357,9 +7171,17 @@ function createRetryer(config) {
   const pause = () => {
     return new Promise((continueResolve) => {
       continueFn = (value) => {
+<<<<<<< HEAD
         if (isResolved || canContinue()) {
           continueResolve(value);
         }
+=======
+        const canContinue = isResolved || !shouldPause();
+        if (canContinue) {
+          continueResolve(value);
+        }
+        return canContinue;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       };
       config.onPause?.();
     }).then(() => {
@@ -6374,9 +7196,14 @@ function createRetryer(config) {
       return;
     }
     let promiseOrValue;
+<<<<<<< HEAD
     const initialPromise = failureCount === 0 ? config.initialPromise : void 0;
     try {
       promiseOrValue = initialPromise ?? config.fn();
+=======
+    try {
+      promiseOrValue = config.fn();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     } catch (error) {
       promiseOrValue = Promise.reject(error);
     }
@@ -6395,7 +7222,14 @@ function createRetryer(config) {
       failureCount++;
       config.onFail?.(failureCount, error);
       (0, import_utils.sleep)(delay).then(() => {
+<<<<<<< HEAD
         return canContinue() ? void 0 : pause();
+=======
+        if (shouldPause()) {
+          return pause();
+        }
+        return;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }).then(() => {
         if (isRetryCancelled) {
           reject(error);
@@ -6405,10 +7239,19 @@ function createRetryer(config) {
       });
     });
   };
+<<<<<<< HEAD
+=======
+  if (canFetch(config.networkMode)) {
+    run();
+  } else {
+    pause().then(run);
+  }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   return {
     promise,
     cancel,
     continue: () => {
+<<<<<<< HEAD
       continueFn?.();
       return promise;
     },
@@ -6423,6 +7266,13 @@ function createRetryer(config) {
       }
       return promise;
     }
+=======
+      const didContinue = continueFn?.();
+      return didContinue ? promise : Promise.resolve();
+    },
+    cancelRetry,
+    continueRetry
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   };
 }
 // Annotate the CommonJS export names for ESM import in node:
@@ -6550,7 +7400,10 @@ var utils_exports = {};
 __export(utils_exports, {
   addToEnd: () => addToEnd,
   addToStart: () => addToStart,
+<<<<<<< HEAD
   ensureQueryFn: () => ensureQueryFn,
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   functionalUpdate: () => functionalUpdate,
   hashKey: () => hashKey,
   hashQueryKeyByOptions: () => hashQueryKeyByOptions,
@@ -6565,15 +7418,24 @@ __export(utils_exports, {
   partialMatchKey: () => partialMatchKey,
   replaceData: () => replaceData,
   replaceEqualDeep: () => replaceEqualDeep,
+<<<<<<< HEAD
   resolveEnabled: () => resolveEnabled,
   resolveStaleTime: () => resolveStaleTime,
   shallowEqualObjects: () => shallowEqualObjects,
   skipToken: () => skipToken,
+=======
+  scheduleMicrotask: () => scheduleMicrotask,
+  shallowEqualObjects: () => shallowEqualObjects,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   sleep: () => sleep,
   timeUntilStale: () => timeUntilStale
 });
 module.exports = __toCommonJS(utils_exports);
+<<<<<<< HEAD
 var isServer = typeof window === "undefined" || "Deno" in globalThis;
+=======
+var isServer = typeof window === "undefined" || "Deno" in window;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function noop() {
   return void 0;
 }
@@ -6586,12 +7448,15 @@ function isValidTimeout(value) {
 function timeUntilStale(updatedAt, staleTime) {
   return Math.max(updatedAt + (staleTime || 0) - Date.now(), 0);
 }
+<<<<<<< HEAD
 function resolveStaleTime(staleTime, query) {
   return typeof staleTime === "function" ? staleTime(query) : staleTime;
 }
 function resolveEnabled(enabled, query) {
   return typeof enabled === "function" ? enabled(query) : enabled;
 }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function matchQuery(filters, query) {
   const {
     type = "all",
@@ -6622,7 +7487,11 @@ function matchQuery(filters, query) {
   if (typeof stale === "boolean" && query.isStale() !== stale) {
     return false;
   }
+<<<<<<< HEAD
   if (fetchStatus && fetchStatus !== query.state.fetchStatus) {
+=======
+  if (typeof fetchStatus !== "undefined" && fetchStatus !== query.state.fetchStatus) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     return false;
   }
   if (predicate && !predicate(query)) {
@@ -6683,14 +7552,19 @@ function replaceEqualDeep(a, b) {
   }
   const array = isPlainArray(a) && isPlainArray(b);
   if (array || isPlainObject(a) && isPlainObject(b)) {
+<<<<<<< HEAD
     const aItems = array ? a : Object.keys(a);
     const aSize = aItems.length;
+=======
+    const aSize = array ? a.length : Object.keys(a).length;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     const bItems = array ? b : Object.keys(b);
     const bSize = bItems.length;
     const copy = array ? [] : {};
     let equalItems = 0;
     for (let i = 0; i < bSize; i++) {
       const key = array ? i : bItems[i];
+<<<<<<< HEAD
       if ((!array && aItems.includes(key) || array) && a[key] === void 0 && b[key] === void 0) {
         copy[key] = void 0;
         equalItems++;
@@ -6699,6 +7573,11 @@ function replaceEqualDeep(a, b) {
         if (copy[key] === a[key] && a[key] !== void 0) {
           equalItems++;
         }
+=======
+      copy[key] = replaceEqualDeep(a[key], b[key]);
+      if (copy[key] === a[key]) {
+        equalItems++;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }
     }
     return aSize === bSize && equalItems === aSize ? a : copy;
@@ -6706,7 +7585,11 @@ function replaceEqualDeep(a, b) {
   return b;
 }
 function shallowEqualObjects(a, b) {
+<<<<<<< HEAD
   if (!b || Object.keys(a).length !== Object.keys(b).length) {
+=======
+  if (a && !b || b && !a) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     return false;
   }
   for (const key in a) {
@@ -6724,7 +7607,11 @@ function isPlainObject(o) {
     return false;
   }
   const ctor = o.constructor;
+<<<<<<< HEAD
   if (ctor === void 0) {
+=======
+  if (typeof ctor === "undefined") {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     return true;
   }
   const prot = ctor.prototype;
@@ -6734,19 +7621,33 @@ function isPlainObject(o) {
   if (!prot.hasOwnProperty("isPrototypeOf")) {
     return false;
   }
+<<<<<<< HEAD
   if (Object.getPrototypeOf(o) !== Object.prototype) {
     return false;
   }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   return true;
 }
 function hasObjectPrototype(o) {
   return Object.prototype.toString.call(o) === "[object Object]";
 }
+<<<<<<< HEAD
 function sleep(ms) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
 }
+=======
+function sleep(timeout) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, timeout);
+  });
+}
+function scheduleMicrotask(callback) {
+  sleep(0).then(callback);
+}
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function replaceData(prevData, data, options) {
   if (typeof options.structuralSharing === "function") {
     return options.structuralSharing(prevData, data);
@@ -6766,6 +7667,7 @@ function addToStart(items, item, max = 0) {
   const newItems = [item, ...items];
   return max && newItems.length > max ? newItems.slice(0, -1) : newItems;
 }
+<<<<<<< HEAD
 var skipToken = Symbol();
 var ensureQueryFn = (options, fetchOptions) => {
   if (true) {
@@ -6783,6 +7685,8 @@ var ensureQueryFn = (options, fetchOptions) => {
   }
   return options.queryFn;
 };
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=utils.cjs.map
@@ -6938,7 +7842,10 @@ __export(QueryClientProvider_exports, {
 });
 module.exports = __toCommonJS(QueryClientProvider_exports);
 var React = __toESM(__webpack_require__(/*! react */ "react"), 1);
+<<<<<<< HEAD
 var import_jsx_runtime = __webpack_require__(/*! react/jsx-runtime */ "../node_modules/react/jsx-runtime.js");
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var QueryClientContext = React.createContext(
   void 0
 );
@@ -6962,7 +7869,11 @@ var QueryClientProvider = ({
       client.unmount();
     };
   }, [client]);
+<<<<<<< HEAD
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(QueryClientContext.Provider, { value: client, children });
+=======
+  return /* @__PURE__ */ React.createElement(QueryClientContext.Provider, { value: client }, children);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
@@ -7015,7 +7926,10 @@ __export(QueryErrorResetBoundary_exports, {
 });
 module.exports = __toCommonJS(QueryErrorResetBoundary_exports);
 var React = __toESM(__webpack_require__(/*! react */ "react"), 1);
+<<<<<<< HEAD
 var import_jsx_runtime = __webpack_require__(/*! react/jsx-runtime */ "../node_modules/react/jsx-runtime.js");
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function createValue() {
   let isReset = false;
   return {
@@ -7036,7 +7950,11 @@ var QueryErrorResetBoundary = ({
   children
 }) => {
   const [value] = React.useState(() => createValue());
+<<<<<<< HEAD
   return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(QueryErrorResetBoundaryContext.Provider, { value, children: typeof children === "function" ? children(value) : children });
+=======
+  return /* @__PURE__ */ React.createElement(QueryErrorResetBoundaryContext.Provider, { value }, typeof children === "function" ? children(value) : children);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
@@ -7109,7 +8027,11 @@ var getHasError = ({
   throwOnError,
   query
 }) => {
+<<<<<<< HEAD
   return result.isError && !errorResetBoundary.isReset() && !result.isFetching && query && (0, import_utils.shouldThrowError)(throwOnError, [result.error, query]);
+=======
+  return result.isError && !errorResetBoundary.isReset() && !result.isFetching && (0, import_utils.shouldThrowError)(throwOnError, [result.error, query]);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
@@ -7160,8 +8082,11 @@ __export(src_exports, {
   useIsRestoring: () => import_isRestoring.useIsRestoring,
   useMutation: () => import_useMutation.useMutation,
   useMutationState: () => import_useMutationState.useMutationState,
+<<<<<<< HEAD
   usePrefetchInfiniteQuery: () => import_prefetch.usePrefetchInfiniteQuery,
   usePrefetchQuery: () => import_prefetch.usePrefetchQuery,
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   useQueries: () => import_useQueries.useQueries,
   useQuery: () => import_useQuery.useQuery,
   useQueryClient: () => import_QueryClientProvider.useQueryClient,
@@ -7178,7 +8103,10 @@ var import_useQuery = __webpack_require__(/*! ./useQuery.cjs */ "../node_modules
 var import_useSuspenseQuery = __webpack_require__(/*! ./useSuspenseQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/useSuspenseQuery.cjs");
 var import_useSuspenseInfiniteQuery = __webpack_require__(/*! ./useSuspenseInfiniteQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/useSuspenseInfiniteQuery.cjs");
 var import_useSuspenseQueries = __webpack_require__(/*! ./useSuspenseQueries.cjs */ "../node_modules/@tanstack/react-query/build/modern/useSuspenseQueries.cjs");
+<<<<<<< HEAD
 var import_prefetch = __webpack_require__(/*! ./prefetch.cjs */ "../node_modules/@tanstack/react-query/build/modern/prefetch.cjs");
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var import_queryOptions = __webpack_require__(/*! ./queryOptions.cjs */ "../node_modules/@tanstack/react-query/build/modern/queryOptions.cjs");
 var import_infiniteQueryOptions = __webpack_require__(/*! ./infiniteQueryOptions.cjs */ "../node_modules/@tanstack/react-query/build/modern/infiniteQueryOptions.cjs");
 var import_QueryClientProvider = __webpack_require__(/*! ./QueryClientProvider.cjs */ "../node_modules/@tanstack/react-query/build/modern/QueryClientProvider.cjs");
@@ -7290,6 +8218,7 @@ var IsRestoringProvider = IsRestoringContext.Provider;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../node_modules/@tanstack/react-query/build/modern/prefetch.cjs":
 /*!***********************************************************************!*\
   !*** ../node_modules/@tanstack/react-query/build/modern/prefetch.cjs ***!
@@ -7342,6 +8271,8 @@ function usePrefetchInfiniteQuery(options) {
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../node_modules/@tanstack/react-query/build/modern/queryOptions.cjs":
 /*!***************************************************************************!*\
   !*** ../node_modules/@tanstack/react-query/build/modern/queryOptions.cjs ***!
@@ -7419,7 +8350,11 @@ __export(suspense_exports, {
   willFetch: () => willFetch
 });
 module.exports = __toCommonJS(suspense_exports);
+<<<<<<< HEAD
 var defaultThrowOnError = (_error, query) => query.state.data === void 0;
+=======
+var defaultThrowOnError = (_error, query) => typeof query.state.data === "undefined";
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var ensureStaleTime = (defaultedOptions) => {
   if (defaultedOptions.suspense) {
     if (typeof defaultedOptions.staleTime !== "number") {
@@ -7428,7 +8363,11 @@ var ensureStaleTime = (defaultedOptions) => {
   }
 };
 var willFetch = (result, isRestoring) => result.isLoading && result.isFetching && !isRestoring;
+<<<<<<< HEAD
 var shouldSuspend = (defaultedOptions, result) => defaultedOptions?.suspense && result.isPending;
+=======
+var shouldSuspend = (defaultedOptions, result, isRestoring) => defaultedOptions?.suspense && willFetch(result, isRestoring);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var fetchOptimistic = (defaultedOptions, observer, errorResetBoundary) => observer.fetchOptimistic(defaultedOptions).catch(() => {
   errorResetBoundary.clearReset();
 });
@@ -7529,9 +8468,12 @@ function useBaseQuery(options, Observer, queryClient) {
   const isRestoring = (0, import_isRestoring.useIsRestoring)();
   const errorResetBoundary = (0, import_QueryErrorResetBoundary.useQueryErrorResetBoundary)();
   const defaultedOptions = client.defaultQueryOptions(options);
+<<<<<<< HEAD
   client.getDefaultOptions().queries?._experimental_beforeQuery?.(
     defaultedOptions
   );
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   defaultedOptions._optimisticResults = isRestoring ? "isRestoring" : "optimistic";
   (0, import_suspense.ensureStaleTime)(defaultedOptions);
   (0, import_errorBoundaryUtils.ensurePreventErrorBoundaryRetry)(defaultedOptions, errorResetBoundary);
@@ -7558,13 +8500,18 @@ function useBaseQuery(options, Observer, queryClient) {
   React.useEffect(() => {
     observer.setOptions(defaultedOptions, { listeners: false });
   }, [defaultedOptions, observer]);
+<<<<<<< HEAD
   if ((0, import_suspense.shouldSuspend)(defaultedOptions, result)) {
+=======
+  if ((0, import_suspense.shouldSuspend)(defaultedOptions, result, isRestoring)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     throw (0, import_suspense.fetchOptimistic)(defaultedOptions, observer, errorResetBoundary);
   }
   if ((0, import_errorBoundaryUtils.getHasError)({
     result,
     errorResetBoundary,
     throwOnError: defaultedOptions.throwOnError,
+<<<<<<< HEAD
     query: client.getQueryCache().get(defaultedOptions.queryHash)
   })) {
     throw result.error;
@@ -7574,6 +8521,12 @@ function useBaseQuery(options, Observer, queryClient) {
     defaultedOptions,
     result
   );
+=======
+    query: observer.getCurrentQuery()
+  })) {
+    throw result.error;
+  }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   return !defaultedOptions.notifyOnChangeProps ? observer.trackResult(result) : result;
 }
 // Annotate the CommonJS export names for ESM import in node:
@@ -7620,6 +8573,10 @@ var import_useBaseQuery = __webpack_require__(/*! ./useBaseQuery.cjs */ "../node
 function useInfiniteQuery(options, queryClient) {
   return (0, import_useBaseQuery.useBaseQuery)(
     options,
+<<<<<<< HEAD
+=======
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     import_query_core.InfiniteQueryObserver,
     queryClient
   );
@@ -7762,7 +8719,11 @@ function useMutation(options, queryClient) {
   );
   const mutate = React.useCallback(
     (variables, mutateOptions) => {
+<<<<<<< HEAD
       observer.mutate(variables, mutateOptions).catch(import_utils.noop);
+=======
+      observer.mutate(variables, mutateOptions).catch(noop);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     },
     [observer]
   );
@@ -7771,6 +8732,11 @@ function useMutation(options, queryClient) {
   }
   return { ...result, mutate, mutateAsync: result.mutate };
 }
+<<<<<<< HEAD
+=======
+function noop() {
+}
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=useMutation.cjs.map
@@ -7833,13 +8799,23 @@ function useIsMutating(filters, queryClient) {
 }
 function getResult(mutationCache, options) {
   return mutationCache.findAll(options.filters).map(
+<<<<<<< HEAD
     (mutation) => options.select ? options.select(mutation) : mutation.state
+=======
+    (mutation) => options.select ? options.select(
+      mutation
+    ) : mutation.state
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   );
 }
 function useMutationState(options = {}, queryClient) {
   const mutationCache = (0, import_QueryClientProvider.useQueryClient)(queryClient).getMutationCache();
   const optionsRef = React.useRef(options);
+<<<<<<< HEAD
   const result = React.useRef(null);
+=======
+  const result = React.useRef();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   if (!result.current) {
     result.current = getResult(mutationCache, options);
   }
@@ -7929,9 +8905,13 @@ function useQueries({
   const errorResetBoundary = (0, import_QueryErrorResetBoundary.useQueryErrorResetBoundary)();
   const defaultedQueries = React.useMemo(
     () => queries.map((opts) => {
+<<<<<<< HEAD
       const defaultedOptions = client.defaultQueryOptions(
         opts
       );
+=======
+      const defaultedOptions = client.defaultQueryOptions(opts);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       defaultedOptions._optimisticResults = isRestoring ? "isRestoring" : "optimistic";
       return defaultedOptions;
     }),
@@ -7949,10 +8929,14 @@ function useQueries({
       options
     )
   );
+<<<<<<< HEAD
   const [optimisticResult, getCombinedResult, trackResult] = observer.getOptimisticResult(
     defaultedQueries,
     options.combine
   );
+=======
+  const [optimisticResult, getCombinedResult, trackResult] = observer.getOptimisticResult(defaultedQueries);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   React.useSyncExternalStore(
     React.useCallback(
       (onStoreChange) => isRestoring ? () => void 0 : observer.subscribe(import_query_core.notifyManager.batchCalls(onStoreChange)),
@@ -7971,13 +8955,21 @@ function useQueries({
     );
   }, [defaultedQueries, options, observer]);
   const shouldAtLeastOneSuspend = optimisticResult.some(
+<<<<<<< HEAD
     (result, index) => (0, import_suspense.shouldSuspend)(defaultedQueries[index], result)
+=======
+    (result, index) => (0, import_suspense.shouldSuspend)(defaultedQueries[index], result, isRestoring)
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   );
   const suspensePromises = shouldAtLeastOneSuspend ? optimisticResult.flatMap((result, index) => {
     const opts = defaultedQueries[index];
     if (opts) {
       const queryObserver = new import_query_core.QueryObserver(client, opts);
+<<<<<<< HEAD
       if ((0, import_suspense.shouldSuspend)(opts, result)) {
+=======
+      if ((0, import_suspense.shouldSuspend)(opts, result, isRestoring)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         return (0, import_suspense.fetchOptimistic)(opts, queryObserver, errorResetBoundary);
       } else if ((0, import_suspense.willFetch)(result, isRestoring)) {
         void (0, import_suspense.fetchOptimistic)(opts, queryObserver, errorResetBoundary);
@@ -7988,6 +8980,7 @@ function useQueries({
   if (suspensePromises.length > 0) {
     throw Promise.all(suspensePromises);
   }
+<<<<<<< HEAD
   const firstSingleResultWhichShouldThrow = optimisticResult.find(
     (result, index) => {
       const query = defaultedQueries[index];
@@ -7998,6 +8991,16 @@ function useQueries({
         query: client.getQueryCache().get(query.queryHash)
       });
     }
+=======
+  const observerQueries = observer.getQueries();
+  const firstSingleResultWhichShouldThrow = optimisticResult.find(
+    (result, index) => (0, import_errorBoundaryUtils.getHasError)({
+      result,
+      errorResetBoundary,
+      throwOnError: defaultedQueries[index]?.throwOnError ?? false,
+      query: observerQueries[index]
+    })
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   );
   if (firstSingleResultWhichShouldThrow?.error) {
     throw firstSingleResultWhichShouldThrow.error;
@@ -8098,6 +9101,10 @@ function useSuspenseInfiniteQuery(options, queryClient) {
       suspense: true,
       throwOnError: import_suspense.defaultThrowOnError
     },
+<<<<<<< HEAD
+=======
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     import_query_core.InfiniteQueryObserver,
     queryClient
   );
@@ -8151,8 +9158,12 @@ function useSuspenseQueries(options, queryClient) {
         ...query,
         suspense: true,
         throwOnError: import_suspense.defaultThrowOnError,
+<<<<<<< HEAD
         enabled: true,
         placeholderData: void 0
+=======
+        enabled: true
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }))
     },
     queryClient
@@ -8201,18 +9212,25 @@ var import_query_core = __webpack_require__(/*! @tanstack/query-core */ "../node
 var import_useBaseQuery = __webpack_require__(/*! ./useBaseQuery.cjs */ "../node_modules/@tanstack/react-query/build/modern/useBaseQuery.cjs");
 var import_suspense = __webpack_require__(/*! ./suspense.cjs */ "../node_modules/@tanstack/react-query/build/modern/suspense.cjs");
 function useSuspenseQuery(options, queryClient) {
+<<<<<<< HEAD
   if (true) {
     if (options.queryFn === import_query_core.skipToken) {
       console.error("skipToken is not allowed for useSuspenseQuery");
     }
   }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   return (0, import_useBaseQuery.useBaseQuery)(
     {
       ...options,
       enabled: true,
       suspense: true,
+<<<<<<< HEAD
       throwOnError: import_suspense.defaultThrowOnError,
       placeholderData: void 0
+=======
+      throwOnError: import_suspense.defaultThrowOnError
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     },
     import_query_core.QueryObserver,
     queryClient
@@ -8253,7 +9271,10 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/utils.ts
 var utils_exports = {};
 __export(utils_exports, {
+<<<<<<< HEAD
   noop: () => noop,
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   shouldThrowError: () => shouldThrowError
 });
 module.exports = __toCommonJS(utils_exports);
@@ -8263,8 +9284,11 @@ function shouldThrowError(throwError, params) {
   }
   return !!throwError;
 }
+<<<<<<< HEAD
 function noop() {
 }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 //# sourceMappingURL=utils.cjs.map

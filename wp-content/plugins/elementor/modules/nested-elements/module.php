@@ -26,8 +26,13 @@ class Module extends \Elementor\Core\Base\Module {
 				'container',
 			],
 			'new_site' => [
+<<<<<<< HEAD
 				'default_active' => true,
 				'minimum_installation_version' => '3.24.0',
+=======
+				'default_active' => false,
+				'minimum_installation_version' => '3.10.0',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			],
 		];
 	}

@@ -94,6 +94,7 @@ class Widget_Divider extends Widget_Base {
 		return false;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * Get style dependencies.
 	 *
@@ -108,6 +109,8 @@ class Widget_Divider extends Widget_Base {
 		return [ 'widget-divider' ];
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	private static function get_additional_styles() {
 		static $additional_styles = null;
 

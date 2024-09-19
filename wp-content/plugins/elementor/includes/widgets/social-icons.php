@@ -75,6 +75,7 @@ class Widget_Social_Icons extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -89,6 +90,8 @@ class Widget_Social_Icons extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Register social icons widget controls.
 	 *
 	 * Adds different input fields to allow the user to change and customize the widget settings.
@@ -277,8 +280,13 @@ class Widget_Social_Icons extends Widget_Base {
 				'type' => Controls_Manager::SELECT,
 				'default' => 'rounded',
 				'options' => [
+<<<<<<< HEAD
 					'square' => esc_html__( 'Square', 'elementor' ),
 					'rounded' => esc_html__( 'Rounded', 'elementor' ),
+=======
+					'rounded' => esc_html__( 'Rounded', 'elementor' ),
+					'square' => esc_html__( 'Square', 'elementor' ),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 					'circle' => esc_html__( 'Circle', 'elementor' ),
 				],
 				'prefix_class' => 'elementor-shape-',

@@ -6,8 +6,13 @@ use Elementor\Controls_Manager;
 use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 use Elementor\Group_Control_Typography;
 use Elementor\Modules\Shapes\Module as Shapes_Module;
+<<<<<<< HEAD
 use Elementor\Group_Control_Text_Stroke;
 use Elementor\Plugin;
+=======
+use Elementor\Utils;
+use Elementor\Group_Control_Text_Stroke;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Widget_Base;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,10 +42,13 @@ class TextPath extends Widget_Base {
 		return 'text-path';
 	}
 
+<<<<<<< HEAD
 	public function get_group_name() {
 		return 'shapes';
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * Get widget title.
 	 *
@@ -81,6 +89,7 @@ class TextPath extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -95,6 +104,8 @@ class TextPath extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Register content controls under content tab.
 	 */
 	protected function register_content_tab() {

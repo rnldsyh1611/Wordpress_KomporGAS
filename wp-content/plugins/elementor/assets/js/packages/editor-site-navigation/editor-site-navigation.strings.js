@@ -21,9 +21,13 @@ __( 'Duplicate', 'elementor' );
 __( 'Delete', 'elementor' );
 /* translators: %s: Post title. */
 __( 'Delete "%s"?', 'elementor' );
+<<<<<<< HEAD
 __(
 						'The page and its content will be deleted forever and we won’t be able to recover them.',
 						'elementor'
 					);
+=======
+__( 'The page and its content will be deleted forever and we won’t be able to recover them.', 'elementor' );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 __( 'Cancel', 'elementor' );
 __( 'Delete', 'elementor' );

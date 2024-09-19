@@ -78,6 +78,7 @@ class Widget_Icon_List extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -92,6 +93,8 @@ class Widget_Icon_List extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Register icon list widget controls.
 	 *
 	 * Adds different input fields to allow the user to change and customize the widget settings.

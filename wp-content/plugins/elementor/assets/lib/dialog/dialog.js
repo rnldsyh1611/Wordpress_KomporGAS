@@ -103,6 +103,7 @@
 			return Object.create(settings);
 		};
 
+<<<<<<< HEAD
 		this.maybeLoadAssets = async function () {
 			const isFrontend = !! window.elementorFrontend?.utils?.assetsLoader;
 
@@ -120,6 +121,9 @@
 		this.init = function (settings) {
 
 			this.maybeLoadAssets();
+=======
+		this.init = function(settings) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 			initSettings(settings);
 

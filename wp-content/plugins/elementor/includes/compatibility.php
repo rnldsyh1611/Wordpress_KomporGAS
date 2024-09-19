@@ -43,6 +43,7 @@ class Compatibility {
 		}
 
 		add_action( 'elementor/maintenance_mode/mode_changed', [ __CLASS__, 'clear_3rd_party_cache' ] );
+<<<<<<< HEAD
 
 		// Enable floating buttons and link in bio experiment for all.
 		// TODO Remove in version 3.26
@@ -52,6 +53,8 @@ class Compatibility {
 
 	public static function return_active() {
 		return 'active';
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 
 	public static function clear_3rd_party_cache() {

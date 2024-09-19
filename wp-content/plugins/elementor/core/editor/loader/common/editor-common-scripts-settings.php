@@ -4,7 +4,10 @@ namespace Elementor\Core\Editor\Loader\Common;
 use Elementor\Api;
 use Elementor\Core\Debug\Loading_Inspection_Manager;
 use Elementor\Core\Settings\Manager as SettingsManager;
+<<<<<<< HEAD
 use Elementor\Group_Control_Typography;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Icons_Manager;
 use Elementor\Modules\Apps\Module as AppsModule;
 use Elementor\Modules\EditorEvents\Module as EditorEventsModule;
@@ -108,7 +111,10 @@ class Editor_Common_Scripts_Settings {
 					'upgrade_url'
 				),
 			],
+<<<<<<< HEAD
 			'fontVariableRanges' => Group_Control_Typography::get_font_variable_ranges(),
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		];
 
 		if ( ! Utils::has_pro() && current_user_can( 'manage_options' ) ) {

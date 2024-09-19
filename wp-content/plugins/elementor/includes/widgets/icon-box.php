@@ -78,6 +78,7 @@ class Widget_Icon_Box extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -92,6 +93,8 @@ class Widget_Icon_Box extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Register icon box widget controls.
 	 *
 	 * Adds different input fields to allow the user to change and customize the widget settings.
@@ -144,9 +147,14 @@ class Widget_Icon_Box extends Widget_Base {
 				'label' => esc_html__( 'Shape', 'elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
+<<<<<<< HEAD
 					'square' => esc_html__( 'Square', 'elementor' ),
 					'rounded' => esc_html__( 'Rounded', 'elementor' ),
 					'circle' => esc_html__( 'Circle', 'elementor' ),
+=======
+					'circle' => esc_html__( 'Circle', 'elementor' ),
+					'square' => esc_html__( 'Square', 'elementor' ),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				],
 				'default' => 'circle',
 				'condition' => [

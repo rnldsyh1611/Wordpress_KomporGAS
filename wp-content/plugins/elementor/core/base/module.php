@@ -287,6 +287,7 @@ abstract class Module extends Base_Object {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get Frontend File URL
 	 *
 	 * Returns the URL for the CSS file to be loaded in the front end. If requested via the second parameter, a custom
@@ -306,6 +307,8 @@ abstract class Module extends Base_Object {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Get assets base url
 	 *
 	 * @since 2.6.0

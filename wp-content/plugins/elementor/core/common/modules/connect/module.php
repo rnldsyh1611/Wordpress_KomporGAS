@@ -119,6 +119,18 @@ class Module extends BaseModule {
 	}
 
 	/**
+<<<<<<< HEAD
+=======
+	 * @deprecated 3.1.0
+	 */
+	public function localize_settings() {
+		Plugin::$instance->modules_manager->get_modules( 'dev-tools' )->deprecation->deprecated_function( __METHOD__, '3.1.0' );
+
+		return [];
+	}
+
+	/**
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Register app.
 	 *
 	 * Registers an app.

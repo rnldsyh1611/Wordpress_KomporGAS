@@ -340,7 +340,11 @@ class WP_Import extends \WP_Importer {
 
 		foreach ( (array) $this->args['imported_authors'] as $i => $old_login ) {
 			// Multisite adds strtolower to sanitize_user. Need to sanitize here to stop breakage in process_posts.
+<<<<<<< HEAD
 			$sanitized_old_login = sanitize_user( $old_login, true );
+=======
+			$santized_old_login = sanitize_user( $old_login, true );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			$old_id = isset( $this->authors[ $old_login ]['author_id'] ) ? (int) $this->authors[ $old_login ]['author_id'] : false;
 
 			if ( ! empty( $this->args['user_map'][ $i ] ) ) {
@@ -349,7 +353,11 @@ class WP_Import extends \WP_Importer {
 					if ( $old_id ) {
 						$this->processed_authors[ $old_id ] = $user->ID;
 					}
+<<<<<<< HEAD
 					$this->author_mapping[ $sanitized_old_login ] = $user->ID;
+=======
+					$this->author_mapping[ $santized_old_login ] = $user->ID;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				}
 			} elseif ( $create_users ) {
 				$user_id = 0;
@@ -371,7 +379,11 @@ class WP_Import extends \WP_Importer {
 					if ( $old_id ) {
 						$this->processed_authors[ $old_id ] = $user_id;
 					}
+<<<<<<< HEAD
 					$this->author_mapping[ $sanitized_old_login ] = $user_id;
+=======
+					$this->author_mapping[ $santized_old_login ] = $user_id;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				} else {
 					$error = sprintf(
 						/* translators: %s: Author display name. */
@@ -388,11 +400,19 @@ class WP_Import extends \WP_Importer {
 			}
 
 			// Failsafe: if the user_id was invalid, default to the current user.
+<<<<<<< HEAD
 			if ( ! isset( $this->author_mapping[ $sanitized_old_login ] ) ) {
 				if ( $old_id ) {
 					$this->processed_authors[ $old_id ] = (int) get_current_user_id();
 				}
 				$this->author_mapping[ $sanitized_old_login ] = (int) get_current_user_id();
+=======
+			if ( ! isset( $this->author_mapping[ $santized_old_login ] ) ) {
+				if ( $old_id ) {
+					$this->processed_authors[ $old_id ] = (int) get_current_user_id();
+				}
+				$this->author_mapping[ $santized_old_login ] = (int) get_current_user_id();
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			}
 		}
 	}

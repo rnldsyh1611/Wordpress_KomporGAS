@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["frontend-modules"],{
 
 /***/ "../assets/dev/js/editor/utils/is-instanceof.js":
@@ -1017,8 +1021,12 @@ var _baseSwiper = _interopRequireDefault(__webpack_require__(/*! ./handlers/base
 var _baseCarousel = _interopRequireDefault(__webpack_require__(/*! ./handlers/base-carousel */ "../assets/dev/js/frontend/handlers/base-carousel.js"));
 var _nestedTabs = _interopRequireDefault(__webpack_require__(/*! elementor/modules/nested-tabs/assets/js/frontend/handlers/nested-tabs */ "../modules/nested-tabs/assets/js/frontend/handlers/nested-tabs.js"));
 var _nestedAccordion = _interopRequireDefault(__webpack_require__(/*! elementor/modules/nested-accordion/assets/js/frontend/handlers/nested-accordion */ "../modules/nested-accordion/assets/js/frontend/handlers/nested-accordion.js"));
+<<<<<<< HEAD
 var _contactButtons = _interopRequireDefault(__webpack_require__(/*! elementor/modules/floating-buttons/assets/js/floating-buttons/frontend/handlers/contact-buttons */ "../modules/floating-buttons/assets/js/floating-buttons/frontend/handlers/contact-buttons.js"));
 var _floatingBars = _interopRequireDefault(__webpack_require__(/*! elementor/modules/floating-buttons/assets/js/floating-bars/frontend/handlers/floating-bars */ "../modules/floating-buttons/assets/js/floating-bars/frontend/handlers/floating-bars.js"));
+=======
+var _contactButtons = _interopRequireDefault(__webpack_require__(/*! elementor/modules/floating-buttons/assets/js/frontend/handlers/contact-buttons */ "../modules/floating-buttons/assets/js/frontend/handlers/contact-buttons.js"));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _nestedTitleKeyboardHandler = _interopRequireDefault(__webpack_require__(/*! ./handlers/accessibility/nested-title-keyboard-handler */ "../assets/dev/js/frontend/handlers/accessibility/nested-title-keyboard-handler.js"));
 _modules.default.frontend = {
   Document: _document.default,
@@ -1033,8 +1041,12 @@ _modules.default.frontend = {
     NestedTabs: _nestedTabs.default,
     NestedAccordion: _nestedAccordion.default,
     NestedTitleKeyboardHandler: _nestedTitleKeyboardHandler.default,
+<<<<<<< HEAD
     ContactButtonsHandler: _contactButtons.default,
     FloatingBarsHandler: _floatingBars.default
+=======
+    ContactButtonsHandler: _contactButtons.default
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
 };
 
@@ -1725,6 +1737,7 @@ class Scroll {
   static scrollObserver(obj) {
     let lastScrollY = 0;
 
+<<<<<<< HEAD
     // Generating thresholds points along the animation height
     // More thresholds points = more trigger points of the callback
     const buildThresholds = function () {
@@ -1739,11 +1752,31 @@ class Scroll {
         thresholds.push(0);
       }
       return thresholds;
+=======
+    // Generating threshholds points along the animation height
+    // More threshholds points = more trigger points of the callback
+    const buildThreshholds = function () {
+      let sensitivityPercentage = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      const threshholds = [];
+      if (sensitivityPercentage > 0 && sensitivityPercentage <= 100) {
+        const increment = 100 / sensitivityPercentage;
+        for (let i = 0; i <= 100; i += increment) {
+          threshholds.push(i / 100);
+        }
+      } else {
+        threshholds.push(0);
+      }
+      return threshholds;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     };
     const options = {
       root: obj.root || null,
       rootMargin: obj.offset || '0px',
+<<<<<<< HEAD
       threshold: buildThresholds(obj.sensitivity)
+=======
+      threshold: buildThreshholds(obj.sensitivity)
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     };
     function handleIntersect(entries) {
       const currentScrollY = entries[0].boundingClientRect.y,
@@ -1871,6 +1904,7 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-bars/frontend/classes/floatin-bar-dom.js":
 /*!***********************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-bars/frontend/classes/floatin-bar-dom.js ***!
@@ -1914,6 +1948,12 @@ exports["default"] = FloatingBarDomHelper;
 /*!**********************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-bars/frontend/handlers/floating-bars.js ***!
   \**********************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/frontend/handlers/contact-buttons.js":
+/*!**********************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/frontend/handlers/contact-buttons.js ***!
+  \**********************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1924,6 +1964,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
+<<<<<<< HEAD
 var _base = _interopRequireDefault(__webpack_require__(/*! elementor-frontend/handlers/base */ "../assets/dev/js/frontend/handlers/base.js"));
 var _floatinBarDom = _interopRequireDefault(__webpack_require__(/*! ../classes/floatin-bar-dom */ "../modules/floating-buttons/assets/js/floating-bars/frontend/classes/floatin-bar-dom.js"));
 var _clickTracking = _interopRequireDefault(__webpack_require__(/*! ../../../shared/frontend/handlers/click-tracking */ "../modules/floating-buttons/assets/js/shared/frontend/handlers/click-tracking.js"));
@@ -2174,6 +2215,15 @@ exports["default"] = void 0;
 var _base = _interopRequireDefault(__webpack_require__(/*! elementor-frontend/handlers/base */ "../assets/dev/js/frontend/handlers/base.js"));
 var _clickTracking = _interopRequireDefault(__webpack_require__(/*! ../../../shared/frontend/handlers/click-tracking */ "../modules/floating-buttons/assets/js/shared/frontend/handlers/click-tracking.js"));
 class ContactButtonsHandler extends _base.default {
+=======
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
+var _base = _interopRequireDefault(__webpack_require__(/*! elementor-frontend/handlers/base */ "../assets/dev/js/frontend/handlers/base.js"));
+class ContactButtonsHandler extends _base.default {
+  constructor() {
+    super(...arguments);
+    (0, _defineProperty2.default)(this, "clicks", []);
+  }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   getDefaultSettings() {
     return {
       selectors: {
@@ -2182,7 +2232,12 @@ class ContactButtonsHandler extends _base.default {
         contentWrapper: '.e-contact-buttons__content-wrapper',
         chatButton: '.e-contact-buttons__chat-button',
         closeButton: '.e-contact-buttons__close-button',
+<<<<<<< HEAD
         messageBubbleTime: '.e-contact-buttons__message-bubble-time'
+=======
+        messageBubbleTime: '.e-contact-buttons__message-bubble-time',
+        contactButtonCore: '.e-contact-buttons__send-button'
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       },
       constants: {
         entranceAnimation: 'style_chat_box_entrance_animation',
@@ -2226,8 +2281,19 @@ class ContactButtonsHandler extends _base.default {
       this.elements.content.addEventListener('animationend', this.removeAnimationClasses.bind(this));
     }
     if (this.elements.contentWrapper) {
+<<<<<<< HEAD
       window.addEventListener('keyup', this.onDocumentKeyup.bind(this));
     }
+=======
+      this.elements.contentWrapper.addEventListener('click', this.onChatButtonTrackClick.bind(this));
+      window.addEventListener('keyup', this.onDocumentKeyup.bind(this));
+    }
+    window.addEventListener('beforeunload', () => {
+      if (this.clicks.length > 0) {
+        this.sendClicks();
+      }
+    });
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
   contentWrapperIsHidden(hide) {
     if (!this.elements.contentWrapper) {
@@ -2265,6 +2331,44 @@ class ContactButtonsHandler extends _base.default {
     /* eslint-enable @wordpress/no-global-active-element */
   }
 
+<<<<<<< HEAD
+=======
+  onChatButtonTrackClick(event) {
+    const targetElement = event.target || event.srcElement;
+    const selectors = this.getSettings('selectors');
+    if (targetElement.matches(selectors.contactButtonCore) || targetElement.closest(selectors.contactButtonCore)) {
+      this.getDocumentIdAndTrack(targetElement, selectors);
+    }
+  }
+  getDocumentIdAndTrack(targetElement, selectors) {
+    let documentId = targetElement.closest(selectors.main).dataset.documentId;
+    if (!documentId) {
+      documentId = targetElement.closest(selectors.elementorWrapper).dataset.elementorId;
+    }
+    this.trackClick(documentId);
+  }
+  trackClick(documentId) {
+    if (!documentId) {
+      return;
+    }
+    this.clicks.push(documentId);
+    if (this.clicks.length >= 10) {
+      this.sendClicks();
+    }
+  }
+  sendClicks() {
+    const formData = new FormData();
+    formData.append('action', 'elementor_send_clicks');
+    formData.append('_nonce', elementorFrontendConfig?.nonces?.floatingButtonsClickTracking);
+    this.clicks.forEach(documentId => formData.append('clicks[]', documentId));
+    fetch(elementorFrontendConfig?.urls?.ajaxurl, {
+      method: 'POST',
+      body: formData
+    }).then(() => {
+      this.clicks = [];
+    });
+  }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   removeAnimationClasses() {
     if (!this.elements.content) {
       return;
@@ -2439,17 +2543,23 @@ class ContactButtonsHandler extends _base.default {
       this.openChatBox();
     }
   }
+<<<<<<< HEAD
   setupInnerContainer() {
     this.elements.main.closest('.e-con-inner').classList.add('e-con-inner--floating-buttons');
   }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   onInit() {
     const {
       hasEntranceAnimation
     } = this.getSettings('constants');
     super.onInit(...arguments);
+<<<<<<< HEAD
     this.clickTrackingHandler = new _clickTracking.default({
       $element: this.$element
     });
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     if (this.elements.messageBubbleTime) {
       this.initMessageBubbleTime();
     }
@@ -2459,13 +2569,17 @@ class ContactButtonsHandler extends _base.default {
         this.initChatButtonEntranceAnimation();
       }
     }
+<<<<<<< HEAD
     this.setupInnerContainer();
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
 }
 exports["default"] = ContactButtonsHandler;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/shared/frontend/handlers/click-tracking.js":
 /*!****************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/shared/frontend/handlers/click-tracking.js ***!
@@ -2555,6 +2669,8 @@ exports["default"] = ClickTrackingHandler;
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/nested-accordion/assets/js/frontend/handlers/nested-accordion-title-keyboard-handler.js":
 /*!**********************************************************************************************************!*\
   !*** ../modules/nested-accordion/assets/js/frontend/handlers/nested-accordion-title-keyboard-handler.js ***!

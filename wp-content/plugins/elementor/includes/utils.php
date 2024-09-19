@@ -22,7 +22,11 @@ class Utils {
 	const EDITOR_BREAK_LINES_OPTION_KEY = 'elementor_editor_break_lines';
 
 	/**
+<<<<<<< HEAD
 	 * A list of safe tags for `validate_html_tag` method.
+=======
+	 * A list of safe tage for `validate_html_tag` method.
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 */
 	const ALLOWED_HTML_WRAPPER_TAGS = [
 		'a',
@@ -532,7 +536,11 @@ class Utils {
 		 *
 		 * Filters the meta tag containing the viewport information.
 		 *
+<<<<<<< HEAD
 		 * This hook can be used to change the initial viewport meta tag set by Elementor
+=======
+		 * This hook can be used to change the intial viewport meta tag set by Elementor
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		 * and replace it with a different viewport tag.
 		 *
 		 * @since 2.5.0

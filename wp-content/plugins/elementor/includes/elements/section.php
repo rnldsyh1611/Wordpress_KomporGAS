@@ -557,6 +557,7 @@ class Element_Section extends Element_Base {
 			]
 		);
 
+<<<<<<< HEAD
 		$this->add_control(
 			'handle_slideshow_asset_loading',
 			[
@@ -580,6 +581,8 @@ class Element_Section extends Element_Base {
 			]
 		);
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$this->end_controls_tab();
 
 		$this->start_controls_tab(
@@ -975,6 +978,7 @@ class Element_Section extends Element_Base {
 					'options' => $shapes_options,
 					'render_type' => 'none',
 					'frontend_available' => true,
+<<<<<<< HEAD
 					'assets' => [
 						'styles' => [
 							[
@@ -991,6 +995,8 @@ class Element_Section extends Element_Base {
 							],
 						],
 					],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				]
 			);
 

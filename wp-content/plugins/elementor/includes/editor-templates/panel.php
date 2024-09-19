@@ -1,14 +1,22 @@
 <?php
 namespace Elementor;
 
+<<<<<<< HEAD
 use Elementor\Modules\EditorAppBar\Module as App_Bar_Module;
+=======
+use Elementor\Core\Editor\Editor;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
 $document = Plugin::$instance->documents->get( Plugin::$instance->editor->get_post_id() );
+<<<<<<< HEAD
 $is_app_bar_active = Plugin::$instance->experiments->is_feature_active( App_Bar_Module::EXPERIMENT_NAME );
+=======
+$is_editor_v2_active = Plugin::$instance->experiments->is_feature_active( Editor::EDITOR_V2_EXPERIMENT_NAME );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 ?>
 <script type="text/template" id="tmpl-elementor-panel">
 	<div id="elementor-panel-state-loading">
@@ -85,13 +93,21 @@ $is_app_bar_active = Plugin::$instance->experiments->is_feature_active( App_Bar_
 	</button>
 	<# if ( $e.components.get( 'document/elements' ).utils.showNavigator() ) { #>
 	<button id="elementor-panel-footer-navigator" class="elementor-panel-footer-tool tooltip-target" data-tooltip="<?php
+<<<<<<< HEAD
 		echo $is_app_bar_active
+=======
+		echo $is_editor_v2_active
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			? esc_attr__( 'Structure', 'elementor' )
 			: esc_attr__( 'Navigator', 'elementor' );
 	?>">
 		<i class="eicon-navigator" aria-hidden="true"></i>
 		<span class="elementor-screen-only"><?php
+<<<<<<< HEAD
 			echo $is_app_bar_active
+=======
+			echo $is_editor_v2_active
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				? esc_html__( 'Structure', 'elementor' )
 				: esc_html__( 'Navigator', 'elementor' );
 		?></span>

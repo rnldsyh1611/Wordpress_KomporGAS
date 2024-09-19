@@ -34,10 +34,13 @@ class Widget_Rating extends Widget_Base {
 		return false;
 	}
 
+<<<<<<< HEAD
 	public function get_style_depends(): array {
 		return [ 'widget-rating' ];
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * @return void
 	 */

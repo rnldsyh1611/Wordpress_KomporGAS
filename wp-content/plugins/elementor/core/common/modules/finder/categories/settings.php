@@ -50,21 +50,27 @@ class Settings extends Base_Category {
 				'url' => ElementorSettings::get_settings_tab_url( 'general' ),
 				'keywords' => [ 'general', 'settings', 'elementor' ],
 			],
+<<<<<<< HEAD
 			'integrations' => [
 				'title' => esc_html__( 'Integrations', 'elementor' ),
 				'url' => ElementorSettings::get_settings_tab_url( 'integrations' ),
 				'keywords' => [ 'integrations', 'settings', 'elementor' ],
 			],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'advanced' => [
 				'title' => esc_html__( 'Advanced', 'elementor' ),
 				'url' => ElementorSettings::get_settings_tab_url( 'advanced' ),
 				'keywords' => [ 'advanced', 'settings', 'elementor' ],
 			],
+<<<<<<< HEAD
 			'performance' => [
 				'title' => esc_html__( 'Performance', 'elementor' ),
 				'url' => ElementorSettings::get_settings_tab_url( 'performance' ),
 				'keywords' => [ 'performance', 'settings', 'elementor' ],
 			],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'experiments' => [
 				'title' => esc_html__( 'Experiments', 'elementor' ),
 				'url' => ElementorSettings::get_settings_tab_url( 'experiments' ),

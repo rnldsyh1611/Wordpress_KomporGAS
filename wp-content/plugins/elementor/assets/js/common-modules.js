@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -2675,6 +2679,7 @@ var Scroll = /*#__PURE__*/function () {
     function scrollObserver(obj) {
       var lastScrollY = 0;
 
+<<<<<<< HEAD
       // Generating thresholds points along the animation height
       // More thresholds points = more trigger points of the callback
       var buildThresholds = function buildThresholds() {
@@ -2689,11 +2694,31 @@ var Scroll = /*#__PURE__*/function () {
           thresholds.push(0);
         }
         return thresholds;
+=======
+      // Generating threshholds points along the animation height
+      // More threshholds points = more trigger points of the callback
+      var buildThreshholds = function buildThreshholds() {
+        var sensitivityPercentage = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+        var threshholds = [];
+        if (sensitivityPercentage > 0 && sensitivityPercentage <= 100) {
+          var increment = 100 / sensitivityPercentage;
+          for (var i = 0; i <= 100; i += increment) {
+            threshholds.push(i / 100);
+          }
+        } else {
+          threshholds.push(0);
+        }
+        return threshholds;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       };
       var options = {
         root: obj.root || null,
         rootMargin: obj.offset || '0px',
+<<<<<<< HEAD
         threshold: buildThresholds(obj.sensitivity)
+=======
+        threshold: buildThreshholds(obj.sensitivity)
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       };
       function handleIntersect(entries) {
         var currentScrollY = entries[0].boundingClientRect.y,
@@ -2910,7 +2935,11 @@ var _default = /*#__PURE__*/function (_Marionette$LayoutVie) {
     key: "isFloatingButtonLibraryClose",
     value: function isFloatingButtonLibraryClose() {
       var _elementor$config, _elementor$config2, _elementor$config2$do;
+<<<<<<< HEAD
       return window.elementor && ((_elementor$config = elementor.config) === null || _elementor$config === void 0 ? void 0 : _elementor$config.admin_floating_button_admin_url) && 'floating-buttons' === ((_elementor$config2 = elementor.config) === null || _elementor$config2 === void 0 ? void 0 : (_elementor$config2$do = _elementor$config2.document) === null || _elementor$config2$do === void 0 ? void 0 : _elementor$config2$do.type) && (this.$el.closest('.dialog-lightbox-widget-content').find('.elementor-template-library-template-floating_button').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-preview').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-templates-empty').length);
+=======
+      return window.elementor && ((_elementor$config = elementor.config) === null || _elementor$config === void 0 ? void 0 : _elementor$config.admin_floating_button_admin_url) && 'floating-buttons' === ((_elementor$config2 = elementor.config) === null || _elementor$config2 === void 0 ? void 0 : (_elementor$config2$do = _elementor$config2.document) === null || _elementor$config2$do === void 0 ? void 0 : _elementor$config2$do.type) && (this.$el.closest('.dialog-lightbox-widget-content').find('.elementor-template-library-template-floating_button').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-preview').length);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }
   }]);
   return _default;

@@ -7,6 +7,10 @@ use Elementor\Core\Common\Modules\Ajax\Module as Ajax;
 use Elementor\Core\Common\Modules\Connect\Apps\Library;
 use Elementor\Core\Files\Uploads_Manager;
 use Elementor\Plugin;
+<<<<<<< HEAD
+=======
+use Elementor\Tracker;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Utils;
 use Plugin_Upgrader;
 
@@ -422,7 +426,11 @@ class Module extends BaseModule {
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		switch ( Utils::get_super_global_value( $_POST, 'action' ) ) {
 			case 'elementor_update_site_name':
+<<<<<<< HEAD
 				// If no value is passed for any reason, no need to update the site name.
+=======
+				// If no value is passed for any reason, no need ot update the site name.
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				$result = $this->maybe_update_site_name();
 				break;
 			case 'elementor_update_site_logo':
@@ -439,10 +447,13 @@ class Module extends BaseModule {
 				break;
 			case 'elementor_update_onboarding_option':
 				$result = $this->maybe_update_onboarding_db_option();
+<<<<<<< HEAD
 				break;
 			case 'elementor_save_onboarding_features':
 				// phpcs:ignore WordPress.Security.NonceVerification.Missing
 				$result = $this->get_component( 'features_usage' )->save_onboarding_features( Utils::get_super_global_value( $_POST, 'data' ) ?? [] );
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		}
 
 		if ( ! empty( $result ) ) {
@@ -455,8 +466,11 @@ class Module extends BaseModule {
 	}
 
 	public function __construct() {
+<<<<<<< HEAD
 		$this->add_component( 'features_usage', new Features_Usage() );
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		add_action( 'elementor/init', function() {
 			// Only load when viewing the onboarding app.
 			if ( Plugin::$instance->app->is_current() ) {
@@ -488,7 +502,10 @@ class Module extends BaseModule {
 				$this->maybe_handle_ajax();
 			}
 		} );
+<<<<<<< HEAD
 
 		$this->get_component( 'features_usage' )->register();
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 }

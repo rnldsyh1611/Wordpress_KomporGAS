@@ -37,6 +37,7 @@ class Module extends BaseModule {
 	public function __construct() {
 		parent::__construct();
 
+<<<<<<< HEAD
 		if ( is_admin() ) {
 			( new Preferences() )->register();
 		}
@@ -45,6 +46,8 @@ class Module extends BaseModule {
 			return;
 		}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$this->register_layout_experiment();
 
 		add_action( 'elementor/connect/apps/register', function ( ConnectModule $connect_module ) {
@@ -55,7 +58,10 @@ class Module extends BaseModule {
 			$handlers = [
 				'ai_get_user_information' => [ $this, 'ajax_ai_get_user_information' ],
 				'ai_get_remote_config' => [ $this, 'ajax_ai_get_remote_config' ],
+<<<<<<< HEAD
 				'ai_get_remote_frontend_config' => [ $this, 'ajax_ai_get_remote_frontend_config' ],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				'ai_get_completion_text' => [ $this, 'ajax_ai_get_completion_text' ],
 				'ai_get_excerpt' => [ $this, 'ajax_ai_get_excerpt' ],
 				'ai_get_featured_image' => [ $this, 'ajax_ai_get_featured_image' ],
@@ -68,7 +74,10 @@ class Module extends BaseModule {
 				'ai_get_text_to_image' => [ $this, 'ajax_ai_get_text_to_image' ],
 				'ai_get_image_to_image' => [ $this, 'ajax_ai_get_image_to_image' ],
 				'ai_get_image_to_image_mask' => [ $this, 'ajax_ai_get_image_to_image_mask' ],
+<<<<<<< HEAD
 				'ai_get_image_to_image_mask_cleanup' => [ $this, 'ajax_ai_get_image_to_image_mask_cleanup' ],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				'ai_get_image_to_image_outpainting' => [ $this, 'ajax_ai_get_image_to_image_outpainting' ],
 				'ai_get_image_to_image_upscale' => [ $this, 'ajax_ai_get_image_to_image_upscale' ],
 				'ai_get_image_to_image_remove_background' => [ $this, 'ajax_ai_get_image_to_image_remove_background' ],
@@ -233,6 +242,32 @@ class Module extends BaseModule {
 		);
 
 		wp_set_script_translations( 'elementor-ai', 'elementor' );
+<<<<<<< HEAD
+=======
+
+		if ( $this->get_ai_app()->is_connected() && ! empty( $config['is_get_started'] ) ) {
+			$remote_config = Utils::get_cached_callback( [ $this->get_ai_app(), 'get_remote_config' ], 'ai_remote_config-' . get_current_user_id(), HOUR_IN_SECONDS );
+
+			if ( ! is_wp_error( $remote_config ) && ! empty( $remote_config['config']['remoteIntegrationUrl'] ) ) {
+				wp_enqueue_script(
+					'elementor-ai-integration',
+					$remote_config['config']['remoteIntegrationUrl'],
+					[
+						'elementor-ai',
+					],
+					ELEMENTOR_VERSION,
+					true
+				);
+			}
+
+			add_filter( 'script_loader_tag', function( $tag, $handle ) {
+				if ( 'elementor-ai-integration' === $handle ) {
+					return str_replace( ' src', ' type="module" src', $tag );
+				}
+				return $tag;
+			}, 10, 2 );
+		}
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 
 	private function enqueue_layout_script() {
@@ -321,6 +356,7 @@ class Module extends BaseModule {
 
 		return $app->get_remote_config();
 	}
+<<<<<<< HEAD
 
 	public function ajax_ai_get_remote_frontend_config( $data ) {
 		$callback = function () use ( $data ) {
@@ -330,6 +366,8 @@ class Module extends BaseModule {
 		return Utils::get_cached_callback( $callback, 'ai_remote_frontend_config-' . get_current_user_id(), HOUR_IN_SECONDS );
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public function verify_upload_permissions( $data ) {
 		$referer = wp_get_referer();
 
@@ -794,6 +832,7 @@ class Module extends BaseModule {
 			'usage' => $result['usage'],
 		];
 	}
+<<<<<<< HEAD
 	public function ajax_ai_get_image_to_image_mask_cleanup( $data ) {
 		$this->verify_upload_permissions( $data );
 
@@ -832,6 +871,8 @@ class Module extends BaseModule {
 		];
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public function ajax_ai_get_image_to_image_outpainting( $data ) {
 		$this->verify_upload_permissions( $data );
 

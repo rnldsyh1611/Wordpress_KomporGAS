@@ -739,6 +739,7 @@ class Admin extends App {
 		Plugin::$instance->common->add_template( ELEMENTOR_PATH . 'includes/admin-templates/new-template.php' );
 	}
 
+<<<<<<< HEAD
 	public function add_new_floating_elements_template() {
 		Plugin::$instance->common->add_template( ELEMENTOR_PATH . 'includes/admin-templates/new-floating-elements.php' );
 	}
@@ -757,6 +758,8 @@ class Admin extends App {
 		wp_set_script_translations( 'elementor-floating-elements-modal', 'elementor' );
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * @access public
 	 */
@@ -799,6 +802,7 @@ class Admin extends App {
 		wp_set_script_translations( 'elementor-beta-tester', 'elementor' );
 	}
 
+<<<<<<< HEAD
 	public function init_floating_elements() {
 		$screens = [
 			'elementor_library_page_e-floating-buttons' => true,
@@ -813,6 +817,8 @@ class Admin extends App {
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_new_floating_elements_scripts' ] );
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * @access public
 	 */
@@ -905,7 +911,10 @@ class Admin extends App {
 		add_action( 'admin_action_elementor_new_post', [ $this, 'admin_action_new_post' ] );
 
 		add_action( 'current_screen', [ $this, 'init_new_template' ] );
+<<<<<<< HEAD
 		add_action( 'current_screen', [ $this, 'init_floating_elements' ] );
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		add_action( 'current_screen', [ $this, 'init_beta_tester' ] );
 
 		add_action( 'in_plugin_update_message-' . ELEMENTOR_PLUGIN_BASE, function( $plugin_data ) {

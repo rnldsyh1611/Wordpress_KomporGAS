@@ -29,7 +29,11 @@ class Utils {
 		switch ( $trigger['action'] ) {
 			case 'isFlexContainerInactive':
 				return new IsFlexContainerInactive();
+<<<<<<< HEAD
 			case 'aiStarted':
+=======
+			case 'aiStared':
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				return new AiStarted();
 			default:
 				return false;

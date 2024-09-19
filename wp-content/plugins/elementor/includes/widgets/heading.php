@@ -95,6 +95,7 @@ class Widget_Heading extends Widget_Base implements Sanitizable {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -109,6 +110,8 @@ class Widget_Heading extends Widget_Base implements Sanitizable {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Remove data attributes from the html.
 	 *
 	 * @param string $content Heading title

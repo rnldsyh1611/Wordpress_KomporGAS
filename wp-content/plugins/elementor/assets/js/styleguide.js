@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -29,9 +33,15 @@ module.exports = Marionette.Behavior.extend({
     if (hasDefault) {
       return false;
     }
+<<<<<<< HEAD
     var isFeatureAvailableToUser = elementor.helpers.hasPro() && !elementor.helpers.hasProAndNotConnected(),
       hasTags = this.getOption('tags').length > 0;
     return !isFeatureAvailableToUser || hasTags;
+=======
+    var isFeatureAvalibleToUser = elementor.helpers.hasPro() && !elementor.helpers.hasProAndNotConnected(),
+      hasTags = this.getOption('tags').length > 0;
+    return !isFeatureAvalibleToUser || hasTags;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   },
   renderTools: function renderTools() {
     var _this = this;

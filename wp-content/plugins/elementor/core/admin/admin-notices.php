@@ -350,7 +350,12 @@ class Admin_Notices extends Module {
 
 		$experiments = Plugin::$instance->experiments;
 		$is_all_performance_features_active = (
+<<<<<<< HEAD
 			$experiments->is_feature_active( 'e_element_cache' ) &&
+=======
+			$experiments->is_feature_active( 'e_lazyload' ) &&
+			$experiments->is_feature_active( 'e_optimized_css_loading' ) &&
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			$experiments->is_feature_active( 'e_font_icon_svg' )
 		);
 

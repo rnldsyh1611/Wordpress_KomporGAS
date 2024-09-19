@@ -317,7 +317,11 @@ class Module extends BaseModule {
 		}
 
 		// Any slug prefixes need to be removed from the post link.
+<<<<<<< HEAD
 		return trailingslashit( get_home_url() ) . trailingslashit( $post->post_name );
+=======
+		return get_home_url() . '/' . $post->post_name . '/';
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 
 	/**

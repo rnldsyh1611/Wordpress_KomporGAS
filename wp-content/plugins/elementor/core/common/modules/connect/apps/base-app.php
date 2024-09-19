@@ -471,7 +471,11 @@ abstract class Base_App {
 			$args
 		);
 
+<<<<<<< HEAD
 		if ( is_wp_error( $response ) && empty( $options['with_error_data'] ) ) {
+=======
+		if ( is_wp_error( $response ) ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			// PHPCS - the variable $response does not contain a user input value.
 			wp_die( $response, [ 'back_link' => true ] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
@@ -661,10 +665,13 @@ abstract class Base_App {
 					<?php echo wp_json_encode( $data ); ?>
 				);
 
+<<<<<<< HEAD
 				opener.dispatchEvent( new CustomEvent( 'elementor/connect/success' ),
 					<?php echo wp_json_encode( $data ); ?>
 				);
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				window.close();
 				opener.focus();
 			} else {

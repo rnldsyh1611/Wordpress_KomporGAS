@@ -2,6 +2,10 @@
 namespace Elementor\Modules\LazyLoad;
 
 use Elementor\Core\Base\Module as BaseModule;
+<<<<<<< HEAD
+=======
+use Elementor\Core\Experiments\Manager as Experiments_Manager;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -10,10 +14,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Module extends BaseModule {
 
+<<<<<<< HEAD
+=======
+	const EXPERIMENT_NAME = 'e_lazyload';
+
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public function get_name() {
 		return 'lazyload';
 	}
 
+<<<<<<< HEAD
+=======
+	public static function get_experimental_data() {
+		return [
+			'name' => static::EXPERIMENT_NAME,
+			'title' => esc_html__( 'Lazy Load Background Images', 'elementor' ),
+			'tag' => esc_html__( 'Performance', 'elementor' ),
+			'description' => esc_html__( 'Lazy loading images that are not in the viewport improves initial page load performance and user experience. By activating this experiment all background images except the first one on your page will be lazy loaded to improve your LCP score', 'elementor' ),
+			'release_status' => Experiments_Manager::RELEASE_STATUS_STABLE,
+			'default' => Experiments_Manager::STATE_ACTIVE,
+			'generator_tag' => true,
+		];
+	}
+
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public function __construct() {
 		parent::__construct();
 
@@ -21,10 +45,13 @@ class Module extends BaseModule {
 	}
 
 	public function init() {
+<<<<<<< HEAD
 		if ( ! $this->is_lazy_load_background_images_enabled() ) {
 			return;
 		}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		add_action( 'wp_head', function() {
 			if ( ! $this->should_lazyload() ) {
 				return;
@@ -89,8 +116,11 @@ class Module extends BaseModule {
 	private function should_lazyload() {
 		return ! is_admin() && ! Plugin::$instance->preview->is_preview_mode() && ! Plugin::$instance->editor->is_edit_mode();
 	}
+<<<<<<< HEAD
 
 	private static function is_lazy_load_background_images_enabled(): bool {
 		return '1' === get_option( 'elementor_lazy_load_background_images', '1' );
 	}
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 }

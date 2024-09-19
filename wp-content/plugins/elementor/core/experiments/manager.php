@@ -344,9 +344,16 @@ class Manager extends Base_Object {
 				esc_html__( 'Learn more', 'elementor' )
 			),
 			'release_status' => self::RELEASE_STATUS_STABLE,
+<<<<<<< HEAD
 			'default' => self::STATE_INACTIVE,
 			static::TYPE_HIDDEN => true,
 			'mutable' => false,
+=======
+			'new_site' => [
+				'default_active' => true,
+				'minimum_installation_version' => '3.3.0',
+			],
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'generator_tag' => true,
 		] );
 
@@ -469,6 +476,7 @@ class Manager extends Base_Object {
 		] );
 
 		$this->add_feature( [
+<<<<<<< HEAD
 			'name' => 'e_swiper_css_conditional_loading',
 			'title' => esc_html__( 'Conditionally load Swiper CSS files', 'elementor' ),
 			static::TYPE_HIDDEN => true,
@@ -476,6 +484,8 @@ class Manager extends Base_Object {
 		] );
 
 		$this->add_feature( [
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'name' => 'e_onboarding',
 			'title' => esc_html__( 'Plugin Onboarding', 'elementor' ),
 			'description' => esc_html__( 'New plugin onboarding.', 'elementor' ),

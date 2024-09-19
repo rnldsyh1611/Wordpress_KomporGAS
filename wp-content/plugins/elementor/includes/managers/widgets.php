@@ -553,6 +553,7 @@ class Widgets_Manager {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Widgets with styles.
 	 *
 	 * This method returns the list of all the widgets in the `/includes/`
@@ -608,6 +609,8 @@ class Widgets_Manager {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Enqueue widgets scripts.
 	 *
 	 * Enqueue all the scripts defined as a dependency for each widget.

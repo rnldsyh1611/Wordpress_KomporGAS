@@ -66,6 +66,7 @@ class Social_Network_Provider {
 		return '';
 	}
 
+<<<<<<< HEAD
 	public static function get_text_mapping( string $platform ): string {
 		static::init_social_networks_array_if_empty();
 
@@ -76,6 +77,8 @@ class Social_Network_Provider {
 		return '';
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public static function get_social_networks_text( $providers = [] ): array {
 		static::init_social_networks_array_if_empty();
 

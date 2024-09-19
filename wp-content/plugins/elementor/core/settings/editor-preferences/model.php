@@ -3,8 +3,13 @@
 namespace Elementor\Core\Settings\EditorPreferences;
 
 use Elementor\Controls_Manager;
+<<<<<<< HEAD
 use Elementor\Core\Settings\Base\Model as BaseModel;
 use Elementor\Modules\EditorAppBar\Module as AppBarModule;
+=======
+use Elementor\Core\Editor\Editor;
+use Elementor\Core\Settings\Base\Model as BaseModel;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Plugin;
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -112,7 +117,11 @@ class Model extends BaseModel {
 			]
 		);
 
+<<<<<<< HEAD
 		if ( ! Plugin::$instance->experiments->is_feature_active( AppBarModule::EXPERIMENT_NAME ) ) {
+=======
+		if ( ! Plugin::$instance->experiments->is_feature_active( Editor::EDITOR_V2_EXPERIMENT_NAME ) ) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 			$this->add_control(
 				'default_device_view',

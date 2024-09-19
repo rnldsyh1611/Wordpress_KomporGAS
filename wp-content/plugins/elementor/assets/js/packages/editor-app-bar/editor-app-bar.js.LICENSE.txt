@@ -1,15 +1,24 @@
 /*! @elementor/editor */
 
+<<<<<<< HEAD
 /*! @elementor/editor-documents */
 
 /*! @elementor/editor-responsive */
+=======
+/*! @elementor/editor-app-bar-ui */
+
+/*! @elementor/editor-documents */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 /*! @elementor/editor-v1-adapters */
 
 /*! @elementor/icons */
 
+<<<<<<< HEAD
 /*! @elementor/locations */
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /*! @elementor/ui */
 
 /*! @wordpress/i18n */
@@ -36,19 +45,28 @@
   !*** external ["elementorV2","editor"] ***!
   \*****************************************/
 
+<<<<<<< HEAD
 /*!********************************************!*\
   !*** external ["elementorV2","locations"] ***!
   \********************************************/
+=======
+/*!*************************************************!*\
+  !*** external ["elementorV2","editorAppBarUi"] ***!
+  \*************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 /*!**************************************************!*\
   !*** external ["elementorV2","editorDocuments"] ***!
   \**************************************************/
 
 /*!***************************************************!*\
+<<<<<<< HEAD
   !*** external ["elementorV2","editorResponsive"] ***!
   \***************************************************/
 
 /*!***************************************************!*\
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   !*** external ["elementorV2","editorV1Adapters"] ***!
   \***************************************************/
 

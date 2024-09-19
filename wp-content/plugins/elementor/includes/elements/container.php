@@ -694,6 +694,7 @@ class Container extends Element_Base {
 			]
 		);
 
+<<<<<<< HEAD
 		$this->add_control(
 			'handle_slideshow_asset_loading',
 			[
@@ -717,6 +718,8 @@ class Container extends Element_Base {
 			]
 		);
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$this->end_controls_tab();
 
 		/**
@@ -1195,6 +1198,7 @@ class Container extends Element_Base {
 					'options' => $shapes_options,
 					'render_type' => 'none',
 					'frontend_available' => true,
+<<<<<<< HEAD
 					'assets' => [
 						'styles' => [
 							[
@@ -1211,6 +1215,8 @@ class Container extends Element_Base {
 							],
 						],
 					],
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				]
 			);
 

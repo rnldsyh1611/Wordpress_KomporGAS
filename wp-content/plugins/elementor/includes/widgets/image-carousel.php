@@ -78,6 +78,7 @@ class Widget_Image_Carousel extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -92,6 +93,8 @@ class Widget_Image_Carousel extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Get widget upsale data.
 	 *
 	 * Retrieve the widget promotion data.
@@ -986,7 +989,11 @@ class Widget_Image_Carousel extends Widget_Base {
 		?>
 		<div <?php $this->print_render_attribute_string( 'carousel-wrapper' ); ?>>
 			<div <?php $this->print_render_attribute_string( 'carousel' ); ?>>
+<<<<<<< HEAD
 				<?php // PHPCS - $slides contains the slides content, all the relevant content is escaped above. ?>
+=======
+				<?php // PHPCS - $slides contains the slides content, all the relevent content is escaped above. ?>
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				<?php echo implode( '', $slides ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</div>
 			<?php if ( 1 < $slides_count ) : ?>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -16,8 +20,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_memoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/memoize */ "../node_modules/@emotion/memoize/dist/emotion-memoize.esm.js");
 
 
+<<<<<<< HEAD
 // eslint-disable-next-line no-undef
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|disableRemotePlayback|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
+=======
+var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 var isPropValid = /* #__PURE__ */(0,_emotion_memoize__WEBPACK_IMPORTED_MODULE_0__["default"])(function (prop) {
   return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111
@@ -2524,7 +2532,11 @@ var _app = _interopRequireDefault(__webpack_require__(/*! ./app */ "../modules/a
 var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _aiExcerpt = _interopRequireDefault(__webpack_require__(/*! ./ai-excerpt */ "../modules/ai/assets/js/editor/ai-excerpt.js"));
 var _useFeaturedImagePrompt = _interopRequireDefault(__webpack_require__(/*! ./hooks/use-featured-image-prompt */ "../modules/ai/assets/js/editor/hooks/use-featured-image-prompt.js"));
+<<<<<<< HEAD
 var _components = __webpack_require__(/*! ../media-library/components */ "../modules/ai/assets/js/media-library/components.js");
+=======
+var _componenets = __webpack_require__(/*! ../media-library/componenets */ "../modules/ai/assets/js/media-library/componenets.js");
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _requestsIds = __webpack_require__(/*! ./context/requests-ids */ "../modules/ai/assets/js/editor/context/requests-ids.js");
 var _react2 = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
@@ -2620,7 +2632,11 @@ var AiBehavior = /*#__PURE__*/function (_Marionette$Behavior) {
       };
       if ('post_featured_image' === this.options.context.controlName) {
         var FEATURED_IMAGE_RATIO = '4:3';
+<<<<<<< HEAD
         return /*#__PURE__*/_react2.default.createElement(_components.AIMediaGenerateApp, {
+=======
+        return /*#__PURE__*/_react2.default.createElement(_componenets.AIMediaGenerateApp, {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           onClose: onClose,
           predefinedPrompt: this.getTextualContent(),
           textToImageHook: _useFeaturedImagePrompt.default,
@@ -2749,6 +2765,10 @@ var AIExcerpt = function AIExcerpt(_ref) {
       credits: credits
     }),
     newExcerpt = _useExcerptPrompt.data,
+<<<<<<< HEAD
+=======
+    isLoadingExcerpt = _useExcerptPrompt.isLoading,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     error = _useExcerptPrompt.error,
     send = _useExcerptPrompt.send;
   var _useRequestIds = (0, _requestsIds.useRequestIds)(),
@@ -2765,6 +2785,7 @@ var AIExcerpt = function AIExcerpt(_ref) {
     }
   }, [isLoadingUserInfo, initialUsagePercentage, isInitUsageDone, updateUsagePercentage]);
   var generateExcerptOnce = (0, _react.useRef)(false);
+<<<<<<< HEAD
   var _useState3 = (0, _react.useState)(true),
     _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
     isLoadingCombined = _useState4[0],
@@ -2772,6 +2793,12 @@ var AIExcerpt = function AIExcerpt(_ref) {
   var initHook = function initHook() {
     return {
       isLoading: isLoadingCombined,
+=======
+  var isLoading = isLoadingExcerpt || isLoadingUserInfo || !isInitUsageDone;
+  var initHook = function initHook() {
+    return {
+      isLoading: isLoading,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       isConnected: isConnected,
       isGetStarted: isGetStarted,
       connectUrl: connectUrl,
@@ -2793,8 +2820,11 @@ var AIExcerpt = function AIExcerpt(_ref) {
           _context.next = 4;
           return send({
             content: postTextualContent
+<<<<<<< HEAD
           }).finally(function () {
             setIsLoadingCombined(false);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           });
         case 4:
         case "end":
@@ -2803,6 +2833,7 @@ var AIExcerpt = function AIExcerpt(_ref) {
     }, _callee);
   })), [postTextualContent, send]);
   (0, _element.useEffect)(function () {
+<<<<<<< HEAD
     if (!generateExcerptOnce.current && isConnected && isGetStarted) {
       fetchAiExcerpt();
     }
@@ -2812,6 +2843,12 @@ var AIExcerpt = function AIExcerpt(_ref) {
       setIsLoadingCombined(false);
     }
   }, [isConnected, isGetStarted, isLoadingUserInfo]);
+=======
+    if (!generateExcerptOnce.current && isConnected && !(newExcerpt !== null && newExcerpt !== void 0 && newExcerpt.result)) {
+      fetchAiExcerpt();
+    }
+  }, [fetchAiExcerpt, isConnected, newExcerpt]);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var isRTL = elementorCommon.config.isRTL;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_app.default, {
     type: 'text',
@@ -2877,9 +2914,13 @@ function isElementInViewport(el) {
   return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 }
 var AiGetStartedConnect = function AiGetStartedConnect(_ref) {
+<<<<<<< HEAD
   var onClose = _ref.onClose,
     source = _ref.source,
     newHashOnConnect = _ref.newHashOnConnect;
+=======
+  var onClose = _ref.onClose;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var _useUserInfo = (0, _useUserInfo2.default)(),
     isLoading = _useUserInfo.isLoading,
     isConnected = _useUserInfo.isConnected,
@@ -2898,9 +2939,12 @@ var AiGetStartedConnect = function AiGetStartedConnect(_ref) {
           behavior: 'smooth'
         });
       }
+<<<<<<< HEAD
       if (newHashOnConnect) {
         window.location.hash = newHashOnConnect;
       }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       setTimeout(function () {
         setShouldShowPromotion(true);
       }, 1000);
@@ -2968,7 +3012,10 @@ var AiGetStartedConnect = function AiGetStartedConnect(_ref) {
       canvasOffsetY = _document$querySelect.y;
     return /*#__PURE__*/_react.default.createElement(_aiPromotionInfotipWrapper.default, {
       "test-id": "ai-promotion-infotip-wrapper",
+<<<<<<< HEAD
       source: source,
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       anchor: element,
       clickAction: function clickAction() {
         element.click();
@@ -2990,9 +3037,13 @@ var AiGetStartedConnect = function AiGetStartedConnect(_ref) {
 };
 exports.AiGetStartedConnect = AiGetStartedConnect;
 AiGetStartedConnect.propTypes = {
+<<<<<<< HEAD
   onClose: _propTypes.default.func.isRequired,
   source: _propTypes.default.string.isRequired,
   newHashOnConnect: _propTypes.default.string
+=======
+  onClose: _propTypes.default.func.isRequired
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 
 /***/ }),
@@ -3010,7 +3061,11 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/inte
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
+<<<<<<< HEAD
 exports.uploadImage = exports.toggleFavoriteHistoryItem = exports.setStatusFeedback = exports.setGetStarted = exports.getUserInformation = exports.getTextToImageGeneration = exports.getRemoteFrontendConfig = exports.getRemoteConfig = exports.getLayoutPromptEnhanced = exports.getImageToImageUpscale = exports.getImageToImageReplaceBackground = exports.getImageToImageRemoveText = exports.getImageToImageRemoveBackground = exports.getImageToImageOutPainting = exports.getImageToImageMaskGeneration = exports.getImageToImageMaskCleanup = exports.getImageToImageGeneration = exports.getImagePromptEnhanced = exports.getHistory = exports.getFeaturedImage = exports.getExcerpt = exports.getEditText = exports.getCustomCode = exports.getCustomCSS = exports.getCompletionText = exports.generateLayout = exports.deleteHistoryItem = void 0;
+=======
+exports.uploadImage = exports.toggleFavoriteHistoryItem = exports.setStatusFeedback = exports.setGetStarted = exports.getUserInformation = exports.getTextToImageGeneration = exports.getRemoteConfig = exports.getLayoutPromptEnhanced = exports.getImageToImageUpscale = exports.getImageToImageReplaceBackground = exports.getImageToImageRemoveText = exports.getImageToImageRemoveBackground = exports.getImageToImageOutPainting = exports.getImageToImageMaskGeneration = exports.getImageToImageGeneration = exports.getImagePromptEnhanced = exports.getHistory = exports.getFeaturedImage = exports.getExcerpt = exports.getEditText = exports.getCustomCode = exports.getCustomCSS = exports.getCompletionText = exports.generateLayout = exports.deleteHistoryItem = void 0;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -3044,12 +3099,15 @@ var getRemoteConfig = function getRemoteConfig() {
   return request('ai_get_remote_config');
 };
 exports.getRemoteConfig = getRemoteConfig;
+<<<<<<< HEAD
 var getRemoteFrontendConfig = function getRemoteFrontendConfig(payload, immediately) {
   return request('ai_get_remote_frontend_config', {
     payload: payload
   }, immediately);
 };
 exports.getRemoteFrontendConfig = getRemoteFrontendConfig;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var getCompletionText = function getCompletionText(payload) {
   return request('ai_get_completion_text', {
     payload: payload
@@ -3108,12 +3166,15 @@ var getImageToImageGeneration = function getImageToImageGeneration(payload) {
   });
 };
 exports.getImageToImageGeneration = getImageToImageGeneration;
+<<<<<<< HEAD
 var getImageToImageMaskCleanup = function getImageToImageMaskCleanup(payload) {
   return request('ai_get_image_to_image_mask_cleanup', {
     payload: payload
   });
 };
 exports.getImageToImageMaskCleanup = getImageToImageMaskCleanup;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var getImageToImageMaskGeneration = function getImageToImageMaskGeneration(payload) {
   return request('ai_get_image_to_image_mask', {
     payload: payload
@@ -3359,10 +3420,16 @@ var AiPromotionInfotipWrapper = function AiPromotionInfotipWrapper(_ref) {
     clickAction = _ref.clickAction,
     placement = _ref.placement,
     offset = _ref.offset,
+<<<<<<< HEAD
     mainActionText = _ref.mainActionText,
     source = _ref.source;
   var focusOutListener = (0, _focusOutListener.useFocusOutListener)();
   var _useIntroduction = (0, _useIntroduction2.default)("ai_get_started_introduction_".concat(controlType, "_").concat(source)),
+=======
+    mainActionText = _ref.mainActionText;
+  var focusOutListener = (0, _focusOutListener.useFocusOutListener)();
+  var _useIntroduction = (0, _useIntroduction2.default)("ai_get_started_introduction_".concat(controlType)),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     isViewed = _useIntroduction.isViewed,
     markAsViewed = _useIntroduction.markAsViewed;
   if (isViewed) {
@@ -3417,8 +3484,12 @@ AiPromotionInfotipWrapper.propTypes = {
   clickAction: PropTypes.func,
   placement: PropTypes.string,
   offset: PropTypes.object,
+<<<<<<< HEAD
   mainActionText: PropTypes.string,
   source: PropTypes.string
+=======
+  mainActionText: PropTypes.string
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 var _default = AiPromotionInfotipWrapper;
 exports["default"] = _default;
@@ -6232,9 +6303,14 @@ var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(/*! @
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../node_modules/@babel/runtime/helpers/extends.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
+<<<<<<< HEAD
 var _featuresEnum = __webpack_require__(/*! ../helpers/features-enum */ "../modules/ai/assets/js/editor/helpers/features-enum.js");
 var _excluded = ["onClose", "usagePercentage", "hasSubscription", "feature"];
 var _title, _url, _title2, _url2, _title3, _url3;
+=======
+var _excluded = ["onClose", "usagePercentage", "hasSubscription"];
+var _title, _description, _url, _title2, _description2, _url2, _title3, _description3, _url3;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var KEY_SUBSCRIPTION = 'subscription';
 var KEY_NO_SUBSCRIPTION = 'noSubscription';
 var getUsageTitle = function getUsageTitle(percentage) {
@@ -6245,6 +6321,7 @@ var CREDITS_95_USAGE_TITLE = getUsageTitle('95%');
 var CREDITS_80_USAGE_TITLE = getUsageTitle('80%');
 var CREDITS_75_USAGE_TITLE = getUsageTitle('75%');
 var DESCRIPTION_SUBSCRIPTION = __('Get maximum access.', 'elementor');
+<<<<<<< HEAD
 var FEATURES = Object.keys(_featuresEnum.FREE_TRIAL_FEATURES_NAMES);
 var getDescriptionNoSubscription = function getDescriptionNoSubscription(excludedFeature) {
   var filteredFeatures = FEATURES.filter(function (feature) {
@@ -6259,16 +6336,31 @@ var getDescriptionNoSubscription = function getDescriptionNoSubscription(exclude
 var alertConfigs = [{
   threshold: 95,
   title: (_title = {}, (0, _defineProperty2.default)(_title, KEY_SUBSCRIPTION, CREDITS_95_USAGE_TITLE), (0, _defineProperty2.default)(_title, KEY_NO_SUBSCRIPTION, CREDITS_95_USAGE_TITLE), _title),
+=======
+var DESCRIPTION_NO_SUBSCRIPTION = __('Upgrade now to keep using this feature. You still have credits for other AI features (Text, Code, Images, Containers, etc.)', 'elementor');
+var alertConfigs = [{
+  threshold: 95,
+  title: (_title = {}, (0, _defineProperty2.default)(_title, KEY_SUBSCRIPTION, CREDITS_95_USAGE_TITLE), (0, _defineProperty2.default)(_title, KEY_NO_SUBSCRIPTION, CREDITS_95_USAGE_TITLE), _title),
+  description: (_description = {}, (0, _defineProperty2.default)(_description, KEY_SUBSCRIPTION, DESCRIPTION_SUBSCRIPTION), (0, _defineProperty2.default)(_description, KEY_NO_SUBSCRIPTION, DESCRIPTION_NO_SUBSCRIPTION), _description),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   url: (_url = {}, (0, _defineProperty2.default)(_url, KEY_SUBSCRIPTION, 'https://go.elementor.com/ai-banner-paid-95-limit-reach/'), (0, _defineProperty2.default)(_url, KEY_NO_SUBSCRIPTION, 'https://go.elementor.com/ai-banner-free-95-limit-reach/'), _url),
   color: 'error'
 }, {
   threshold: 80,
   title: (_title2 = {}, (0, _defineProperty2.default)(_title2, KEY_SUBSCRIPTION, CREDITS_80_USAGE_TITLE), (0, _defineProperty2.default)(_title2, KEY_NO_SUBSCRIPTION, CREDITS_80_USAGE_TITLE), _title2),
+<<<<<<< HEAD
+=======
+  description: (_description2 = {}, (0, _defineProperty2.default)(_description2, KEY_SUBSCRIPTION, DESCRIPTION_SUBSCRIPTION), (0, _defineProperty2.default)(_description2, KEY_NO_SUBSCRIPTION, DESCRIPTION_NO_SUBSCRIPTION), _description2),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   url: (_url2 = {}, (0, _defineProperty2.default)(_url2, KEY_SUBSCRIPTION, 'https://go.elementor.com/ai-banner-paid-80-limit-reach/'), (0, _defineProperty2.default)(_url2, KEY_NO_SUBSCRIPTION, 'https://go.elementor.com/ai-banner-free-80-limit-reach/'), _url2),
   color: 'warning'
 }, {
   threshold: 75,
   title: (_title3 = {}, (0, _defineProperty2.default)(_title3, KEY_SUBSCRIPTION, CREDITS_75_USAGE_TITLE), (0, _defineProperty2.default)(_title3, KEY_NO_SUBSCRIPTION, CREDITS_75_USAGE_TITLE), _title3),
+<<<<<<< HEAD
+=======
+  description: (_description3 = {}, (0, _defineProperty2.default)(_description3, KEY_SUBSCRIPTION, DESCRIPTION_SUBSCRIPTION), (0, _defineProperty2.default)(_description3, KEY_NO_SUBSCRIPTION, DESCRIPTION_NO_SUBSCRIPTION), _description3),
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   url: (_url3 = {}, (0, _defineProperty2.default)(_url3, KEY_SUBSCRIPTION, 'https://go.elementor.com/ai-banner-paid-80-limit-reach/'), (0, _defineProperty2.default)(_url3, KEY_NO_SUBSCRIPTION, 'https://go.elementor.com/ai-banner-free-80-limit-reach/'), _url3),
   color: 'warning'
 }];
@@ -6282,11 +6374,17 @@ var UpgradeButton = function UpgradeButton(props) {
   }, props), __('Upgrade now', 'elementor'));
 };
 var UsageLimitAlert = function UsageLimitAlert(_ref) {
+<<<<<<< HEAD
   var _description;
   var onClose = _ref.onClose,
     usagePercentage = _ref.usagePercentage,
     hasSubscription = _ref.hasSubscription,
     feature = _ref.feature,
+=======
+  var onClose = _ref.onClose,
+    usagePercentage = _ref.usagePercentage,
+    hasSubscription = _ref.hasSubscription,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     props = (0, _objectWithoutProperties2.default)(_ref, _excluded);
   var config = alertConfigs.find(function (_ref2) {
     var threshold = _ref2.threshold;
@@ -6296,8 +6394,13 @@ var UsageLimitAlert = function UsageLimitAlert(_ref) {
     return null;
   }
   var subscriptionType = hasSubscription ? KEY_SUBSCRIPTION : KEY_NO_SUBSCRIPTION;
+<<<<<<< HEAD
   var description = (_description = {}, (0, _defineProperty2.default)(_description, KEY_SUBSCRIPTION, DESCRIPTION_SUBSCRIPTION), (0, _defineProperty2.default)(_description, KEY_NO_SUBSCRIPTION, getDescriptionNoSubscription(feature)), _description);
   var title = config.title,
+=======
+  var title = config.title,
+    description = config.description,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     url = config.url,
     color = config.color;
   var handleUpgradeClick = function handleUpgradeClick() {
@@ -6314,8 +6417,12 @@ var UsageLimitAlert = function UsageLimitAlert(_ref) {
 UsageLimitAlert.propTypes = {
   onClose: PropTypes.func,
   usagePercentage: PropTypes.number,
+<<<<<<< HEAD
   hasSubscription: PropTypes.bool,
   feature: PropTypes.string
+=======
+  hasSubscription: PropTypes.bool
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 var _default = UsageLimitAlert;
 exports["default"] = _default;
@@ -6344,8 +6451,12 @@ var _useUpgradeMessage2 = _interopRequireDefault(__webpack_require__(/*! ../hook
 var UsageMessages = function UsageMessages(_ref) {
   var hasSubscription = _ref.hasSubscription,
     usagePercentage = _ref.usagePercentage,
+<<<<<<< HEAD
     sx = _ref.sx,
     feature = _ref.feature;
+=======
+    sx = _ref.sx;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var _useUpgradeMessage = (0, _useUpgradeMessage2.default)({
       usagePercentage: usagePercentage,
       hasSubscription: hasSubscription
@@ -6358,15 +6469,23 @@ var UsageMessages = function UsageMessages(_ref) {
   }), /*#__PURE__*/_react.default.createElement(_usageLimitAlert.default, {
     hasSubscription: hasSubscription,
     usagePercentage: usagePercentage,
+<<<<<<< HEAD
     sx: sx,
     feature: feature
+=======
+    sx: sx
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }));
 };
 UsageMessages.propTypes = {
   hasSubscription: PropTypes.bool,
   usagePercentage: PropTypes.number,
+<<<<<<< HEAD
   sx: PropTypes.object,
   feature: PropTypes.string
+=======
+  sx: PropTypes.object
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 var _default = UsageMessages;
 exports["default"] = _default;
@@ -6690,6 +6809,7 @@ exports.daysDiff = daysDiff;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/ai/assets/js/editor/helpers/features-enum.js":
 /*!***************************************************************!*\
   !*** ../modules/ai/assets/js/editor/helpers/features-enum.js ***!
@@ -6714,6 +6834,8 @@ exports.FREE_TRIAL_FEATURES_NAMES = FREE_TRIAL_FEATURES_NAMES;
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/ai/assets/js/editor/helpers/focus-out-listener.js":
 /*!********************************************************************!*\
   !*** ../modules/ai/assets/js/editor/helpers/focus-out-listener.js ***!
@@ -7945,6 +8067,7 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/ai/assets/js/editor/icons/cleanup-icon.js":
 /*!************************************************************!*\
   !*** ../modules/ai/assets/js/editor/icons/cleanup-icon.js ***!
@@ -7978,6 +8101,8 @@ exports["default"] = _default;
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/ai/assets/js/editor/icons/code-icon.js":
 /*!*********************************************************!*\
   !*** ../modules/ai/assets/js/editor/icons/code-icon.js ***!
@@ -8815,6 +8940,7 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/ai/assets/js/editor/integration/navigator/apply-ai-titles-to-navigator-behaviour.js":
 /*!******************************************************************************************************!*\
   !*** ../modules/ai/assets/js/editor/integration/navigator/apply-ai-titles-to-navigator-behaviour.js ***!
@@ -8878,6 +9004,8 @@ exports["default"] = _default;
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/ai/assets/js/editor/layout-app-wrapper.js":
 /*!************************************************************!*\
   !*** ../modules/ai/assets/js/editor/layout-app-wrapper.js ***!
@@ -9100,13 +9228,19 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+<<<<<<< HEAD
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ "../node_modules/@babel/runtime/regenerator/index.js"));
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "../node_modules/@babel/runtime/helpers/classCallCheck.js"));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ "../node_modules/@babel/runtime/helpers/createClass.js"));
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
+<<<<<<< HEAD
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _aiBehavior = _interopRequireDefault(__webpack_require__(/*! ./ai-behavior */ "../modules/ai/assets/js/editor/ai-behavior.js"));
 var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _constants = __webpack_require__(/*! ./pages/form-media/constants */ "../modules/ai/assets/js/editor/pages/form-media/constants/index.js");
@@ -9114,6 +9248,7 @@ var _react2 = _interopRequireDefault(__webpack_require__(/*! elementor-utils/rea
 var _layoutAppWrapper = _interopRequireDefault(__webpack_require__(/*! ./layout-app-wrapper */ "../modules/ai/assets/js/editor/layout-app-wrapper.js"));
 var _aiGetStartedConnect = __webpack_require__(/*! ./ai-get-started-connect */ "../modules/ai/assets/js/editor/ai-get-started-connect.js");
 var _editorIntegration = __webpack_require__(/*! ./utils/editor-integration */ "../modules/ai/assets/js/editor/utils/editor-integration.js");
+<<<<<<< HEAD
 var _api = __webpack_require__(/*! ./api */ "../modules/ai/assets/js/editor/api/index.js");
 var _requestsIds = __webpack_require__(/*! ./context/requests-ids */ "../modules/ai/assets/js/editor/context/requests-ids.js");
 var _applyAiTitlesToNavigatorBehaviour = _interopRequireDefault(__webpack_require__(/*! ./integration/navigator/apply-ai-titles-to-navigator-behaviour */ "../modules/ai/assets/js/editor/integration/navigator/apply-ai-titles-to-navigator-behaviour.js"));
@@ -9162,6 +9297,10 @@ setTimeout( /*#__PURE__*/(0, _asyncToGenerator2.default)( /*#__PURE__*/_regenera
     }
   }, _callee, null, [[3, 11]]);
 })), 0);
+=======
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var Module = /*#__PURE__*/function (_elementorModules$edi) {
   (0, _inherits2.default)(Module, _elementorModules$edi);
   var _super = _createSuper(Module);
@@ -9173,11 +9312,16 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
     key: "onElementorInit",
     value: function onElementorInit() {
       elementor.hooks.addFilter('controls/base/behaviors', this.registerControlBehavior.bind(this));
+<<<<<<< HEAD
       elementor.hooks.addFilter('navigator/layout/behaviors', this.registerNavigatorBehavior.bind(this));
       window.addEventListener('hashchange', function (e) {
         if (e.newURL.includes('welcome-ai')) {
           var source = e.newURL.includes('welcome-ai-whats-new') ? 'whats-new' : 'connect';
           var returnTo = e.newURL.includes('return-to') ? e.newURL.split('return-to-')[1] : '';
+=======
+      window.addEventListener('hashchange', function (e) {
+        if (e.newURL.includes('welcome-ai')) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           window.location.hash = '';
           setTimeout(function () {
             var rootElement = document.createElement('div');
@@ -9192,9 +9336,13 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
                 onClose: function onClose() {
                   unmount();
                   rootElement.remove();
+<<<<<<< HEAD
                 },
                 newHashOnConnect: returnTo,
                 source: source
+=======
+                }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
               })), rootElement),
               unmount = _ReactUtils$render.unmount;
           }, 1000);
@@ -9202,6 +9350,7 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
       });
     }
   }, {
+<<<<<<< HEAD
     key: "registerNavigatorBehavior",
     value: function registerNavigatorBehavior(behaviors) {
       behaviors.ai = {
@@ -9210,6 +9359,8 @@ var Module = /*#__PURE__*/function (_elementorModules$edi) {
       return behaviors;
     }
   }, {
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     key: "registerControlBehavior",
     value: function registerControlBehavior(behaviors, view) {
       var aiOptions = view.options.model.get('ai');
@@ -9346,7 +9497,10 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../node_modules/@babel/runtime/helpers/extends.js"));
+<<<<<<< HEAD
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js"));
 var _formText = _interopRequireDefault(__webpack_require__(/*! ./pages/form-text */ "../modules/ai/assets/js/editor/pages/form-text/index.js"));
@@ -9367,11 +9521,16 @@ var _usageMessages = _interopRequireDefault(__webpack_require__(/*! ./components
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
 var _loader = _interopRequireDefault(__webpack_require__(/*! ./components/loader */ "../modules/ai/assets/js/editor/components/loader.js"));
 var _requestsIds = __webpack_require__(/*! ./context/requests-ids */ "../modules/ai/assets/js/editor/context/requests-ids.js");
+<<<<<<< HEAD
 var _featuresEnum = __webpack_require__(/*! ./helpers/features-enum */ "../modules/ai/assets/js/editor/helpers/features-enum.js");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+=======
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var PageContent = function PageContent(_ref) {
   var type = _ref.type,
     controlType = _ref.controlType,
@@ -9409,6 +9568,7 @@ var PageContent = function PageContent(_ref) {
       hasSubscription: hasSubscription
     }),
     showBadge = _useUpgradeMessage.showBadge;
+<<<<<<< HEAD
   var _useState3 = (0, _react.useState)({
       pointerEvents: 'none'
     }),
@@ -9416,6 +9576,8 @@ var PageContent = function PageContent(_ref) {
     sxStyle = _useState4[0],
     setSxStyle = _useState4[1];
   var timeoutRef = (0, _react.useRef)(null);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var promptDialogStyleProps = {
     sx: {
       zIndex: 170000,
@@ -9441,6 +9603,7 @@ var PageContent = function PageContent(_ref) {
       }
     }
   };
+<<<<<<< HEAD
   var codePromptDialogStyleProps = {
     sx: _objectSpread(_objectSpread({}, promptDialogStyleProps.sx), sxStyle),
     PaperProps: {
@@ -9463,6 +9626,8 @@ var PageContent = function PageContent(_ref) {
       })
     }
   };
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var maybeRenderUpgradeChip = function maybeRenderUpgradeChip() {
     if (!showBadge) {
       return;
@@ -9537,7 +9702,11 @@ var PageContent = function PageContent(_ref) {
   if ('code' === type) {
     return /*#__PURE__*/_react.default.createElement(_promptDialog.default, (0, _extends2.default)({
       onClose: onClose
+<<<<<<< HEAD
     }, codePromptDialogStyleProps), /*#__PURE__*/_react.default.createElement(_promptHistoryContext.PromptHistoryProvider, {
+=======
+    }, promptDialogStyleProps), /*#__PURE__*/_react.default.createElement(_promptHistoryContext.PromptHistoryProvider, {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       historyType: _historyTypes.HISTORY_TYPES.CODE
     }, /*#__PURE__*/_react.default.createElement(_promptHistoryActionContext.PromptHistoryActionProvider, null, /*#__PURE__*/_react.default.createElement(_promptDialog.default.Header, {
       onClose: onClose
@@ -9556,8 +9725,12 @@ var PageContent = function PageContent(_ref) {
       usagePercentage: usagePercentage,
       sx: {
         mb: 2
+<<<<<<< HEAD
       },
       feature: _featuresEnum.FREE_TRIAL_FEATURES_NAMES.CODE
+=======
+      }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }))))));
   }
   return /*#__PURE__*/_react.default.createElement(_promptDialog.default, (0, _extends2.default)({
@@ -9583,8 +9756,12 @@ var PageContent = function PageContent(_ref) {
     usagePercentage: usagePercentage,
     sx: {
       mb: 2
+<<<<<<< HEAD
     },
     feature: _featuresEnum.FREE_TRIAL_FEATURES_NAMES.TEXT
+=======
+    }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }))))));
 };
 PageContent.propTypes = {
@@ -9937,14 +10114,20 @@ var _promptHistoryActionContext = __webpack_require__(/*! ../../components/promp
 var _promptLibraryLink = _interopRequireDefault(__webpack_require__(/*! ../../components/prompt-library-link */ "../modules/ai/assets/js/editor/components/prompt-library-link.js"));
 var _requestsIds = __webpack_require__(/*! ../../context/requests-ids */ "../modules/ai/assets/js/editor/context/requests-ids.js");
 var _voicePromotionAlert = __webpack_require__(/*! ../../components/voice-promotion-alert */ "../modules/ai/assets/js/editor/components/voice-promotion-alert.js");
+<<<<<<< HEAD
 var _splitTextResult = __webpack_require__(/*! ./splitTextResult */ "../modules/ai/assets/js/editor/pages/form-code/splitTextResult.js");
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+<<<<<<< HEAD
 var generateUniqueId = function generateUniqueId() {
   return "custom-css-".concat(Math.random().toString(36).substr(2, 9));
 };
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var CodeDisplayWrapper = (0, _ui.styled)(_ui.Box)(function () {
   return {
     '& p': {
@@ -9977,16 +10160,22 @@ var FormCode = function FormCode(_ref) {
     reset = _useCodePrompt.reset,
     send = _useCodePrompt.send,
     sendUsageData = _useCodePrompt.sendUsageData;
+<<<<<<< HEAD
   var _splitText = (0, _splitTextResult.splitText)(data.result),
     code = _splitText.code,
     details = _splitText.details;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var _useState = (0, _react.useState)(''),
     _useState2 = (0, _slicedToArray2.default)(_useState, 2),
     prompt = _useState2[0],
     setPrompt = _useState2[1];
   var _useRequestIds = (0, _requestsIds.useRequestIds)(),
     setGenerate = _useRequestIds.setGenerate;
+<<<<<<< HEAD
   var styleTagId = (0, _react.useRef)(generateUniqueId());
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   (0, _promptHistoryActionContext.useSubscribeOnPromptHistoryAction)([{
     type: _promptHistoryActionContext.ACTION_TYPES.REUSE,
     handler: function handler(action) {
@@ -10008,7 +10197,10 @@ var FormCode = function FormCode(_ref) {
   var showSuggestions = !prompt;
   var handleSubmit = /*#__PURE__*/function () {
     var _ref2 = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(event) {
+<<<<<<< HEAD
       var response;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       return _regenerator.default.wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -10019,6 +10211,7 @@ var FormCode = function FormCode(_ref) {
                 prompt: prompt
               });
             };
+<<<<<<< HEAD
             _context.next = 5;
             return lastRun.current();
           case 5:
@@ -10027,6 +10220,10 @@ var FormCode = function FormCode(_ref) {
               showCssPreview((0, _splitTextResult.splitText)(response.result).code);
             }
           case 7:
+=======
+            lastRun.current();
+          case 4:
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           case "end":
             return _context.stop();
         }
@@ -10036,6 +10233,7 @@ var FormCode = function FormCode(_ref) {
       return _ref2.apply(this, arguments);
     };
   }();
+<<<<<<< HEAD
   (0, _react.useEffect)(function () {
     return function () {
       removeStyleTag();
@@ -10065,6 +10263,8 @@ var FormCode = function FormCode(_ref) {
       styleTag.remove();
     }
   };
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   var applyPrompt = function applyPrompt(inputText) {
     sendUsageData();
     setControlValue(inputText);
@@ -10119,7 +10319,11 @@ var FormCode = function FormCode(_ref) {
         }));
       }
     }
+<<<<<<< HEAD
   }, code), details, /*#__PURE__*/_react.default.createElement(_voicePromotionAlert.VoicePromotionAlert, {
+=======
+  }, data.result), /*#__PURE__*/_react.default.createElement(_voicePromotionAlert.VoicePromotionAlert, {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     introductionKey: "ai-context-code-promotion"
   }), /*#__PURE__*/_react.default.createElement(_ui.Stack, {
     direction: "row",
@@ -10136,10 +10340,14 @@ var FormCode = function FormCode(_ref) {
     size: "small",
     color: "secondary",
     variant: "text",
+<<<<<<< HEAD
     onClick: function onClick() {
       removeStyleTag();
       reset();
     }
+=======
+    onClick: reset
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }, (0, _i18n.__)('New prompt', 'elementor'))))));
 };
 FormCode.propTypes = {
@@ -10160,6 +10368,7 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/ai/assets/js/editor/pages/form-code/splitTextResult.js":
 /*!*************************************************************************!*\
   !*** ../modules/ai/assets/js/editor/pages/form-code/splitTextResult.js ***!
@@ -10189,6 +10398,8 @@ function splitText(inputText) {
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/ai/assets/js/editor/pages/form-layout/components/attachments.js":
 /*!**********************************************************************************!*\
   !*** ../modules/ai/assets/js/editor/pages/form-layout/components/attachments.js ***!
@@ -10858,7 +11069,11 @@ var UrlDialog = function UrlDialog(props) {
             type: 'url',
             previewHTML: html,
             content: html,
+<<<<<<< HEAD
             label: url ? new URL(url).href : '',
+=======
+            label: url ? new URL(url).host : '',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             source: _attachments.USER_URL_SOURCE
           }]);
           break;
@@ -10990,7 +11205,11 @@ var StyledDialog = (0, _ui.styled)(_promptDialog.default)(function () {
     },
     '& .MuiPaper-root': {
       margin: 0,
+<<<<<<< HEAD
       maxHeight: '80vh'
+=======
+      maxHeight: '55vh'
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }
   };
 });
@@ -12005,13 +12224,19 @@ var RemoteConfigProvider = function RemoteConfigProvider(props) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             setIsLoading(true);
+<<<<<<< HEAD
             setIsError(false);
             _context.prev = 2;
             _context.next = 5;
+=======
+            _context.prev = 1;
+            _context.next = 4;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             return (0, _api.getRemoteConfig)().finally(function () {
               setIsLoaded(true);
               setIsLoading(false);
             });
+<<<<<<< HEAD
           case 5:
             result = _context.sent;
             if (result.config) {
@@ -12034,17 +12259,44 @@ var RemoteConfigProvider = function RemoteConfigProvider(props) {
             return _context.stop();
         }
       }, _callee, null, [[2, 11]]);
+=======
+          case 4:
+            result = _context.sent;
+            if (result.config) {
+              _context.next = 7;
+              break;
+            }
+            throw new Error('Invalid remote config');
+          case 7:
+            setRemoteConfig(result.config);
+            _context.next = 15;
+            break;
+          case 10:
+            _context.prev = 10;
+            _context.t0 = _context["catch"](1);
+            setIsError(true);
+            setIsLoaded(true);
+            setIsLoading(false);
+          case 15:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[1, 10]]);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }));
     return function fetchData() {
       return _ref.apply(this, arguments);
     };
   }();
+<<<<<<< HEAD
   (0, _react.useEffect)(function () {
     window.addEventListener('elementor/connect/success', fetchData);
     return function () {
       window.removeEventListener('elementor/connect/success', fetchData);
     };
   }, []);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   if (!isLoaded && !isLoading) {
     fetchData();
   }
@@ -14069,7 +14321,10 @@ var _backButton = _interopRequireDefault(__webpack_require__(/*! ./back-button *
 var _locationContext = __webpack_require__(/*! ../context/location-context */ "../modules/ai/assets/js/editor/pages/form-media/context/location-context.js");
 var _globalSettingsContext = __webpack_require__(/*! ../context/global-settings-context */ "../modules/ai/assets/js/editor/pages/form-media/context/global-settings-context.js");
 var _usageMessages = _interopRequireDefault(__webpack_require__(/*! ../../../components/usage-messages */ "../modules/ai/assets/js/editor/components/usage-messages.js"));
+<<<<<<< HEAD
 var _featuresEnum = __webpack_require__(/*! ../../../helpers/features-enum */ "../modules/ai/assets/js/editor/helpers/features-enum.js");
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _excluded = ["sx"],
   _excluded2 = ["primary", "secondary"],
   _excluded3 = ["primary", "secondary"],
@@ -14211,8 +14466,12 @@ var ViewPanel = function ViewPanel(props) {
     usagePercentage: usagePercentage,
     sx: {
       mb: 4
+<<<<<<< HEAD
     },
     feature: _featuresEnum.FREE_TRIAL_FEATURES_NAMES.IMAGES
+=======
+    }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }), props.children);
 };
 ViewPanel.propTypes = {
@@ -14244,7 +14503,11 @@ exports["default"] = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
+<<<<<<< HEAD
 exports.LOCATIONS = exports.IMAGE_PROMPT_SETTINGS = exports.IMAGE_PROMPT_CATEGORIES = exports.IMAGE_PLACEHOLDERS_HOSTS = exports.IMAGE_ASPECT_RATIO = void 0;
+=======
+exports.LOCATIONS = exports.IMAGE_PROMPT_SETTINGS = exports.IMAGE_PROMPT_CATEGORIES = exports.IMAGE_ASPECT_RATIO = void 0;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var LOCATIONS = {
   RESIZE: 'resize',
@@ -14255,8 +14518,12 @@ var LOCATIONS = {
   OUT_PAINTING: 'out-painting',
   REMOVE_BACKGROUND: 'remove-background',
   REPLACE_BACKGROUND: 'replace-background',
+<<<<<<< HEAD
   REMOVE_TEXT: 'remove-text',
   CLEANUP: 'cleanup'
+=======
+  REMOVE_TEXT: 'remove-text'
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 exports.LOCATIONS = LOCATIONS;
 var IMAGE_PROMPT_SETTINGS = {
@@ -14374,10 +14641,13 @@ var IMAGE_ASPECT_RATIO = {
   }
 };
 exports.IMAGE_ASPECT_RATIO = IMAGE_ASPECT_RATIO;
+<<<<<<< HEAD
 var IMAGE_PLACEHOLDERS_HOSTS = {
   WIREFRAME: 'gene-\\d+\\.live\\.strattic\\.io'
 };
 exports.IMAGE_PLACEHOLDERS_HOSTS = IMAGE_PLACEHOLDERS_HOSTS;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 /***/ }),
 
@@ -15246,7 +15516,10 @@ var _outPainting = _interopRequireDefault(__webpack_require__(/*! ./views/out-pa
 var _variations = _interopRequireDefault(__webpack_require__(/*! ./views/variations */ "../modules/ai/assets/js/editor/pages/form-media/views/variations/index.js"));
 var _replaceBackground = _interopRequireDefault(__webpack_require__(/*! ./views/replace-background */ "../modules/ai/assets/js/editor/pages/form-media/views/replace-background/index.js"));
 var _removeBackground = _interopRequireDefault(__webpack_require__(/*! ./views/remove-background */ "../modules/ai/assets/js/editor/pages/form-media/views/remove-background/index.js"));
+<<<<<<< HEAD
 var _cleanup = _interopRequireDefault(__webpack_require__(/*! ./views/cleanup */ "../modules/ai/assets/js/editor/pages/form-media/views/cleanup/index.js"));
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _locationContext = __webpack_require__(/*! ./context/location-context */ "../modules/ai/assets/js/editor/pages/form-media/context/location-context.js");
 var _editImageContext = __webpack_require__(/*! ./context/edit-image-context */ "../modules/ai/assets/js/editor/pages/form-media/context/edit-image-context.js");
 var _promptHistoryActionContext = __webpack_require__(/*! ../../components/prompt-history/context/prompt-history-action-context */ "../modules/ai/assets/js/editor/components/prompt-history/context/prompt-history-action-context.js");
@@ -15265,6 +15538,7 @@ var MediaOutlet = function MediaOutlet(_ref) {
     current = _useLocation.current,
     navigate = _useLocation.navigate;
   (0, _react.useEffect)(function () {
+<<<<<<< HEAD
     var placeholderHostRegex = new RegExp(_constants.IMAGE_PLACEHOLDERS_HOSTS.WIREFRAME);
     var isNotWireframePlaceholder = editImage.url && !placeholderHostRegex.test(new URL(editImage.url).host);
     var isNotPlaceholderImage = editImage.id && isNotWireframePlaceholder;
@@ -15272,6 +15546,13 @@ var MediaOutlet = function MediaOutlet(_ref) {
       navigate(_constants.LOCATIONS.IMAGE_TOOLS);
     }
   }, [editImage.id, editImage.url]);
+=======
+    var isNotPlaceholderImage = editImage.id;
+    if (isNotPlaceholderImage) {
+      navigate(_constants.LOCATIONS.IMAGE_TOOLS);
+    }
+  }, [editImage.id]);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   (0, _promptHistoryActionContext.useSubscribeOnPromptHistoryAction)([{
     type: _promptHistoryActionContext.ACTION_TYPES.RESTORE,
     handler: function handler() {
@@ -15289,7 +15570,11 @@ var MediaOutlet = function MediaOutlet(_ref) {
     textToImageHook: additionalOptions !== null && additionalOptions !== void 0 && additionalOptions.textToImageHook ? additionalOptions === null || additionalOptions === void 0 ? void 0 : additionalOptions.textToImageHook : _useTextToImage.default,
     predefinedPrompt: additionalOptions === null || additionalOptions === void 0 ? void 0 : additionalOptions.predefinedPrompt,
     initialSettings: additionalOptions === null || additionalOptions === void 0 ? void 0 : additionalOptions.initialSettings
+<<<<<<< HEAD
   }), current === _constants.LOCATIONS.IMAGE_TOOLS && /*#__PURE__*/_react.default.createElement(_imageTools.default, null), current === _constants.LOCATIONS.VARIATIONS && /*#__PURE__*/_react.default.createElement(_variations.default, null), current === _constants.LOCATIONS.IN_PAINTING && /*#__PURE__*/_react.default.createElement(_inPainting.default, null), current === _constants.LOCATIONS.OUT_PAINTING && /*#__PURE__*/_react.default.createElement(_outPainting.default, null), current === _constants.LOCATIONS.RESIZE && /*#__PURE__*/_react.default.createElement(_resize.default, null), current === _constants.LOCATIONS.REPLACE_BACKGROUND && /*#__PURE__*/_react.default.createElement(_replaceBackground.default, null), current === _constants.LOCATIONS.REMOVE_BACKGROUND && /*#__PURE__*/_react.default.createElement(_removeBackground.default, null), current === _constants.LOCATIONS.CLEANUP && /*#__PURE__*/_react.default.createElement(_cleanup.default, null));
+=======
+  }), current === _constants.LOCATIONS.IMAGE_TOOLS && /*#__PURE__*/_react.default.createElement(_imageTools.default, null), current === _constants.LOCATIONS.VARIATIONS && /*#__PURE__*/_react.default.createElement(_variations.default, null), current === _constants.LOCATIONS.IN_PAINTING && /*#__PURE__*/_react.default.createElement(_inPainting.default, null), current === _constants.LOCATIONS.OUT_PAINTING && /*#__PURE__*/_react.default.createElement(_outPainting.default, null), current === _constants.LOCATIONS.RESIZE && /*#__PURE__*/_react.default.createElement(_resize.default, null), current === _constants.LOCATIONS.REPLACE_BACKGROUND && /*#__PURE__*/_react.default.createElement(_replaceBackground.default, null), current === _constants.LOCATIONS.REMOVE_BACKGROUND && /*#__PURE__*/_react.default.createElement(_removeBackground.default, null));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 };
 var _default = MediaOutlet;
 exports["default"] = _default;
@@ -15382,6 +15667,7 @@ exports.fetchImageAsBase64 = fetchImageAsBase64;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/ai/assets/js/editor/pages/form-media/views/cleanup/cleanup-content.js":
 /*!****************************************************************************************!*\
   !*** ../modules/ai/assets/js/editor/pages/form-media/views/cleanup/cleanup-content.js ***!
@@ -15781,6 +16067,8 @@ exports["default"] = _default;
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../modules/ai/assets/js/editor/pages/form-media/views/generate/hooks/use-suggested-images.js":
 /*!****************************************************************************************************!*\
   !*** ../modules/ai/assets/js/editor/pages/form-media/views/generate/hooks/use-suggested-images.js ***!
@@ -15838,7 +16126,11 @@ var useSuggestedImages = function useSuggestedImages(_ref7) {
       return imageType.includes(selectedType);
     });
 
+<<<<<<< HEAD
     // Some categories don't have images, so we TEMPORARILY fallback to the shuffled images.
+=======
+    // Some categories don't have images, so we TEMPORARLY fallback to the shuffled images.
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     return categoryImages.length ? categoryImages : shuffledImages;
   }, [selectedType, data]);
   var fetchImages = function fetchImages() {
@@ -16197,7 +16489,10 @@ var _evolveIcon = _interopRequireDefault(__webpack_require__(/*! ../../../../ico
 var _enlargerIcon = _interopRequireDefault(__webpack_require__(/*! ../../../../icons/enlarger-icon */ "../modules/ai/assets/js/editor/icons/enlarger-icon.js"));
 var _removeBg = _interopRequireDefault(__webpack_require__(/*! ../../../../icons/remove-bg */ "../modules/ai/assets/js/editor/icons/remove-bg.js"));
 var _replaceBg = _interopRequireDefault(__webpack_require__(/*! ../../../../icons/replace-bg */ "../modules/ai/assets/js/editor/icons/replace-bg.js"));
+<<<<<<< HEAD
 var _cleanupIcon = _interopRequireDefault(__webpack_require__(/*! ../../../../icons/cleanup-icon */ "../modules/ai/assets/js/editor/icons/cleanup-icon.js"));
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var _constants = __webpack_require__(/*! ../../constants */ "../modules/ai/assets/js/editor/pages/form-media/constants/index.js");
 var _locationContext = __webpack_require__(/*! ../../context/location-context */ "../modules/ai/assets/js/editor/pages/form-media/context/location-context.js");
 var TeaserDrawing = function TeaserDrawing() {
@@ -16322,12 +16617,15 @@ var ImageToolsPanel = function ImageToolsPanel() {
     onClick: function onClick() {
       return navigate(_constants.LOCATIONS.REPLACE_BACKGROUND);
     }
+<<<<<<< HEAD
   }, {
     label: (0, _i18n.__)('Cleanup', 'elementor'),
     Icon: _cleanupIcon.default,
     onClick: function onClick() {
       return navigate(_constants.LOCATIONS.CLEANUP);
     }
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }];
   return /*#__PURE__*/_react.default.createElement(ImageToolsContainer, null, /*#__PURE__*/_react.default.createElement(_ui.Box, {
     display: "grid",
@@ -18858,10 +19156,17 @@ function wrapContainer(container, wrapper) {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/ai/assets/js/media-library/components.js":
 /*!***********************************************************!*\
   !*** ../modules/ai/assets/js/media-library/components.js ***!
   \***********************************************************/
+=======
+/***/ "../modules/ai/assets/js/media-library/componenets.js":
+/*!************************************************************!*\
+  !*** ../modules/ai/assets/js/media-library/componenets.js ***!
+  \************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";

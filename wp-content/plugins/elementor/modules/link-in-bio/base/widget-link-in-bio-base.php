@@ -8,6 +8,10 @@ use Elementor\Core\Base\Traits\Shared_Widget_Controls_Trait;
 use Elementor\Group_Control_Background;
 use Elementor\Group_Control_Typography;
 use Elementor\Modules\LinkInBio\Classes\Render\Core_Render;
+<<<<<<< HEAD
+=======
+use Elementor\Modules\LinkInBio\Module as ConversionCenterModule;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Plugin;
 use Elementor\Repeater;
 use Elementor\Utils;
@@ -17,10 +21,13 @@ abstract class Widget_Link_In_Bio_Base extends Widget_Base {
 
 	use Shared_Widget_Controls_Trait;
 
+<<<<<<< HEAD
 	public function get_group_name(): string {
 		return 'link-in-bio';
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	public function get_style_depends(): array {
 		if ( Plugin::$instance->experiments->is_feature_active( 'e_font_icon_svg' ) ) {
 			return parent::get_style_depends();
@@ -180,6 +187,13 @@ abstract class Widget_Link_In_Bio_Base extends Widget_Base {
 		];
 	}
 
+<<<<<<< HEAD
+=======
+	public function show_in_panel(): bool {
+		return Plugin::$instance->experiments->is_feature_active( ConversionCenterModule::EXPERIMENT_NAME );
+	}
+
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	protected function register_controls(): void {
 
 		$this->add_content_tab();

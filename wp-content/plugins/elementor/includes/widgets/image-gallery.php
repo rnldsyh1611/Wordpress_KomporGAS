@@ -77,6 +77,7 @@ class Widget_Image_Gallery extends Widget_Base {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Get style dependencies.
 	 *
 	 * Retrieve the list of style dependencies the widget requires.
@@ -91,6 +92,8 @@ class Widget_Image_Gallery extends Widget_Base {
 	}
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Get widget upsale data.
 	 *
 	 * Retrieve the widget promotion data.

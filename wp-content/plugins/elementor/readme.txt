@@ -1,11 +1,19 @@
 === Elementor Website Builder - More than Just a Page Builder ===
 Contributors: elemntor
 Tags: page builder, editor, landing page, drag-and-drop, elementor,
+<<<<<<< HEAD
 Requires at least: 6.3
 Tested up to: 6.6
 Requires PHP: 7.4
 Stable tag: 3.24.0
 Beta tag: 3.24.0-beta3
+=======
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+Stable tag: 3.23.4
+Beta tag: 3.23.0-beta6
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -224,7 +232,11 @@ Join a global community that helps each other achieve their goals.
 
 = Minimum Requirements =
 
+<<<<<<< HEAD
 * WordPress 6.3 or greater
+=======
+* WordPress 6.0 or greater
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 * PHP version 7.4 or greater
 * MySQL version 5.0 or greater
 
@@ -272,11 +284,19 @@ It works with almost all the plugins. If you experience an incompatibility issue
 
 **Do I need to know how to code?**
 
+<<<<<<< HEAD
 No! Elementor provides you with all the widgets and features that you need to build a professional website without using code.
 
 **Do i need to know how to design?**
 
 No, you can choose between professionally designed kits and templates that fit toevery industry and have all you need to create your own professional website.
+=======
+No! Elementor provides you with all the widgets and features that you need to build a proffesional website without using code.
+
+**Do i need to know how to design?**
+
+No, you can choose between professionaly designed kits and templates that fit toevery industry and have all you need to create your own profesional website.
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 **Will elementor slow down my website?**
 
@@ -316,6 +336,7 @@ You can also add a new language via [translate.wordpress.org](https://go.element
 
 == Changelog ==
 
+<<<<<<< HEAD
 = 3.24.0 - 2024-09-10 =
 
 * New: Introducing Floating Bars - including Call to Action, Ticker, and Coupon Bars, to enhance visitor engagement and boost conversions
@@ -364,5 +385,46 @@ You can also add a new language via [translate.wordpress.org](https://go.element
 * Fix: "Full width on mobile" isn't working in the "Single Bar" floating Button
 * Fix: Lightbox video aspect ratio issues on the front
 * Fix: PHP errors caused by using Global Color for container background gradient
+=======
+= 3.23.4 - 2024-08-05 =
+
+* Fix: Links to Elementor Settings are broken in various locations
+
+= 3.23.3 - 2024-07-25 =
+
+* Fix: UI fixes to improve user experience
+
+= 3.23.2 - 2024-07-23 =
+* Security Fix: Improved code security enforcement in link URL
+* Fix: Facebook Messenger username is not working on mobile devices in Floating Buttons ([#28103](https://github.com/elementor/elementor/issues/28103))
+* Fix: RTL issues with Floating Buttons templates
+* Fix: WordPress 6.6 does not support certain features
+
+= 3.23.1 - 2024-07-15 =
+* Fix: Slow loading of WordPress admin and Elementor screens due to AI health check
+
+= 3.23.0 - 2024-07-15 =
+
+* New: Elevate engagement with Floating Buttons - Convert visitors into leads, making it easier than ever to start a conversation on any platform
+* New: Introducing Link In Bio - allowing you to create a digital business card and share it easily
+* New: Generate Featured Image with AI
+* New: Generate texts using AI within WordPress
+* Tweak: Added support for the `overscroll-behavior` CSS property to improve scrolling experience
+* Tweak: Activated Editor Top Bar feature by default for new sites
+* Tweak: Activated Element Caching feature for new sites and promoted to Beta status
+* Tweak: Promotes "Lazy Load Backgrounds Images" feature to Stable status
+* Tweak: Hide "Default Device View" from User Preferences when the Editor Top Bar is active
+* Tweak: Increased the height of the Globals popover to improve usability
+* Tweak: Improved Image style presets and added two additional ones in AI Images
+* Tweak: Added Excerpt generation option with AI in the editor
+* Fix: Performance issues causing lag and slowness while editing Nested Elements ([#24076](https://github.com/elementor/elementor/issues/24076))
+* Fix: Video autoplay issues in various scenarios (props [@JxxIT](https://github.com/JxxIT), [#24324](https://github.com/elementor/elementor/issues/24324), [#14437](https://github.com/elementor/elementor/issues/14437), [#7964](https://github.com/elementor/elementor/issues/7964))
+* Fix: Writing permissions issues related to WordPress root directory ([#21036](https://github.com/elementor/elementor/issues/21036), [#17255](https://github.com/elementor/elementor/issues/17255))
+* Fix: Restored deprecated Google fonts that were deprecated in the previous update ([#27701](https://github.com/elementor/elementor/issues/27701))
+* Fix: Vimeo link structure with privacy hash is not working correctly with dynamic link action using the lightbox
+* Fix: Validate prompt and canvas changes to allow generation in AI image edit generative fill
+* Fix: Elementor Core versions are being incorrectly added to Elementor Pro versions' history
+* Fix: AI Connect not launching when the user doesn't have prior connect data
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 [See changelog for all versions.](https://go.elementor.com/full-changelog/)

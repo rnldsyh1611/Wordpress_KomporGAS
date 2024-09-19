@@ -3,7 +3,10 @@
 namespace Elementor\Modules\Announcements;
 
 use Elementor\Core\Base\App as BaseApp;
+<<<<<<< HEAD
 use Elementor\Modules\Ai\Preferences;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Modules\Announcements\Classes\Announcement;
 use Elementor\Settings as ElementorSettings;
 
@@ -93,6 +96,7 @@ class Module extends BaseApp {
 	 * @return array[]
 	 */
 	private function get_raw_announcements(): array {
+<<<<<<< HEAD
 		$raw_announcements = [];
 
 		if ( Preferences::is_ai_enabled( get_current_user_id() ) ) {
@@ -129,6 +133,38 @@ class Module extends BaseApp {
 				],
 			],
 		];
+=======
+		$raw_announcements = [
+			[
+				'title' => __( 'Discover your new superpowers ', 'elementor' ),
+				'description' => __( '<p>With AI for text, code, image generation and editing, you can bring your vision to life faster than ever. Start your free trial now - <b>no credit card required!</b></p>', 'elementor' ),
+				'media' => [
+					'type' => 'image',
+					'src' => ELEMENTOR_ASSETS_URL . 'images/announcement.png?' . ELEMENTOR_VERSION,
+				],
+				'cta' => [
+					[
+						'label' => __( 'Let\'s do it', 'elementor' ),
+						'variant' => 'primary',
+						'target' => '_top',
+						'url' => '#welcome-ai',
+					],
+					[
+						'label' => __( 'Skip', 'elementor' ),
+						'variant' => 'secondary',
+					],
+				],
+				'triggers' => [
+					[
+						'action' => 'aiStared',
+					],
+				],
+			],
+		];
+
+		// DO NOT USE THIS FILTER
+		return apply_filters( 'elementor/announcements/raw_announcements', $raw_announcements );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	}
 
 	/**

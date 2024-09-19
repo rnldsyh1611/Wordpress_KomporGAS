@@ -2,7 +2,10 @@
 namespace Elementor;
 
 use Elementor\Core\Base\App;
+<<<<<<< HEAD
 use Elementor\Core\Base\Elements_Iteration_Actions\Assets;
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 use Elementor\Core\Frontend\Render_Mode_Manager;
 use Elementor\Core\Responsive\Files\Frontend as FrontendFile;
 use Elementor\Core\Files\CSS\Global_CSS;
@@ -33,11 +36,14 @@ class Frontend extends App {
 	const THE_CONTENT_FILTER_PRIORITY = 9;
 
 	/**
+<<<<<<< HEAD
 	 * The priority of the frontend enqueued styles.
 	 */
 	const ENQUEUED_STYLES_PRIORITY = 20;
 
 	/**
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 * Post ID.
 	 *
 	 * Holds the ID of the current post.
@@ -243,7 +249,11 @@ class Frontend extends App {
 		$document = Plugin::$instance->documents->get( $this->post_id );
 
 		if ( is_singular() && $document && $document->is_built_with_elementor() ) {
+<<<<<<< HEAD
 			add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ], self::ENQUEUED_STYLES_PRIORITY );
+=======
+			add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_styles' ] );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		}
 
 		// Priority 7 to allow google fonts in header template to load in <head> tag
@@ -401,6 +411,19 @@ class Frontend extends App {
 		);
 
 		wp_register_script(
+<<<<<<< HEAD
+=======
+			'elementor-waypoints',
+			$this->get_js_assets_url( 'waypoints', 'assets/lib/waypoints/' ),
+			[
+				'jquery',
+			],
+			'4.0.2',
+			true
+		);
+
+		wp_register_script(
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			'flatpickr',
 			$this->get_js_assets_url( 'flatpickr', 'assets/lib/flatpickr/' ),
 			[
@@ -436,7 +459,11 @@ class Frontend extends App {
 			[
 				'jquery-ui-position',
 			],
+<<<<<<< HEAD
 			'4.9.3',
+=======
+			'4.9.0',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 			true
 		);
 
@@ -465,6 +492,10 @@ class Frontend extends App {
 			$this->get_js_assets_url( 'frontend' ),
 			[
 				'elementor-frontend-modules',
+<<<<<<< HEAD
+=======
+				'elementor-waypoints',
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 				'jquery-ui-position',
 			],
 			ELEMENTOR_VERSION,
@@ -492,10 +523,13 @@ class Frontend extends App {
 	 * @access public
 	 */
 	public function register_styles() {
+<<<<<<< HEAD
 		$min_suffix = Utils::is_script_debug() ? '' : '.min';
 		$direction_suffix = is_rtl() ? '-rtl' : '';
 		$has_custom_breakpoints = Plugin::$instance->breakpoints->has_custom_breakpoints();
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		/**
 		 * Before frontend register styles.
 		 *
@@ -533,6 +567,7 @@ class Frontend extends App {
 			'1.2.0'
 		);
 
+<<<<<<< HEAD
 		wp_register_style(
 			'e-apple-webkit',
 			$this->get_css_assets_url( 'apple-webkit', 'assets/css/conditionals/' ),
@@ -545,6 +580,23 @@ class Frontend extends App {
 			$this->get_css_assets_url( 'e-swiper', 'assets/css/conditionals/' ),
 			[ 'swiper' ],
 			ELEMENTOR_VERSION
+=======
+		$min_suffix = Utils::is_script_debug() ? '' : '.min';
+
+		$direction_suffix = is_rtl() ? '-rtl' : '';
+
+		$frontend_base_file_name = $this->is_optimized_css_mode() ? 'frontend-lite' : 'frontend';
+
+		$frontend_file_name = $frontend_base_file_name . $direction_suffix . $min_suffix . '.css';
+
+		$has_custom_breakpoints = Plugin::$instance->breakpoints->has_custom_breakpoints();
+
+		wp_register_style(
+			'elementor-frontend',
+			$this->get_frontend_file_url( $frontend_file_name, $has_custom_breakpoints ),
+			[],
+			$has_custom_breakpoints ? null : ELEMENTOR_VERSION
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		);
 
 		wp_register_style(
@@ -554,6 +606,7 @@ class Frontend extends App {
 			$this->e_swiper_version
 		);
 
+<<<<<<< HEAD
 		wp_register_style(
 			'elementor-wp-admin-bar',
 			$this->get_css_assets_url( 'admin-bar', 'assets/css/' ),
@@ -588,6 +641,8 @@ class Frontend extends App {
 			);
 		}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		/**
 		 * After frontend register styles.
 		 *
@@ -664,6 +719,7 @@ class Frontend extends App {
 
 			wp_enqueue_style( 'elementor-frontend' );
 
+<<<<<<< HEAD
 			// TODO: Update in version 3.26.0 [ED-15471]
 			if ( ! Plugin::$instance->experiments->is_feature_active( 'e_swiper_css_conditional_loading' ) ) {
 				wp_enqueue_style( 'e-swiper' );
@@ -672,6 +728,9 @@ class Frontend extends App {
 			if ( is_admin_bar_showing() ) {
 				wp_enqueue_style( 'elementor-wp-admin-bar' );
 			}
+=======
+			wp_enqueue_style( 'swiper' );
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
 			/**
 			 * After frontend styles enqueued.
@@ -688,11 +747,14 @@ class Frontend extends App {
 				$post_id = get_the_ID();
 				// Check $post_id for virtual pages. check is singular because the $post_id is set to the first post on archive pages.
 				if ( $post_id && is_singular() ) {
+<<<<<<< HEAD
 					$page_assets = get_post_meta( $post_id, Assets::ASSETS_META_KEY, true );
 					if ( ! empty( $page_assets ) ) {
 						Plugin::$instance->assets_loader->enable_assets( $page_assets );
 					}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 					$css_file = Post_CSS::create( get_the_ID() );
 					$css_file->enqueue();
 				}
@@ -1573,4 +1635,13 @@ class Frontend extends App {
 
 		return force_balance_tags( $parts['main'] ) . $more_link;
 	}
+<<<<<<< HEAD
+=======
+
+	private function is_optimized_css_mode() {
+		$is_optimized_css_loading = Plugin::$instance->experiments->is_feature_active( 'e_optimized_css_loading' );
+
+		return ! Utils::is_script_debug() && $is_optimized_css_loading && ! Plugin::$instance->preview->is_preview_mode();
+	}
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 }

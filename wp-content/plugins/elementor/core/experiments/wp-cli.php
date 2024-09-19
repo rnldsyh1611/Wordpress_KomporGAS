@@ -141,7 +141,11 @@ class Wp_Cli extends \WP_CLI_Command {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * @param string $experiments_str comma delimited string of experiments
+=======
+	 * @param string $experiments_str comma delimeted string of experiments
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	 *
 	 * @return array array of experiments
 	 */

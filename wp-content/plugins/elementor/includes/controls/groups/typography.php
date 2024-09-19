@@ -154,8 +154,11 @@ class Group_Control_Typography extends Group_Control_Base {
 			],
 		];
 
+<<<<<<< HEAD
 		$fields = $this->add_font_variables_fields( $fields );
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 		$fields['text_transform'] = [
 			'label' => esc_html_x( 'Transform', 'Typography Control', 'elementor' ),
 			'type' => Controls_Manager::SELECT,
@@ -274,6 +277,7 @@ class Group_Control_Typography extends Group_Control_Base {
 		return $fields;
 	}
 
+<<<<<<< HEAD
 	private function add_font_variables_fields( $fields ): array {
 		$font_variables = $this->get_font_variables();
 
@@ -355,6 +359,8 @@ class Group_Control_Typography extends Group_Control_Base {
 		return apply_filters( 'elementor/typography/font_variable_ranges', [] );
 	}
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 	/**
 	 * Prepare fields.
 	 *

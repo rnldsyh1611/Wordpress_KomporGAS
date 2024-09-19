@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! elementor - v3.24.0 - 10-09-2024 */
+=======
+/*! elementor - v3.23.0 - 05-08-2024 */
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -5419,7 +5423,11 @@ var Load = /*#__PURE__*/function (_$e$modules$CommandIn) {
         // The issue is that the css-parser is depends upon cache and cache is not available during this time.
         return $e.data.get('globals/index').then(function () {
           if (setAsInitial) {
+<<<<<<< HEAD
             // There is no need to attach preview when the iframe is reloaded. It will be triggered
+=======
+            // There is no need to attach preview when the iframe is reloaded. It will be triggerred
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             // automatically after the iframe finishes loading (see `EditorBase.onPreviewLoaded()`).
             elementor.reloadPreview();
             return Promise.resolve();
@@ -6718,9 +6726,15 @@ module.exports = Marionette.Behavior.extend({
     if (hasDefault) {
       return false;
     }
+<<<<<<< HEAD
     var isFeatureAvailableToUser = elementor.helpers.hasPro() && !elementor.helpers.hasProAndNotConnected(),
       hasTags = this.getOption('tags').length > 0;
     return !isFeatureAvailableToUser || hasTags;
+=======
+    var isFeatureAvalibleToUser = elementor.helpers.hasPro() && !elementor.helpers.hasProAndNotConnected(),
+      hasTags = this.getOption('tags').length > 0;
+    return !isFeatureAvalibleToUser || hasTags;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   },
   renderTools: function renderTools() {
     var _this = this;
@@ -10391,6 +10405,11 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/inte
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ "../node_modules/@babel/runtime/helpers/typeof.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _component = _interopRequireDefault(__webpack_require__(/*! ./component */ "../assets/dev/js/editor/components/template-library/component.js"));
+<<<<<<< HEAD
+=======
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 var TemplateLibraryCollection = __webpack_require__(/*! elementor-templates/collections/templates */ "../assets/dev/js/editor/components/template-library/collections/templates.js"),
   TemplateLibraryManager;
 TemplateLibraryManager = function TemplateLibraryManager() {
@@ -10638,6 +10657,10 @@ TemplateLibraryManager = function TemplateLibraryManager() {
     self.showTemplates();
   };
   this.loadTemplates = function (onUpdate) {
+<<<<<<< HEAD
+=======
+    var _this = this;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     self.layout.showLoadingView();
     var query = {
         source: this.getFilter('source')
@@ -10649,9 +10672,15 @@ TemplateLibraryManager = function TemplateLibraryManager() {
       options.refresh = true;
     }
     $e.data.get('library/templates', query, options).then(function (result) {
+<<<<<<< HEAD
       templatesCollection = new TemplateLibraryCollection(result.data.templates);
       if (result.data.config) {
         config = result.data.config;
+=======
+      templatesCollection = new TemplateLibraryCollection(_this.filterOutInactiveExperiments(result.data.templates));
+      if (result.data.config) {
+        config = _this.filterOutExperimentsCategories(result.data.config);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       }
       self.layout.hideLoadingView();
       if (onUpdate) {
@@ -10659,6 +10688,29 @@ TemplateLibraryManager = function TemplateLibraryManager() {
       }
     });
   };
+<<<<<<< HEAD
+=======
+  this.filterOutExperimentsCategories = function (configData) {
+    var _configData$block;
+    if (elementorCommon.config.experimentalFeatures['link-in-bio']) {
+      return configData;
+    }
+    var dataToReturn = _objectSpread({}, configData);
+    dataToReturn.block.categories = configData === null || configData === void 0 ? void 0 : (_configData$block = configData.block) === null || _configData$block === void 0 ? void 0 : _configData$block.categories.filter(function (category) {
+      return category !== 'Link in Bio';
+    });
+    return dataToReturn;
+  };
+  this.filterOutInactiveExperiments = function (templates) {
+    if (elementorCommon.config.experimentalFeatures['link-in-bio']) {
+      return templates;
+    }
+    return templates.filter(function (template) {
+      var subtype = template.subtype;
+      return subtype !== 'Link in Bio';
+    });
+  };
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   this.showTemplates = function () {
     // The tabs should exist in DOM on loading.
     self.layout.setHeaderDefaultParts();
@@ -11467,7 +11519,11 @@ TemplateLibraryTemplateView = Marionette.ItemView.extend({
     if (elementor.config.library_connect.base_access_tier !== this.model.get('accessTier')) {
       classes += ' elementor-template-library-pro-template';
     }
+<<<<<<< HEAD
     return elementor.hooks.applyFilters('elementor/editor/template-library/template/classes', classes, this);
+=======
+    return classes;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   },
   attributes: function attributes() {
     var userAccessTier = elementor.config.library_connect.current_access_tier;
@@ -27654,12 +27710,19 @@ var _component4 = _interopRequireDefault(__webpack_require__(/*! ./data/globals/
 var _controlConditions = _interopRequireDefault(__webpack_require__(/*! ./utils/control-conditions */ "../assets/dev/js/editor/utils/control-conditions.js"));
 var _module5 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/promotions/assets/js/editor/module */ "../modules/promotions/assets/js/editor/module.js"));
 var _module6 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/editor-events/assets/js/editor/module */ "../modules/editor-events/assets/js/editor/module.js"));
+<<<<<<< HEAD
 var _module7 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/floating-buttons/assets/js/floating-buttons/editor/module */ "../modules/floating-buttons/assets/js/floating-buttons/editor/module.js"));
 var _module8 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/floating-buttons/assets/js/floating-bars/editor/module */ "../modules/floating-buttons/assets/js/floating-bars/editor/module.js"));
 var _module9 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/link-in-bio/assets/js/editor/module */ "../modules/link-in-bio/assets/js/editor/module.js"));
 var elementTypes = _interopRequireWildcard(__webpack_require__(/*! ./elements/types */ "../assets/dev/js/editor/elements/types/index.js"));
 var _elementBase = _interopRequireDefault(__webpack_require__(/*! ./elements/types/base/element-base */ "../assets/dev/js/editor/elements/types/base/element-base.js"));
 var _fontVariables = __webpack_require__(/*! ./utils/font-variables */ "../assets/dev/js/editor/utils/font-variables.js");
+=======
+var _module7 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/floating-buttons/assets/js/editor/module */ "../modules/floating-buttons/assets/js/editor/module.js"));
+var _module8 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/link-in-bio/assets/js/editor/module */ "../modules/link-in-bio/assets/js/editor/module.js"));
+var elementTypes = _interopRequireWildcard(__webpack_require__(/*! ./elements/types */ "../assets/dev/js/editor/elements/types/index.js"));
+var _elementBase = _interopRequireDefault(__webpack_require__(/*! ./elements/types/base/element-base */ "../assets/dev/js/editor/elements/types/base/element-base.js"));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof3(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -27907,7 +27970,11 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
         if (!this.widgetsCache[widgetType]) {
           return false;
         }
+<<<<<<< HEAD
         if (!this.widgetsCache[widgetType].commonMerged && !this.widgetsCache[widgetType].atomic_controls) {
+=======
+        if (!this.widgetsCache[widgetType].commonMerged) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           var _this$widgetsCache$wi;
           jQuery.extend(this.widgetsCache[widgetType].controls, this.widgetsCache.common.controls);
           this.widgetsCache[widgetType].controls = elementor.hooks.applyFilters('elements/widget/controls/common', this.widgetsCache[widgetType].controls, widgetType, this.widgetsCache[widgetType]);
@@ -28037,11 +28104,20 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
       if (elementorCommon.config.experimentalFeatures['landing-pages']) {
         this.modules.landingLibraryPageModule = new _module3.default();
       }
+<<<<<<< HEAD
       if (elementorCommon.config.experimentalFeatures.container) {
         this.modules.floatingButtonsLibraryModule = new _module7.default();
       }
       this.modules.linkInBioLibraryModule = new _module9.default();
       this.modules.floatingBarsLibraryModule = new _module8.default();
+=======
+      if (elementorCommon.config.experimentalFeatures['floating-buttons']) {
+        this.modules.floatingButtonsLibraryModule = new _module7.default();
+      }
+      if (elementorCommon.config.experimentalFeatures['link-in-bio']) {
+        this.modules.linkInBioLibraryModule = new _module8.default();
+      }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       this.modules.elementsColorPicker = new _module4.default();
       this.modules.promotionModule = new _module5.default();
 
@@ -28052,7 +28128,10 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
 
       // TODO: Remove, BC Since 2.9.0.
       elementor.saver = $e.components.get('document/save');
+<<<<<<< HEAD
       new _fontVariables.FontVariables();
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       _events.default.dispatch(elementorCommon.elements.$window, 'elementor/init-components', null, 'elementor:init-components');
     }
 
@@ -30481,7 +30560,10 @@ BaseElementView = BaseContainer.extend({
   allowRender: true,
   toggleEditTools: false,
   renderAttributes: {},
+<<<<<<< HEAD
   isRendering: false,
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   className: function className() {
     var classes = 'elementor-element elementor-element-edit-mode ' + this.getElementUniqueID();
     if (this.toggleEditTools) {
@@ -30583,7 +30665,15 @@ BaseElementView = BaseContainer.extend({
           return !elementor.selection.isMultiple();
         },
         callback: function callback() {
+<<<<<<< HEAD
           return $e.run('document/elements/select', {
+=======
+          return $e.run('panel/editor/open', {
+            model: _this.options.model,
+            // Todo: remove on merge router
+            view: _this,
+            // Todo: remove on merge router
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             container: _this.getContainer()
           });
         }
@@ -31035,6 +31125,7 @@ BaseElementView = BaseContainer.extend({
     }
     this.renderHTML();
   },
+<<<<<<< HEAD
   isAtomicDynamic: function isAtomicDynamic(changedSettings, dataBinding, changedControl) {
     return '__dynamic__' in changedSettings && dataBinding.el.hasAttribute('data-binding-dynamic') && elementorCommon.config.experimentalFeatures.e_nested_atomic_repeaters && dataBinding.el.getAttribute('data-binding-setting') === changedControl;
   },
@@ -31042,11 +31133,21 @@ BaseElementView = BaseContainer.extend({
     var _this3 = this;
     return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
       var dynamicSettings, valueToParse;
+=======
+  isAtomicDynamic: function isAtomicDynamic(dataBinding, changedControl) {
+    return !!(dataBinding.el.hasAttribute('data-binding-dynamic') && elementorCommon.config.experimentalFeatures.e_nested_atomic_repeaters) && dataBinding.el.getAttribute('data-binding-setting') === changedControl;
+  },
+  getDynamicValue: function getDynamicValue(settings, bindingSetting) {
+    return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+      var _settings$attributes, _settings$attributes2, _settings$attributes3;
+      var dynamicSettings, changedDataForRemovedItem, changedDataForAddedItem, valueToParse;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       return _regenerator.default.wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             dynamicSettings = {
               active: true
+<<<<<<< HEAD
             }, valueToParse = _this3.getChangedData(settings, changedControlKey, bindingSetting);
             if (valueToParse) {
               _context.next = 3;
@@ -31063,6 +31164,33 @@ BaseElementView = BaseContainer.extend({
             return _context.stop();
         }
       }, _callee);
+=======
+            }, changedDataForRemovedItem = (_settings$attributes = settings.attributes) === null || _settings$attributes === void 0 ? void 0 : _settings$attributes[bindingSetting], changedDataForAddedItem = (_settings$attributes2 = settings.attributes) === null || _settings$attributes2 === void 0 ? void 0 : (_settings$attributes3 = _settings$attributes2.__dynamic__) === null || _settings$attributes3 === void 0 ? void 0 : _settings$attributes3[bindingSetting], valueToParse = changedDataForAddedItem || changedDataForRemovedItem;
+            if (!valueToParse) {
+              _context.next = 11;
+              break;
+            }
+            _context.prev = 2;
+            return _context.abrupt("return", elementor.dynamicTags.parseTagsText(valueToParse, dynamicSettings, elementor.dynamicTags.getTagDataContent));
+          case 6:
+            _context.prev = 6;
+            _context.t0 = _context["catch"](2);
+            _context.next = 10;
+            return new Promise(function (resolve) {
+              elementor.dynamicTags.refreshCacheFromServer(function () {
+                resolve();
+              });
+            });
+          case 10:
+            return _context.abrupt("return", !_.isEmpty(elementor.dynamicTags.cache) ? elementor.dynamicTags.parseTagsText(valueToParse, dynamicSettings, elementor.dynamicTags.getTagDataContent) : false);
+          case 11:
+            return _context.abrupt("return", settings.attributes[bindingSetting]);
+          case 12:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[2, 6]]);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }))();
   },
   findUniqueKey: function findUniqueKey(obj1, obj2) {
@@ -31100,7 +31228,11 @@ BaseElementView = BaseContainer.extend({
    * UPDATE: Support for dynamics has experimentally been added in v3.23
    */
   linkDataBindings: function linkDataBindings() {
+<<<<<<< HEAD
     var _this4 = this;
+=======
+    var _this3 = this;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     /**
      * @type {Array.<DataBinding>}
      */
@@ -31117,7 +31249,11 @@ BaseElementView = BaseContainer.extend({
       // To support nested data-binding bypass nested data-binding that are not part of the current.
       if (jQuery(current).closest('.elementor-element').data('id') === id) {
         if (current.dataset.bindingType) {
+<<<<<<< HEAD
           _this4.dataBindings.push({
+=======
+          _this3.dataBindings.push({
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             el: current,
             dataset: current.dataset
           });
@@ -31137,25 +31273,43 @@ BaseElementView = BaseContainer.extend({
    */
   renderDataBindings: function renderDataBindings(settings, dataBindings) {
     var _this$dataBindings,
+<<<<<<< HEAD
       _this5 = this;
+=======
+      _this4 = this;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     if (!((_this$dataBindings = this.dataBindings) !== null && _this$dataBindings !== void 0 && _this$dataBindings.length)) {
       return false;
     }
     var changed = false;
     var renderDataBinding = /*#__PURE__*/function () {
       var _ref = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee2(dataBinding) {
+<<<<<<< HEAD
+=======
+        var _settings$changed, _settings$_previousAt;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         var bindingSetting, changedControl, change, dynamicValue;
         return _regenerator.default.wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
+<<<<<<< HEAD
               bindingSetting = dataBinding.dataset.bindingSetting, changedControl = _this5.getChangedDynamicControlKey(settings);
               change = settings.changed[bindingSetting];
               if (!_this5.isAtomicDynamic(settings.changed, dataBinding, changedControl)) {
+=======
+              bindingSetting = dataBinding.dataset.bindingSetting, changedControl = _this4.findUniqueKey(settings === null || settings === void 0 ? void 0 : (_settings$changed = settings.changed) === null || _settings$changed === void 0 ? void 0 : _settings$changed.__dynamic__, settings === null || settings === void 0 ? void 0 : (_settings$_previousAt = settings._previousAttributes) === null || _settings$_previousAt === void 0 ? void 0 : _settings$_previousAt.__dynamic__)[0] || Object.keys(settings.changed)[0];
+              change = settings.changed[bindingSetting];
+              if (!_this4.isAtomicDynamic(dataBinding, changedControl)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
                 _context2.next = 7;
                 break;
               }
               _context2.next = 5;
+<<<<<<< HEAD
               return _this5.getDynamicValue(settings, changedControl, bindingSetting);
+=======
+              return _this4.getDynamicValue(settings, bindingSetting);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
             case 5:
               dynamicValue = _context2.sent;
               if (dynamicValue) {
@@ -31198,8 +31352,11 @@ BaseElementView = BaseContainer.extend({
               });
               if ((container === null || container === void 0 ? void 0 : (_container$parent = container.parent) === null || _container$parent === void 0 ? void 0 : _container$parent.children.indexOf(container)) + 1 === parseInt(dataBinding.dataset.bindingIndex)) {
                 changed = renderDataBinding(dataBinding);
+<<<<<<< HEAD
               } else if (dataBindings.indexOf(dataBinding) + 1 === this.getRepeaterItemActiveIndex()) {
                 changed = this.tryHandleDynamicCoverSettings(dataBinding, settings);
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
               }
             }
             break;
@@ -31228,6 +31385,7 @@ BaseElementView = BaseContainer.extend({
    * @param {Object} settings
    */
   renderOnChange: function renderOnChange(settings) {
+<<<<<<< HEAD
     var _this6 = this;
     if (!this.allowRender) {
       return;
@@ -31236,11 +31394,21 @@ BaseElementView = BaseContainer.extend({
       this.isRendering = false;
       return;
     }
+=======
+    var _this5 = this;
+    if (!this.allowRender) {
+      return;
+    }
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     var renderResult = this.renderDataBindings(settings, this.dataBindings);
     if (renderResult instanceof Promise) {
       renderResult.then(function (result) {
         if (!result) {
+<<<<<<< HEAD
           _this6.renderChanges(settings);
+=======
+          _this5.renderChanges(settings);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         }
       });
     }
@@ -31275,7 +31443,11 @@ BaseElementView = BaseContainer.extend({
     BaseContainer.prototype.render.apply(this, arguments);
   },
   onRender: function onRender() {
+<<<<<<< HEAD
     var _this7 = this;
+=======
+    var _this6 = this;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     this.linkDataBindings();
     this.renderUI();
     this.runReadyTrigger();
@@ -31296,9 +31468,15 @@ BaseElementView = BaseContainer.extend({
 
     // Defer to wait for all of the children to render.
     setTimeout(function () {
+<<<<<<< HEAD
       _this7.initDraggable();
       _this7.dispatchElementLifeCycleEvent('rendered');
       elementorFrontend.elements.$window.on('elementor/elements/link-data-bindings', _this7.linkDataBindings.bind(_this7));
+=======
+      _this6.initDraggable();
+      _this6.dispatchElementLifeCycleEvent('rendered');
+      elementorFrontend.elements.$window.on('elementor/elements/link-data-bindings', _this6.linkDataBindings.bind(_this6));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     });
   },
   dispatchElementLifeCycleEvent: function dispatchElementLifeCycleEvent(eventType) {
@@ -31380,7 +31558,11 @@ BaseElementView = BaseContainer.extend({
     elementorFrontend.elements.window.document.activeElement.blur();
   },
   onDestroy: function onDestroy() {
+<<<<<<< HEAD
     var _this8 = this;
+=======
+    var _this7 = this;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     if (this.dataBindings) {
       delete this.dataBindings;
     }
@@ -31390,7 +31572,11 @@ BaseElementView = BaseContainer.extend({
 
     // Defer so the event is fired after the element is removed from the DOM.
     setTimeout(function () {
+<<<<<<< HEAD
       return _this8.dispatchElementLifeCycleEvent('destroyed');
+=======
+      return _this7.dispatchElementLifeCycleEvent('destroyed');
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     });
   },
   // eslint-disable-next-line jsdoc/require-returns-check
@@ -31425,7 +31611,11 @@ BaseElementView = BaseContainer.extend({
    * Initialize the Droppable instance.
    */
   initDraggable: function initDraggable() {
+<<<<<<< HEAD
     var _this9 = this;
+=======
+    var _this8 = this;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     if (!elementor.userCan('design')) {
       return;
     }
@@ -31436,20 +31626,34 @@ BaseElementView = BaseContainer.extend({
     }
     this.$el.html5Draggable({
       onDragStart: function onDragStart(e) {
+<<<<<<< HEAD
         var _this9$options$dragga;
         e.stopPropagation();
         if (_this9.getContainer().isLocked()) {
+=======
+        var _this8$options$dragga;
+        e.stopPropagation();
+        if (_this8.getContainer().isLocked()) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           e.originalEvent.preventDefault();
           return;
         }
 
         // Need to stop this event when the element is absolute since it clashes with this one.
         // See `behaviors/widget-draggable.js`.
+<<<<<<< HEAD
         if ((_this9$options$dragga = _this9.options.draggable) !== null && _this9$options$dragga !== void 0 && _this9$options$dragga.isActive) {
           return;
         }
         var helper = _this9.getDraggableHelper();
         _this9.$el[0].appendChild(helper);
+=======
+        if ((_this8$options$dragga = _this8.options.draggable) !== null && _this8$options$dragga !== void 0 && _this8$options$dragga.isActive) {
+          return;
+        }
+        var helper = _this8.getDraggableHelper();
+        _this8.$el[0].appendChild(helper);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 
         // Set the x & y coordinates of the helper the same as the legacy jQuery sortable.
         e.originalEvent.dataTransfer.setDragImage(helper, 25, 20);
@@ -31459,6 +31663,7 @@ BaseElementView = BaseContainer.extend({
         setTimeout(function () {
           helper.remove();
         });
+<<<<<<< HEAD
         _this9.onDragStart(e);
         elementor.channels.editor.reply('element:dragged', _this9);
       },
@@ -31566,6 +31771,17 @@ BaseElementView = BaseContainer.extend({
   },
   isAdvancedDynamicSettings: function isAdvancedDynamicSettings(attributes) {
     return 'before' in attributes && 'after' in attributes && 'fallback' in attributes;
+=======
+        _this8.onDragStart(e);
+        elementor.channels.editor.reply('element:dragged', _this8);
+      },
+      onDragEnd: function onDragEnd(e) {
+        e.stopPropagation();
+        _this8.onDragEnd(e);
+      },
+      groups: ['elementor-element']
+    });
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
   }
 });
 module.exports = BaseElementView;
@@ -35278,12 +35494,15 @@ var _default = /*#__PURE__*/function (_Marionette$LayoutVie) {
       };
     }
   }, {
+<<<<<<< HEAD
     key: "behaviors",
     value: function behaviors() {
       var behaviors = {};
       return elementor.hooks.applyFilters('navigator/layout/behaviors', behaviors, this);
     }
   }, {
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     key: "events",
     value: function events() {
       return {
@@ -35398,7 +35617,11 @@ var _default = /*#__PURE__*/function (_BaseRegion) {
       customPosition: {
         title: __('Custom Positioning', 'elementor'),
         icon: 'cursor-move',
+<<<<<<< HEAD
         settingKeys: ['_position'],
+=======
+        settingKeys: ['_position', '_element_width'],
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         section: '_section_position'
       }
     };
@@ -39212,7 +39435,13 @@ var ContainerHelper = /*#__PURE__*/function () {
   }, {
     key: "openEditMode",
     value: function openEditMode(container) {
+<<<<<<< HEAD
       $e.run('document/elements/select', {
+=======
+      $e.run('panel/editor/open', {
+        model: container.model,
+        view: container.view,
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         container: container
       });
     }
@@ -39362,6 +39591,7 @@ module.exports = elementorModules.Module.extend({
     }
     return action.isEnabled ? action.isEnabled() : true;
   },
+<<<<<<< HEAD
   isActionVisible: function isActionVisible(action) {
     if ('function' === typeof action.isVisible) {
       return action.isVisible();
@@ -39370,6 +39600,10 @@ module.exports = elementorModules.Module.extend({
   },
   runAction: function runAction(action) {
     if (!this.isActionEnabled(action) || !this.isActionVisible(action)) {
+=======
+  runAction: function runAction(action) {
+    if (!this.isActionEnabled(action)) {
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
       return;
     }
     action.callback();
@@ -39410,7 +39644,11 @@ module.exports = elementorModules.Module.extend({
       self.toggleGroupVisibility(group, isGroupVisible);
       if (isGroupVisible) {
         group.actions.forEach(function (action) {
+<<<<<<< HEAD
           var isActionVisible = self.isActionVisible(action);
+=======
+          var isActionVisible = false !== action.isVisible;
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
           self.toggleActionVisibility(action, isActionVisible);
           self.updateActionTitle(action);
           if (isActionVisible) {
@@ -40048,6 +40286,7 @@ exports["default"] = FilesUploadHandler;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../assets/dev/js/editor/utils/font-variables.js":
 /*!*******************************************************!*\
   !*** ../assets/dev/js/editor/utils/font-variables.js ***!
@@ -40214,6 +40453,8 @@ exports.FontVariables = FontVariables;
 
 /***/ }),
 
+=======
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ "../assets/dev/js/editor/utils/heartbeat.js":
 /*!**************************************************!*\
   !*** ../assets/dev/js/editor/utils/heartbeat.js ***!
@@ -40488,7 +40729,11 @@ module.exports = {
    * @param {*}      icon       - icon control data
    * @param {*}      attributes - default {} - attributes to attach to rendered html tag
    * @param {string} tag        - default i - html tag to render
+<<<<<<< HEAD
    * @param {*}      returnType - default value - return type
+=======
+   * @param {*}      returnType - default value - retrun type
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
    * @return {string|undefined|*} result
    */
   renderIcon: function renderIcon(view, icon) {
@@ -44636,7 +44881,11 @@ var _default = /*#__PURE__*/function (_Marionette$LayoutVie) {
     key: "isFloatingButtonLibraryClose",
     value: function isFloatingButtonLibraryClose() {
       var _elementor$config, _elementor$config2, _elementor$config2$do;
+<<<<<<< HEAD
       return window.elementor && ((_elementor$config = elementor.config) === null || _elementor$config === void 0 ? void 0 : _elementor$config.admin_floating_button_admin_url) && 'floating-buttons' === ((_elementor$config2 = elementor.config) === null || _elementor$config2 === void 0 ? void 0 : (_elementor$config2$do = _elementor$config2.document) === null || _elementor$config2$do === void 0 ? void 0 : _elementor$config2$do.type) && (this.$el.closest('.dialog-lightbox-widget-content').find('.elementor-template-library-template-floating_button').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-preview').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-templates-empty').length);
+=======
+      return window.elementor && ((_elementor$config = elementor.config) === null || _elementor$config === void 0 ? void 0 : _elementor$config.admin_floating_button_admin_url) && 'floating-buttons' === ((_elementor$config2 = elementor.config) === null || _elementor$config2 === void 0 ? void 0 : (_elementor$config2$do = _elementor$config2.document) === null || _elementor$config2$do === void 0 ? void 0 : _elementor$config2$do.type) && (this.$el.closest('.dialog-lightbox-widget-content').find('.elementor-template-library-template-floating_button').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-preview').length);
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
     }
   }]);
   return _default;
@@ -48718,7 +48967,11 @@ var ShowSwatches = /*#__PURE__*/function (_$e$modules$CommandBa) {
     }
 
     /**
+<<<<<<< HEAD
      * Extract colors from image and push it to the colors array.
+=======
+     * Extract colors from image and push it ot the colors array.
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
      *
      * @param {Object} image  - The image element to extract colors from
      * @param {string} suffix - An optional suffix for the key in the colors array.
@@ -50195,6 +50448,7 @@ module.exports = PanelElementsNoticeView;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-bars/editor/module.js":
 /*!****************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-bars/editor/module.js ***!
@@ -50263,6 +50517,12 @@ exports["default"] = _default;
 /*!**********************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/component.js ***!
   \**********************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/component.js":
+/*!*****************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/component.js ***!
+  \*****************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50279,7 +50539,11 @@ var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtim
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
+<<<<<<< HEAD
 var hooks = _interopRequireWildcard(__webpack_require__(/*! ./hooks/ */ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/index.js"));
+=======
+var hooks = _interopRequireWildcard(__webpack_require__(/*! ./hooks/ */ "../modules/floating-buttons/assets/js/editor/hooks/index.js"));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
@@ -50308,10 +50572,17 @@ exports["default"] = LinksPageComponent;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/index.js":
 /*!************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/index.js ***!
   \************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/index.js":
+/*!*******************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/index.js ***!
+  \*******************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50356,6 +50627,7 @@ Object.defineProperty(exports, "SelectLoadingButtonOnOpen", ({
     return _selectFloatingButtonOnOpen.SelectLoadingButtonOnOpen;
   }
 }));
+<<<<<<< HEAD
 var _addFloatingButtonsTab = __webpack_require__(/*! ./ui/editor/documents/open/add-floating-buttons-tab */ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/open/add-floating-buttons-tab.js");
 var _removeFloatingButtonsTab = __webpack_require__(/*! ./ui/editor/documents/close/remove-floating-buttons-tab */ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/close/remove-floating-buttons-tab.js");
 var _openLibraryAfterDelete = __webpack_require__(/*! ./ui/editor/delete/open-library-after-delete */ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/delete/open-library-after-delete.js");
@@ -50369,6 +50641,21 @@ var _delete = __webpack_require__(/*! ./ui/editor/document/delete */ "../modules
 /*!*************************************************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/delete/open-library-after-delete.js ***!
   \*************************************************************************************************************************/
+=======
+var _addFloatingButtonsTab = __webpack_require__(/*! ./ui/editor/documents/open/add-floating-buttons-tab */ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/open/add-floating-buttons-tab.js");
+var _removeFloatingButtonsTab = __webpack_require__(/*! ./ui/editor/documents/close/remove-floating-buttons-tab */ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/close/remove-floating-buttons-tab.js");
+var _openLibraryAfterDelete = __webpack_require__(/*! ./ui/editor/delete/open-library-after-delete */ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/delete/open-library-after-delete.js");
+var _select = __webpack_require__(/*! ./ui/editor/document/select */ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/document/select.js");
+var _selectFloatingButtonOnOpen = __webpack_require__(/*! ./ui/editor/documents/attach-preview/select-floating-button-on-open */ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/attach-preview/select-floating-button-on-open.js");
+var _delete = __webpack_require__(/*! ./ui/editor/document/delete */ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/document/delete.js");
+
+/***/ }),
+
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/delete/open-library-after-delete.js":
+/*!********************************************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/ui/editor/delete/open-library-after-delete.js ***!
+  \********************************************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50429,10 +50716,17 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/document/delete.js":
 /*!********************************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/document/delete.js ***!
   \********************************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/document/delete.js":
+/*!***************************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/ui/editor/document/delete.js ***!
+  \***************************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50506,10 +50800,17 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/document/select.js":
 /*!********************************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/document/select.js ***!
   \********************************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/document/select.js":
+/*!***************************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/ui/editor/document/select.js ***!
+  \***************************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50582,10 +50883,17 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/attach-preview/select-floating-button-on-open.js":
 /*!************************************************************************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/attach-preview/select-floating-button-on-open.js ***!
   \************************************************************************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/attach-preview/select-floating-button-on-open.js":
+/*!*******************************************************************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/attach-preview/select-floating-button-on-open.js ***!
+  \*******************************************************************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50649,10 +50957,17 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/close/remove-floating-buttons-tab.js":
 /*!************************************************************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/close/remove-floating-buttons-tab.js ***!
   \************************************************************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/close/remove-floating-buttons-tab.js":
+/*!*******************************************************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/close/remove-floating-buttons-tab.js ***!
+  \*******************************************************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50709,10 +51024,17 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/open/add-floating-buttons-tab.js":
 /*!********************************************************************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/hooks/ui/editor/documents/open/add-floating-buttons-tab.js ***!
   \********************************************************************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/open/add-floating-buttons-tab.js":
+/*!***************************************************************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/hooks/ui/editor/documents/open/add-floating-buttons-tab.js ***!
+  \***************************************************************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50755,6 +51077,7 @@ var FloatingButtonsAddLibraryTab = /*#__PURE__*/function (_$e$modules$hookUI$Af)
       return 'floating-buttons' === document.config.type;
     }
   }, {
+<<<<<<< HEAD
     key: "getSubtype",
     value: function getSubtype() {
       var urlParams = new URLSearchParams(window.location.search);
@@ -50789,6 +51112,15 @@ var FloatingButtonsAddLibraryTab = /*#__PURE__*/function (_$e$modules$hookUI$Af)
           source: 'remote',
           type: 'floating_button',
           subtype: this.getSubtype()
+=======
+    key: "apply",
+    value: function apply() {
+      $e.components.get('library').addTab('templates/floating-buttons', {
+        title: __('Floating Buttons', 'elementor'),
+        filter: {
+          source: 'remote',
+          type: 'floating_button'
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
         }
       }, 2);
       $e.components.get('library').removeTab('templates/blocks');
@@ -50803,10 +51135,17 @@ exports["default"] = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../modules/floating-buttons/assets/js/floating-buttons/editor/module.js":
 /*!*******************************************************************************!*\
   !*** ../modules/floating-buttons/assets/js/floating-buttons/editor/module.js ***!
   \*******************************************************************************/
+=======
+/***/ "../modules/floating-buttons/assets/js/editor/module.js":
+/*!**************************************************************!*\
+  !*** ../modules/floating-buttons/assets/js/editor/module.js ***!
+  \**************************************************************/
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -50822,7 +51161,11 @@ var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtim
 var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ "../node_modules/@babel/runtime/helpers/inherits.js"));
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
+<<<<<<< HEAD
 var _component = _interopRequireDefault(__webpack_require__(/*! ./component */ "../modules/floating-buttons/assets/js/floating-buttons/editor/component.js"));
+=======
+var _component = _interopRequireDefault(__webpack_require__(/*! ./component */ "../modules/floating-buttons/assets/js/editor/component.js"));
+>>>>>>> 221ebc616d24a224f325a1b5acdc1e837ccf3350
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 var FloatingButtonsLibraryModule = /*#__PURE__*/function (_elementorModules$edi) {
