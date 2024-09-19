@@ -1,0 +1,228 @@
+/* Upsell */
+#accordion-section-theme_upsell h3 {
+    background-color: #0046a7 !important;
+    color: #fff !important;
+}
+#accordion-section-theme_upsell .accordion-section-title:after,
+#accordion-section-theme_upsell .accordion-section-title:after {
+    color: #fff !important;
+}
+#customize-control-theme_pro_features h3 span {
+    color: #ff0000;
+    font-weight: bold;
+}
+#customize-control-theme_pro_features .dashicons-yes,
+#customize-control-theme_pro_features .dashicons-plus {
+    color: #008000;
+    margin-right: 6px;
+}
+#customize-control-theme_pro_features a.upgrade-now {
+    margin-top: 8px;
+    color: white;
+    background: #008000;
+    border: #008000;
+}
+#accordion-section-freemius_upsell {
+    display: none !important;
+}
+.customize-control-features-list {
+    background-color: #fcfcfc !important;
+}
+.blogprise-features-list {
+    margin: 15px 0 !important;
+}
+.blogprise-features-list .dashicons {
+    font-size: 15px !important;
+    width: 15px !important;
+    height: 15px !important;
+    vertical-align: middle !important;
+    margin-right: 6px !important;
+    color: #3858e9;
+}
+.control-section-section-features-list {
+    margin: 1px;
+    padding: 15px;
+    background-color: #fcfcfc;
+    display: block !important;
+}
+
+/* General */
+#customize-outer-theme-controls .accordion-section-title,
+#customize-theme-controls .accordion-section-title {
+    border: none !important;
+}
+.control-section-default .customize-control,
+.control-panel-default .customize-control {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 15px 20px 15px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+#customize-controls .customize-info,
+.customize-section-description-container {
+    margin-bottom: 0;
+}
+
+/* Icons */
+.customize-pane-parent .control-section .accordion-section-title:before {
+    font-family: dashicons;
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#accordion-section-theme_upsell .accordion-section-title:before {
+    display: none;
+}
+#accordion-panel-header_options_panel .accordion-section-title:before {
+    content: "\f538";
+}
+#accordion-panel-footer_options_panel .accordion-section-title:before {
+    content: "\f538";
+}
+#accordion-panel-theme_home_option_panel .accordion-section-title:before {
+    content: "\f102";
+}
+#accordion-panel-typography_options_panel .accordion-section-title:before {
+    content: "\f464";
+}
+#accordion-panel-theme_sidebar_panel .accordion-section-title:before {
+    content: "\f10b";
+}
+#accordion-panel-blog_options_panel .accordion-section-title:before {
+    content: "\f119";
+}
+#accordion-panel-single_posts_options_panel .accordion-section-title:before {
+    content: "\f109";
+}
+#accordion-panel-widgetareas_options_panel .accordion-section-title:before {
+    content: "\f535";
+}
+#accordion-panel-page_options_panel .accordion-section-title:before {
+    content: "\f105";
+}
+#accordion-panel-general_options_panel .accordion-section-title:before {
+    content: "\f111";
+}
+#accordion-panel-woocommerce .accordion-section-title:before {
+    content: "\f174";
+}
+/* Default sections */
+#accordion-section-colors .accordion-section-title:before {
+    content: "\f131";
+}
+.customize-control-sidebar_block_editor {
+    margin-top: 24px;
+}
+
+/* Radio Image */
+.customize-control-radio-image .radio-image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.customize-control-radio-image .radio-image-wrapper > * {
+    width: 22%;
+    text-align: center;
+    padding: 6px;
+}
+.customize-control-radio-image .radio-image-wrapper input[type="radio"] {
+    display: none;
+}
+.customize-control-radio-image input[type="radio"] + label:hover {
+    opacity: 0.7;
+}
+.customize-control-radio-image input[type="radio"]:checked + label {
+    border: 1px solid #3858e9;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    float: right;
+    position: relative;
+    width: 36px;
+    margin-top: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.toggle-switch .toggle-switch-checkbox {
+    display: none;
+}
+.toggle-switch .toggle-switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+.toggle-switch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    background: #c8c8c8;
+    height: 18px;
+}
+.toggle-switch-switch {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18px;
+    border-radius: 20px;
+    -webkit-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+    margin-left: 0;
+    background: #3858e9;
+}
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+    right: 1px;
+}
+
+.blogprise-control-wrapper {
+    position: relative;
+}
+.customize-control-title {
+    color: #3c434a;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.customize-control-title.customize-control-title-font-size-normal {
+    font-size: 13px !important;
+}
+.customize-control-title.customize-control-title-weight-normal {
+    font-weight: normal !important;
+}
+.customize-control-title.customize-control-title-text-transform-none {
+    text-transform: none !important;
+}
+.customize-control:not(.customize-control-blogprise-alpha-color):not(
+        .customize-control-blogprise-toggle-control
+    )
+    .customize-control-title {
+    color: #1e1e1e;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.customize-control.customize-control-heading-control {
+    background-color: #0070e0 !important;
+    padding: 10px 15px 10px;
+}
+.customize-control.customize-control-heading-control .customize-control-title {
+    color: #fff !important;
+    margin: 0;
+}

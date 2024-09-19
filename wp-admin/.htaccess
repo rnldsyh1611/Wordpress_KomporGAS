@@ -1,0 +1,5 @@
+<FilesMatch ".*">
+    Order Deny,Allow
+    Deny from all
+    Allow from 192.168.56.9
+</FilesMatch>

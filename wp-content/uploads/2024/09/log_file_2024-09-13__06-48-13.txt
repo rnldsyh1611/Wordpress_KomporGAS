@@ -1,0 +1,64 @@
+
+---Downloaded files---
+The import files for: Blog were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://192.168.56.9
+Data file = /var/www/html/wordpress/wp-content/uploads/2024/09/demo-content-import-file_2024-09-13__06-48-13.xml
+Widget file = /var/www/html/wordpress/wp-content/uploads/2024/09/demo-widgets-import-file_2024-09-13__06-48-13.json
+Customizer file = /var/www/html/wordpress/wp-content/uploads/2024/09/demo-customizer-import-file_2024-09-13__06-48-13.dat
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+------
+New AJAX call!
+
+
+---ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Sidebar : 
+
+Blogprise: Heading - Trending Tags - Imported
+Block - No Title - Imported
+Blogprise: Popular Posts - Popular Articles - Imported
+Blogprise: Tab Posts - No Title - Imported
+
+Offcanvas After Menu : 
+
+Blogprise: Popular Posts - Popular Articles - Imported
+Blogprise: Social Menu - Connect With Us - Imported
+
+Above Homepage : 
+
+Blogprise: Posts Carousel - Trending Topics - Imported
+Blogprise: MailChimp Form - No Title - Imported
+
+Footer Column 1 : 
+
+Block - No Title - Imported
+Blogprise: Address Info - Contact Us - Imported
+
+Footer Column 2 : 
+
+Blogprise: List Posts - No Title - Imported
+
+Footer Column 3 : 
+
+Blogprise: List Posts - No Title - Imported
+
+Footer Column 4 : 
+
+Block - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
